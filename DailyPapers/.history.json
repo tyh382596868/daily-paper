@@ -1,5 +1,35 @@
 [
   {
+    "id": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
+    "date": "2026-05-10",
+    "title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies"
+  },
+  {
+    "id": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
+    "date": "2026-05-10",
+    "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos"
+  },
+  {
+    "id": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks",
+    "date": "2026-05-10",
+    "title": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks"
+  },
+  {
+    "id": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
+    "date": "2026-05-10",
+    "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models"
+  },
+  {
+    "id": "Splatting Physical Scenes: End-to-End Real-to-Sim from Imperfect Robot Data",
+    "date": "2026-05-10",
+    "title": "Splatting Physical Scenes: End-to-End Real-to-Sim from Imperfect Robot Data"
+  },
+  {
+    "id": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting",
+    "date": "2026-05-10",
+    "title": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting"
+  },
+  {
     "id": "RLDX-1 Technical Report",
     "date": "2026-05-09",
     "title": "RLDX-1 Technical Report"
