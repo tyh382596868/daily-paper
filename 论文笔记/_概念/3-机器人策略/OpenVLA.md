@@ -1,25 +1,26 @@
 ---
 type: concept
-aliases: [Open VLA]
+aliases: [Open Vision-Language-Action]
 ---
 
 # OpenVLA
 
 ## 定义
+基于 Llama 2 的开源 Vision-Language-Action 模型，在 Open X-Embodiment 数据集上训练，支持多种机器人平台的通用控制。
 
-OpenVLA 是早期有影响力的开源视觉-语言-动作模型，基于 Prismatic VLM，在 Open X-Embodiment 数据集上训练。
+## 数学形式
+$$a = \text{OpenVLA}_\theta(I, l)$$
+其中 $I$ 为 RGB 图像，$l$ 为语言指令，$a$ 为离散化的机器人动作 token 序列。
 
 ## 核心要点
-
-1. 7B 参数，完全开源
-2. LIBERO 平均成功率 76.5%（明显低于后续方法）
-3. 与特定机器人平台绑定，泛化性受限
+1. 将动作向量离散化为 token，用语言模型 next-token prediction 框架预测动作
+2. 基于 Prismatic VLM（SigLIP + Llama 2）
+3. 在 Open X-Embodiment 970K 轨迹上训练
 
 ## 代表工作
-
-- [[MolmoAct2]]：相比 OpenVLA 在 LIBERO 上提升约 21 个百分点
+- Kim et al., 2024: OpenVLA 原始论文
 
 ## 相关概念
-
 - [[VLA]]
-- [[Action Chunking]]
+- [[LIBERO]]
+- [[LoRA]]

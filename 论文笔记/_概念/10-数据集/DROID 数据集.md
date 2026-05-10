@@ -1,25 +1,26 @@
 ---
 type: concept
-aliases: [DROID, DROID dataset]
+aliases: [DROID, DROID Dataset]
 ---
 
 # DROID 数据集
 
 ## 定义
 
-DROID 是一个大规模 Franka 机器人操控数据集，包含 7.46 万条遥操作轨迹，是目前最大的开放机器人数据集之一。
+DROID（Distributed Robot Interaction Dataset）是一个大规模真实世界机器人操作数据集，包含使用 Franka 机械臂在多种场景下采集的多样化操控轨迹，配有多视角摄像头和自然语言标注。
 
 ## 核心要点
 
-1. 主要使用 Franka Panda 机器人收集
-2. 包含多种操控任务（抓取、放置、开合等）
-3. MolmoAct2 对其进行质量筛选后用于预训练
+1. 多场景多任务：覆盖厨房、办公室、家庭等真实环境，操作对象和任务多样
+2. 随机摄像头位置：不同于固定视角数据集，DROID 摄像头位置随机，对泛化性要求更高
+3. 大规模：原始数据超过 7.6 万条轨迹，是主流泛化操作研究的重要来源
 
 ## 代表工作
 
-- [[MolmoAct2]]：MolmoAct2-DROID 在其上训练，真实操控任务 87.1%
+- [[MolmoAct2]]: 使用 DROID 数据训练 MolmoAct2-DROID，在 5 个新任务上达到 87.1% 成功率
+- [[π0.5]]: 同样基于 DROID 数据训练的泛化操作策略
 
 ## 相关概念
 
 - [[VLA]]
-- [[OpenFAST]]
+- [[Flow Matching]]

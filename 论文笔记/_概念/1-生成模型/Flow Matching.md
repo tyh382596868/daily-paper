@@ -3,30 +3,34 @@ type: concept
 aliases: [流匹配, Conditional Flow Matching, CFM]
 ---
 
-# Flow Matching（流匹配）
+# Flow Matching
 
 ## 定义
 
-Flow Matching 是一种生成模型训练范式，通过回归从噪声到数据的线性插值路径上的速度场来学习生成分布，训练稳定且推理高效。
+一种基于连续正则化流的生成模型训练范式，通过直接回归从噪声到数据的速度场（velocity field）来训练生成模型，比 DDPM 更简洁高效。
 
 ## 数学形式
 
-线性插值：$x_t = (1-t)\varepsilon + ta$，速度场 $u = a - \varepsilon$
+$$
+\mathcal{L}_\text{FM} = \mathbb{E}_{t, q(x_1), p(x_0)} \| v_\theta(x_t, t) - u_t(x_t | x_1) \|^2
+$$
 
-损失：$\mathcal{L}_{\text{flow}} = \mathbb{E}\left[\|f_\theta(x_t, t, c) - u\|_2^2\right]$
+其中 $u_t(x_t | x_1) = x_1 - x_0$ 为从噪声 $x_0$ 到数据 $x_1$ 的条件速度场，$x_t = (1-t)x_0 + t x_1$ 为线性插值路径。
 
 ## 核心要点
 
-1. 在噪声和目标之间定义直线轨迹，速度场为常数，训练简单
-2. 无需离散化 SDE，可用少步 ODE 推理
-3. 通过上下文条件 $c$ 实现条件生成
+1. 目标是学习一个向量场 $v_\theta$，将噪声分布通过 ODE 积分变换为数据分布
+2. 线性路径（Rectified Flow）比 DDPM 的马尔可夫链更直接，推理步数更少
+3. 时间步权重 $\omega(t)$ 可灵活调节不同时间步的损失贡献
+4. 已成为大规模视频/图像生成（如 Wan2.2、SD3）的主流训练目标
 
 ## 代表工作
 
-- [[π₀]]：将 Flow Matching 引入机器人 VLA 动作生成
-- [[MolmoAct2]]：使用多流样本损失增强 Flow Matching 训练
+- [[Wan2.2]]: 基于 Flow Matching 训练的视频生成模型
+- [[EA-WM]]: 使用 Flow Matching 目标联合训练视频和 KVAF 预测
 
 ## 相关概念
 
-- [[VLA]]
-- [[Action Chunking]]
+- [[视频扩散模型]]
+- [[扩散变换器]]
+- [[LDM]]
