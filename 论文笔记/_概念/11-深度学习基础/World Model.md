@@ -32,6 +32,7 @@ $$
 
 - [[World Action Model|OA-WAM]]: 将世界模型应用于对象级鲁棒机器人操作
 - [[Cosmos-Policy]]: 基于 Cosmos 视频世界模型驱动的机器人策略
+- [[LeWM]]: 端到端 JEPA 潜空间世界模型，单卡可训
 
 ## 相关概念
 
