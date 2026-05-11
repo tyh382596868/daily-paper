@@ -18,10 +18,17 @@ $$\mathcal{L} = \| s_\phi(x_{t+k}) - p_\psi(s_\phi(x_t), a_{t:t+k}) \|^2$$
 3. I-JEPA（图像）、V-JEPA（视频）是已发布的实现
 
 ## 代表工作
-- Assran et al., 2023: I-JEPA
-- [[LeWorldModel]]: 基于 JEPA 的稳定世界模型
+- Assran et al., 2023: [[I-JEPA]]
+- Bardes et al., 2024: [[V-JEPA]]
+- [[LeWM]]: 基于 [[SIGReg]] 的稳定端到端 JEPA 世界模型
+- [[PLDM]]: 此前唯一的端到端像素 JEPA 基线，需要 6+ 损失项
 
 ## 相关概念
+- [[I-JEPA]]
+- [[V-JEPA]]
+- [[SIGReg]]
+- [[VICReg]]
+- [[表征坍塌]]
 - [[DreamerV3]]
 - [[DINO]]
 - [[EMA]]
