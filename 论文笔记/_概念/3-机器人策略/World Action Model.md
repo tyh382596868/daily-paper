@@ -27,6 +27,7 @@ World Action Model（WAM）是一类将场景演化预测（世界模型）与�
 - [[WorldVLA]]: 整体式 WAM 的典型代表
 - [[Cosmos-Policy]]: 基于 Cosmos 世界模型的整体式 WAM
 - [[VLA-JEPA]]: 采用 JEPA 式预测目标的 WAM 变体
+- [[RLA-WM]]: 极简 WAM——给 BC-ResNet 加线性头预测残差潜在动作（RLA），从无动作视频学策略，不耦合 DINO/视频生成 backbone
 
 ## 相关概念
 

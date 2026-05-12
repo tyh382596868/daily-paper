@@ -33,6 +33,7 @@ $$
 - [[World Action Model|OA-WAM]]: 将世界模型应用于对象级鲁棒机器人操作
 - [[Cosmos-Policy]]: 基于 Cosmos 视频世界模型驱动的机器人策略
 - [[LeWM]]: 端到端 JEPA 潜空间世界模型，单卡可训
+- [[RLA-WM]]: 视觉特征空间世界模型——预测 [[DINO]] token 残差压缩出的紧凑潜变量（RLA）而非特征本身
 
 ## 相关概念
 

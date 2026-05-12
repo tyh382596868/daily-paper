@@ -28,7 +28,9 @@
       "robot learning",
       "sim-to-real",
       "dreamzero",
-      "wan video model"
+      "wan video model",
+      "vla memory",
+      "world model with memory"
     ],
     "negative_keywords": [
       "medical imaging",
