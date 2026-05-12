@@ -28,6 +28,7 @@ $$
 
 - Zhou et al., 2024: DINO-WM 原始论文
 - [[LeWM]]: 把 DINO-WM 作为 foundation-based 基线对比
+- [[RLA-WM]]: 指出直接回归 DINO token 在复杂 3D 任务上模糊/坍塌，改为预测 token 残差的紧凑潜变量（RLA）
 
 ## 相关概念
 
@@ -35,3 +36,4 @@ $$
 - [[世界模型]]
 - [[JEPA]]
 - [[CEM]]
+- [[残差潜在动作]]
