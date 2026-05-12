@@ -178,5 +178,130 @@
     "id": "Novelty-based Tree-of-Thought Search for LLM Reaso",
     "date": "2026-05-09",
     "title": "Novelty-based Tree-of-Thought Search for LLM Reasoning and Planning"
+  },
+  {
+    "id": "2605.07308",
+    "date": "2026-05-12",
+    "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.07079",
+    "date": "2026-05-12",
+    "title": "Learning Visual Feature-Based World Models via Residual Latent Action"
+  },
+  {
+    "id": "2605.07931",
+    "date": "2026-05-12",
+    "title": "One Token Per Frame: Reconsidering Visual Bandwidth in World Models for VLA Policy"
+  },
+  {
+    "id": "2605.07306",
+    "date": "2026-05-12",
+    "title": "BioProVLA-Agent: An Affordable, Protocol-Driven, Vision-Enhanced VLA-Enabled Embodied Multi-Agent System with Closed-Loop-Capable Reasoning for Biological Laboratory Manipulation"
+  },
+  {
+    "id": "2605.07288",
+    "date": "2026-05-12",
+    "title": "Sword: Style-Robust World Models as Simulators via Dynamic Latent Bootstrapping for VLA Policy Post-Training"
+  },
+  {
+    "id": "2605.07503",
+    "date": "2026-05-12",
+    "title": "Diffusion-APO: Trajectory-Aware Direct Preference Alignment for Video Diffusion Transformers"
+  },
+  {
+    "id": "2605.07474",
+    "date": "2026-05-12",
+    "title": "ForgeVLA: Federated Vision-Language-Action Learning without Language Annotations"
+  },
+  {
+    "id": "2605.06747",
+    "date": "2026-05-12",
+    "title": "HumanNet: Scaling Human-centric Video Learning to One Million Hours"
+  },
+  {
+    "id": "2605.07177",
+    "date": "2026-05-12",
+    "title": "HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents"
+  },
+  {
+    "id": "2605.07278",
+    "date": "2026-05-12",
+    "title": "Predictive but Not Plannable: RC-aux for Latent World Models"
+  },
+  {
+    "id": "2605.07381",
+    "date": "2026-05-12",
+    "title": "Escaping the Diversity Trap in Robotic Manipulation via Anchor-Centric Adaptation"
+  },
+  {
+    "id": "2605.07687",
+    "date": "2026-05-12",
+    "title": "PhySPRING: Structure-Preserving Reduction of Physics-Informed Twins via GNN"
+  },
+  {
+    "id": "2605.07943",
+    "date": "2026-05-12",
+    "title": "TAVIS: A Benchmark for Egocentric Active Vision and Anticipatory Gaze in Imitation Learning"
+  },
+  {
+    "id": "2605.06892",
+    "date": "2026-05-12",
+    "title": "Not All Tokens Need 40 Steps: Heterogeneous Step Allocation in Diffusion Transformers for Efficient Video Generation"
+  },
+  {
+    "id": "2605.07195",
+    "date": "2026-05-12",
+    "title": "See Tomorrow, Act Today: Foresight-Driven Autonomous Driving"
+  },
+  {
+    "id": "2605.07326",
+    "date": "2026-05-12",
+    "title": "GEM: Generating LiDAR World Model via Deformable Mamba"
+  },
+  {
+    "id": "2605.07390",
+    "date": "2026-05-12",
+    "title": "ST-Gen4D: Embedding 4D Spatiotemporal Cognition into World Model for 4D Generation"
+  },
+  {
+    "id": "2605.07800",
+    "date": "2026-05-12",
+    "title": "SARA: Semantically Adaptive Relational Alignment for Video Diffusion Models"
+  },
+  {
+    "id": "2605.06841",
+    "date": "2026-05-12",
+    "title": "AGWM: Affordance-Grounded World Models for Environments with Compositional Prerequisites"
+  },
+  {
+    "id": "2605.07199",
+    "date": "2026-05-12",
+    "title": "Three-in-One World Model: Energy-Based Consistency, Prediction, and Counterfactual Inference for Marketing Intervention"
+  },
+  {
+    "id": "2605.06759",
+    "date": "2026-05-12",
+    "title": "An Aerial Manipulator for Perception-Driven Flower Targeting Toward Contactless Pollination in Vertical Farming"
+  },
+  {
+    "id": "2605.06863",
+    "date": "2026-05-12",
+    "title": "Bi3: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation"
+  },
+  {
+    "id": "2605.07215",
+    "date": "2026-05-12",
+    "title": "PISTO: Proximal Inference for Stochastic Trajectory Optimization"
+  },
+  {
+    "id": "2605.07325",
+    "date": "2026-05-12",
+    "title": "CSR: Infinite-Horizon Real-Time Policies with Massive Cached State Representations"
+  },
+  {
+    "id": "2605.07496",
+    "date": "2026-05-12",
+    "title": "PathPainter: Transferring the Generalization Ability of Image Generation Models to Embodied Navigation"
   }
 ]
