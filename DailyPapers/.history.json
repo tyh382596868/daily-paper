@@ -303,5 +303,115 @@
     "id": "2605.07496",
     "date": "2026-05-12",
     "title": "PathPainter: Transferring the Generalization Ability of Image Generation Models to Embodied Navigation"
+  },
+  {
+    "id": "2605.10094",
+    "date": "2026-05-12",
+    "title": "Retrieve-then-Steer: Online Success Memory for Test-Time Adaptation of Generative VLAs"
+  },
+  {
+    "id": "2604.18791",
+    "date": "2026-05-12",
+    "title": "HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation"
+  },
+  {
+    "id": "2603.12942",
+    "date": "2026-05-12",
+    "title": "ReMem-VLA: Empowering Vision-Language-Action Model with Memory via Dual-Level Recurrent Queries"
+  },
+  {
+    "id": "2603.04639",
+    "date": "2026-05-12",
+    "title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies"
+  },
+  {
+    "id": "2603.07647",
+    "date": "2026-05-12",
+    "title": "TempoFit: Plug-and-Play Layer-Wise Temporal KV Memory for Long-Horizon Vision-Language-Action Manipulation"
+  },
+  {
+    "id": "2602.20659",
+    "date": "2026-05-12",
+    "title": "Recursive Belief Vision Language Action Models"
+  },
+  {
+    "id": "2603.24060",
+    "date": "2026-05-12",
+    "title": "SOMA: Strategic Orchestration and Memory-Augmented System for Vision-Language-Action Model Robustness via In-Context Adaptation"
+  },
+  {
+    "id": "2603.04910",
+    "date": "2026-05-12",
+    "title": "VPWEM: Non-Markovian Visuomotor Policy with Working and Episodic Memory"
+  },
+  {
+    "id": "2603.09513",
+    "date": "2026-05-12",
+    "title": "Beyond Short-Horizon: VQ-Memory for Robust Long-Horizon Manipulation in Non-Markovian Simulation Benchmarks"
+  },
+  {
+    "id": "2603.12730",
+    "date": "2026-05-12",
+    "title": "AnchorVLA4D: an Anchor-Based Spatial-Temporal Vision-Language-Action Model for Robotic Manipulation"
+  },
+  {
+    "id": "2602.21013",
+    "date": "2026-05-12",
+    "title": "Notes-to-Self: Scratchpad Augmented VLAs for Memory Dependent Manipulation Tasks"
+  },
+  {
+    "id": "2604.15671",
+    "date": "2026-05-12",
+    "title": "Long-Term Memory for VLA-based Agents in Open-World Task Execution"
+  },
+  {
+    "id": "2604.16484",
+    "date": "2026-05-12",
+    "title": "DexWorldModel: Causal Latent World Modeling towards Automated Learning of Embodied Tasks"
+  },
+  {
+    "id": "2604.11302",
+    "date": "2026-05-12",
+    "title": "3D-Anchored Lookahead Planning for Persistent Robotic Scene Memory via World-Model-Based MCTS"
+  },
+  {
+    "id": "2604.08995",
+    "date": "2026-05-12",
+    "title": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory"
+  },
+  {
+    "id": "2603.25716",
+    "date": "2026-05-12",
+    "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models"
+  },
+  {
+    "id": "2603.03482",
+    "date": "2026-05-12",
+    "title": "Beyond Pixel Histories: World Models with Persistent 3D State"
+  },
+  {
+    "id": "2604.07392",
+    "date": "2026-05-12",
+    "title": "Event-Centric World Modeling with Memory-Augmented Retrieval for Embodied Decision-Making"
+  },
+  {
+    "id": "2603.07145",
+    "date": "2026-05-12",
+    "title": "LiveWorld: Simulating Out-of-Sight Dynamics in Generative Video World Models"
+  },
+  {
+    "id": "2602.22960",
+    "date": "2026-05-12",
+    "title": "UCM: Unifying Camera Control and Memory with Time-aware Positional Encoding Warping for World Models"
+  },
+  {
+    "id": "2603.02049",
+    "date": "2026-05-12",
+    "title": "WorldStereo: Bridging Camera-Guided Video Generation and Scene Reconstruction via 3D Geometric Memories"
+  },
+  {
+    "id": "2603.11395",
+    "date": "2026-05-12",
+    "title": "ARROW: Augmented Replay for RObust World models"
   }
 ]
