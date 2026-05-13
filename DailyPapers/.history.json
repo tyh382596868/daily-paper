@@ -40,7 +40,7 @@
     "title": "Toward Visually Realistic Simulation: A Benchmark for Evaluating Robot Manipulation in Simulation"
   },
   {
-    "id": "MolmoAct2: Action Reasoning Models for Real-world ",
+    "id": "2605.02881",
     "date": "2026-05-09",
     "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment"
   },
@@ -95,7 +95,7 @@
     "title": "UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors"
   },
   {
-    "id": "LeWorldModel: Stable End-to-End Joint-Embedding Pr",
+    "id": "2603.19312",
     "date": "2026-05-09",
     "title": "LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels"
   },
@@ -303,5 +303,100 @@
     "id": "2605.07496",
     "date": "2026-05-12",
     "title": "PathPainter: Transferring the Generalization Ability of Image Generation Models to Embodied Navigation"
+  },
+  {
+    "id": "2605.11367",
+    "date": "2026-05-13",
+    "title": "3D-Belief: Embodied Belief Inference via Generative 3D World Modeling"
+  },
+  {
+    "id": "2605.11596",
+    "date": "2026-05-13",
+    "title": "HorizonDrive: Self-Corrective Autoregressive World Model for Long-horizon Driving Simulation"
+  },
+  {
+    "id": "2605.10903",
+    "date": "2026-05-13",
+    "title": "CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.11151",
+    "date": "2026-05-13",
+    "title": "RankQ: Offline-to-Online Reinforcement Learning via Self-Supervised Action Ranking"
+  },
+  {
+    "id": "2605.11817",
+    "date": "2026-05-13",
+    "title": "See What Matters: Differentiable Grid Sample Pruning for Generalizable Vision-Language-Action Model"
+  },
+  {
+    "id": "2605.11809",
+    "date": "2026-05-13",
+    "title": "Beyond World-Frame Action Heads: Motion-Centric Action Frames for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.11567",
+    "date": "2026-05-13",
+    "title": "Dynamic Execution Commitment of Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.11459",
+    "date": "2026-05-13",
+    "title": "Overcoming Dynamics-Blindness: Training-Free Pace-and-Path Correction for VLA Models"
+  },
+  {
+    "id": "2605.11750",
+    "date": "2026-05-13",
+    "title": "DreamAvoid: Critical-Phase Test-Time Dreaming to Avoid Failures in VLA Policies"
+  },
+  {
+    "id": "2605.11832",
+    "date": "2026-05-13",
+    "title": "Learning Action Manifold with Multi-view Latent Priors for Robotic Manipulation"
+  },
+  {
+    "id": "2605.11564",
+    "date": "2026-05-13",
+    "title": "RIO: Flexible Real-Time Robot I/O for Cross-Embodiment Robot Learning"
+  },
+  {
+    "id": "2605.11381",
+    "date": "2026-05-13",
+    "title": "Kairos: A Scalable Serving System for Physical AI"
+  },
+  {
+    "id": "2605.11678",
+    "date": "2026-05-13",
+    "title": "OOM-Free Alpamayo via CPU-GPU Memory Swapping for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.11479",
+    "date": "2026-05-13",
+    "title": "Offline Policy Evaluation for Manipulation Policies via Discounted Liveness Formulation"
+  },
+  {
+    "id": "2605.10921",
+    "date": "2026-05-13",
+    "title": "RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark"
+  },
+  {
+    "id": "2605.11951",
+    "date": "2026-05-13",
+    "title": "From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation"
+  },
+  {
+    "id": "2605.11762",
+    "date": "2026-05-13",
+    "title": "NavOL: Navigation Policy with Online Imitation Learning"
+  },
+  {
+    "id": "2605.11859",
+    "date": "2026-05-13",
+    "title": "EvoNav: Evolutionary Reward Function Design for Robot Navigation with Large Language Models"
+  },
+  {
+    "id": "2605.11424",
+    "date": "2026-05-13",
+    "title": "VidSplat: Gaussian Splatting Reconstruction with Geometry-Guided Video Diffusion Priors"
   }
 ]
