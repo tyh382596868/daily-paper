@@ -303,5 +303,55 @@
     "id": "2605.07496",
     "date": "2026-05-12",
     "title": "PathPainter: Transferring the Generalization Ability of Image Generation Models to Embodied Navigation"
+  },
+  {
+    "id": "2605.00080",
+    "date": "2026-05-14",
+    "title": "World Model for Robot Learning: A Comprehensive Survey"
+  },
+  {
+    "id": "2605.12090",
+    "date": "2026-05-14",
+    "title": "World Action Models: The Next Frontier in Embodied AI"
+  },
+  {
+    "id": "2605.02881",
+    "date": "2026-05-14",
+    "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment"
+  },
+  {
+    "id": "2605.12500",
+    "date": "2026-05-14",
+    "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture"
+  },
+  {
+    "id": "2509.18154",
+    "date": "2026-05-14",
+    "title": "MiniCPM-V 4.5: Cooking Efficient MLLMs via Architecture, Data, and\n  Training Recipe"
+  },
+  {
+    "id": "2605.12495",
+    "date": "2026-05-14",
+    "title": "AlphaGRPO: Unlocking Self-Reflective Multimodal Generation in UMMs via Decompositional Verifiable Reward"
+  },
+  {
+    "id": "2605.10813",
+    "date": "2026-05-14",
+    "title": "NanoResearch: Co-Evolving Skills, Memory, and Policy for Personalized Research Automation"
+  },
+  {
+    "id": "2605.10903",
+    "date": "2026-05-14",
+    "title": "CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.10832",
+    "date": "2026-05-14",
+    "title": "Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents"
+  },
+  {
+    "id": "2605.10921",
+    "date": "2026-05-14",
+    "title": "RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark"
   }
 ]
