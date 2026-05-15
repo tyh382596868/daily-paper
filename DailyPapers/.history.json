@@ -383,5 +383,50 @@
     "id": "2605.13775",
     "date": "2026-05-14",
     "title": "RoboEvolve: Co-Evolving Planner-Simulator for Robotic Manipulation with Limited Data"
+  },
+  {
+    "id": "2605.15178",
+    "date": "2026-05-15",
+    "title": "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer"
+  },
+  {
+    "id": "2605.11459",
+    "date": "2026-05-15",
+    "title": "Overcoming Dynamics-Blindness: Training-Free Pace-and-Path Correction for VLA Models"
+  },
+  {
+    "id": "2605.15190",
+    "date": "2026-05-15",
+    "title": "RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO"
+  },
+  {
+    "id": "2605.15185",
+    "date": "2026-05-15",
+    "title": "Quantitative Video World Model Evaluation for Geometric-Consistency"
+  },
+  {
+    "id": "2605.09681",
+    "date": "2026-05-15",
+    "title": "Forcing-KV: Hybrid KV Cache Compression for Efficient Autoregressive Video Diffusion Models"
+  },
+  {
+    "id": "2605.14876",
+    "date": "2026-05-15",
+    "title": "Unlocking Complex Visual Generation via Closed-Loop Verified Reasoning"
+  },
+  {
+    "id": "2605.07637",
+    "date": "2026-05-15",
+    "title": "Learning to Communicate Locally for Large-Scale Multi-Agent Pathfinding"
+  },
+  {
+    "id": "2605.13169",
+    "date": "2026-05-15",
+    "title": "PanoWorld: Towards Spatial Supersensing in 360^circ Panorama World"
+  },
+  {
+    "id": "2605.14712",
+    "date": "2026-05-15",
+    "title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation"
   }
 ]

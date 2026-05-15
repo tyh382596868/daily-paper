@@ -16,6 +16,7 @@ generated_by: dailypaper-skills
 
 - [[论文笔记/3-Robotics/VLA/DAWN|DAWN]]
 - [[论文笔记/3-Robotics/VLA/EA-WM|EA-WM]]
+- [[论文笔记/3-Robotics/VLA/IntentVLA|IntentVLA]]
 - [[论文笔记/3-Robotics/VLA/LeWM|LeWM]]
 - [[论文笔记/3-Robotics/VLA/MolmoAct2|MolmoAct2]]
 - [[论文笔记/3-Robotics/VLA/OA-WAM|OA-WAM]]
