@@ -433,5 +433,40 @@
     "id": "2605.15155",
     "date": "2026-05-17",
     "title": "Self-Distilled Agentic Reinforcement Learning"
+  },
+  {
+    "id": "2504.12626",
+    "date": "2026-05-18",
+    "title": "Packing Input Frame Context in Next-Frame Prediction Models for Video\n  Generation"
+  },
+  {
+    "id": "2605.13740",
+    "date": "2026-05-18",
+    "title": "Learning POMDP World Models from Observations with Language-Model Priors"
+  },
+  {
+    "id": "2605.15256",
+    "date": "2026-05-18",
+    "title": "ReactiveGWM: Steering NPC in Reactive Game World Models"
+  },
+  {
+    "id": "2605.15298",
+    "date": "2026-05-18",
+    "title": "PhysBrain 1.0 Technical Report"
+  },
+  {
+    "id": "2605.15843",
+    "date": "2026-05-18",
+    "title": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes"
+  },
+  {
+    "id": "2605.15980",
+    "date": "2026-05-18",
+    "title": "Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization"
+  },
+  {
+    "id": "2605.16257",
+    "date": "2026-05-18",
+    "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo"
   }
 ]
