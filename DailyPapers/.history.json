@@ -470,14 +470,109 @@
     "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo"
   },
   {
+    "id": "2505.16278",
+    "date": "2026-05-19",
+    "title": "DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving"
+  },
+  {
+    "id": "2506.14009",
+    "date": "2026-05-19",
+    "title": "GRaD-Nav++: Vision-Language Model Enabled Visual Drone Navigation with Gaussian Radiance Fields and Differentiable Dynamics"
+  },
+  {
+    "id": "2507.01099",
+    "date": "2026-05-19",
+    "title": "Geometry-aware 4D Video Generation for Robot Manipulation"
+  },
+  {
     "id": "2507.19457",
     "date": "2026-05-19",
     "title": "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning"
   },
   {
+    "id": "2509.19102",
+    "date": "2026-05-19",
+    "title": "FUNCanon: Learning Pose-Aware Action Primitives via Functional Object Canonicalization for Generalizable Robotic Manipulation"
+  },
+  {
+    "id": "2512.24497",
+    "date": "2026-05-19",
+    "title": "What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?"
+  },
+  {
+    "id": "2602.08167",
+    "date": "2026-05-19",
+    "title": "Self-Supervised Bootstrapping of Action-Predictive Embodied Reasoning"
+  },
+  {
+    "id": "2602.10503",
+    "date": "2026-05-19",
+    "title": "Towards Long-Lived Robots: Continual Learning VLA Models via Reinforcement Fine-Tuning"
+  },
+  {
+    "id": "2602.20200",
+    "date": "2026-05-19",
+    "title": "Global Prior Meets Local Consistency: Dual-Memory Augmented Vision-Language-Action Model for Efficient Robotic Manipulation"
+  },
+  {
+    "id": "2602.23058",
+    "date": "2026-05-19",
+    "title": "GeoWorld: Geometric World Models"
+  },
+  {
+    "id": "2603.04639",
+    "date": "2026-05-19",
+    "title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies"
+  },
+  {
+    "id": "2603.10126",
+    "date": "2026-05-19",
+    "title": "AR-VLA: True Autoregressive Action Expert for Vision-Language-Action Models"
+  },
+  {
+    "id": "2603.11395",
+    "date": "2026-05-19",
+    "title": "ARROW: Augmented Replay for RObust World models"
+  },
+  {
+    "id": "2603.14371",
+    "date": "2026-05-19",
+    "title": "OxyGen: Unified KV Cache Management for VLA Inference under Multi-Task Parallelism"
+  },
+  {
+    "id": "2603.19199",
+    "date": "2026-05-19",
+    "title": "FASTER: Rethinking Real-Time Flow VLAs"
+  },
+  {
     "id": "2604.14268",
     "date": "2026-05-19",
     "title": "HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds"
+  },
+  {
+    "id": "2605.08567",
+    "date": "2026-05-19",
+    "title": "ACWM-Phys: Investigating Generalized Physical Interaction in Action-Conditioned Video World Models"
+  },
+  {
+    "id": "2605.11567",
+    "date": "2026-05-19",
+    "title": "Dynamic Execution Commitment of Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.12920",
+    "date": "2026-05-19",
+    "title": "Embodied Multi-Agent Coordination by Aligning World Models Through Dialogue"
+  },
+  {
+    "id": "2605.15735",
+    "date": "2026-05-19",
+    "title": "UAM: A Dual-Stream Perspective on Forgetting in VLA Training"
+  },
+  {
+    "id": "2605.15960",
+    "date": "2026-05-19",
+    "title": "Imperfect World Models are Exploitable"
   },
   {
     "id": "2605.15964",
@@ -508,6 +603,21 @@
     "id": "2605.16154",
     "date": "2026-05-19",
     "title": "Learn Where Outcomes Diverge: Efficient VLA RL via Probabilistic Chunk Masking"
+  },
+  {
+    "id": "2605.16395",
+    "date": "2026-05-19",
+    "title": "OrbiSim: World Models as Differentiable Physics Engines for Embodied Intelligence"
+  },
+  {
+    "id": "2605.16457",
+    "date": "2026-05-19",
+    "title": "Identifiable Token Correspondence for World Models"
+  },
+  {
+    "id": "2605.16725",
+    "date": "2026-05-19",
+    "title": "Baba in Wonderland: Online Self-Supervised Dynamics Discovery for Executable World Models"
   },
   {
     "id": "2605.16797",
@@ -560,9 +670,19 @@
     "title": "RoboFlow4D: A Lightweight Flow World Model Toward Real-Time Flow-Guided Robotic Manipulation"
   },
   {
+    "id": "2605.17537",
+    "date": "2026-05-19",
+    "title": "Self-supervised Hierarchical Visual Reasoning with World Model"
+  },
+  {
     "id": "2605.17912",
     "date": "2026-05-19",
     "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform"
+  },
+  {
+    "id": "2605.17916",
+    "date": "2026-05-19",
+    "title": "PanoWorld: A Generative Spatial World Model for Consistent Whole-House Panorama Synthesis"
   },
   {
     "id": "2605.18287",
