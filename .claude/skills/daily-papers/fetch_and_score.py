@@ -14,12 +14,15 @@ Stderr: progress logs.  Stdout: JSON array of top papers (30 * days).
 
 import argparse
 import json
+import os
+import random
 import re
 import sys
+import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from pathlib import Path
-from urllib.error import URLError
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 _SHARED_DIR = Path(__file__).resolve().parent.parent / "_shared"
@@ -102,15 +105,74 @@ def score_paper(paper: dict, is_trending: bool = False) -> int:
 
 # ── Fetchers ───────────────────────────────────────────────────────────────
 
+# arXiv API rate limit: docs ask for ~1 req / 3s. Anything faster risks 429.
+# We identify the bot per their guidelines (a contact handle in the UA helps a lot).
+_USER_AGENT = os.environ.get(
+    "DAILY_PAPERS_UA",
+    "daily-papers-bot/1.1 (+https://github.com/tyh382596868/daily-paper)",
+)
 
-def fetch_url(url: str, timeout: int = 30) -> str:
-    try:
-        req = Request(url, headers={"User-Agent": "daily-papers-bot/1.0"})
-        with urlopen(req, timeout=timeout) as resp:
-            return resp.read().decode("utf-8")
-    except Exception as e:
-        print(f"  [WARN] fetch failed {url}: {e}", file=sys.stderr)
-        return ""
+# Polite delay (seconds) before each arXiv request. Override via env if needed.
+_ARXIV_MIN_INTERVAL = float(os.environ.get("DAILY_PAPERS_ARXIV_INTERVAL", "3.0"))
+_last_arxiv_call: float = 0.0
+
+
+def _throttle_arxiv():
+    """Block until at least _ARXIV_MIN_INTERVAL seconds since the last arXiv call."""
+    global _last_arxiv_call
+    delta = time.monotonic() - _last_arxiv_call
+    if delta < _ARXIV_MIN_INTERVAL:
+        time.sleep(_ARXIV_MIN_INTERVAL - delta)
+    _last_arxiv_call = time.monotonic()
+
+
+def fetch_url(url: str, timeout: int = 30, retries: int = 4) -> str:
+    """Fetch a URL with retry + exponential backoff. Honors Retry-After on 429/503.
+
+    Retries on: HTTP 429, 5xx, and transient URLError (DNS, connection reset, timeout).
+    Does NOT retry on 4xx other than 429 (404, 400 etc. won't fix themselves).
+    """
+    is_arxiv = "arxiv.org" in url
+    backoff = 2.0
+    for attempt in range(retries + 1):
+        if is_arxiv:
+            _throttle_arxiv()
+        try:
+            req = Request(url, headers={"User-Agent": _USER_AGENT})
+            with urlopen(req, timeout=timeout) as resp:
+                return resp.read().decode("utf-8")
+        except HTTPError as e:
+            retry_after = 0
+            try:
+                retry_after = float(e.headers.get("Retry-After", "") or 0)
+            except (TypeError, ValueError):
+                retry_after = 0
+            should_retry = e.code == 429 or (500 <= e.code < 600)
+            if not should_retry or attempt == retries:
+                print(f"  [WARN] fetch failed {url}: {e}", file=sys.stderr)
+                return ""
+            wait = retry_after if retry_after > 0 else backoff + random.uniform(0, 0.5)
+            print(
+                f"  [retry {attempt + 1}/{retries}] HTTP {e.code} on {url[:80]}..., sleeping {wait:.1f}s",
+                file=sys.stderr,
+            )
+            time.sleep(wait)
+            backoff = min(backoff * 2, 30.0)
+        except (URLError, TimeoutError, OSError) as e:
+            if attempt == retries:
+                print(f"  [WARN] fetch failed {url}: {e}", file=sys.stderr)
+                return ""
+            wait = backoff + random.uniform(0, 0.5)
+            print(
+                f"  [retry {attempt + 1}/{retries}] {type(e).__name__} on {url[:80]}..., sleeping {wait:.1f}s",
+                file=sys.stderr,
+            )
+            time.sleep(wait)
+            backoff = min(backoff * 2, 30.0)
+        except Exception as e:
+            print(f"  [WARN] fetch failed {url}: {e}", file=sys.stderr)
+            return ""
+    return ""
 
 
 def _parse_hf_item(item: dict, source: str) -> tuple[str, dict] | None:
@@ -222,30 +284,68 @@ def fetch_hf_papers(start_date=None, end_date=None) -> list[dict]:
     return result
 
 
-def fetch_arxiv_papers(start_date=None, end_date=None, days: int = 1) -> list[dict]:
-    max_results = min(400 * days, 3000)
-    cats = "+OR+".join(f"cat:{c}" for c in ARXIV_CATEGORIES)
-    url = (
-        f"https://export.arxiv.org/api/query?"
-        f"search_query=({cats})"
-        f"&sortBy=submittedDate&sortOrder=descending&max_results={max_results}"
-    )
-
-    timeout = max(60, 30 * days)
-    print(f"  Fetching arXiv (max_results={max_results}, timeout={timeout}s)...", file=sys.stderr)
-    xml_text = fetch_url(url, timeout=timeout)
+def _parse_arxiv_atom(xml_text: str) -> list[ET.Element]:
+    """Parse an Atom XML payload from arXiv. Returns entry elements or []."""
     if not xml_text:
         return []
-
     try:
         root = ET.fromstring(xml_text)
     except ET.ParseError as e:
         print(f"  [WARN] arXiv XML parse error: {e}", file=sys.stderr)
         return []
+    return root.findall("atom:entry", ATOM_NS)
+
+
+def fetch_arxiv_papers(start_date=None, end_date=None, days: int = 1) -> list[dict]:
+    # Per-category split: 4 small requests are friendlier than 1 mega +OR+ query,
+    # which is exactly the shape that gets 429'd on busy days.
+    per_cat = min(100 * max(days, 1), 800)
+    timeout = max(30, 20 * days)
+
+    print(
+        f"  Fetching arXiv per-category (per_cat={per_cat}, timeout={timeout}s, categories={len(ARXIV_CATEGORIES)})...",
+        file=sys.stderr,
+    )
+
+    entries: list[ET.Element] = []
+    failed_cats: list[str] = []
+    for cat in ARXIV_CATEGORIES:
+        url = (
+            f"https://export.arxiv.org/api/query?"
+            f"search_query=cat:{cat}"
+            f"&sortBy=submittedDate&sortOrder=descending&max_results={per_cat}"
+        )
+        xml_text = fetch_url(url, timeout=timeout)
+        cat_entries = _parse_arxiv_atom(xml_text)
+        if not cat_entries:
+            failed_cats.append(cat)
+            continue
+        entries.extend(cat_entries)
+        print(f"    {cat}: {len(cat_entries)} entries", file=sys.stderr)
+
+    # RSS fallback: if API failed for some categories, try the cached RSS feed
+    # (rss.arxiv.org is served from a separate cache that's much less likely to 429).
+    # RSS only has the latest day's submissions — useful for the default daily flow.
+    if failed_cats:
+        print(
+            f"  [fallback] {len(failed_cats)} arXiv API categories failed, trying RSS...",
+            file=sys.stderr,
+        )
+        for cat in failed_cats:
+            rss_url = f"https://rss.arxiv.org/atom/{cat}"
+            xml_text = fetch_url(rss_url, timeout=30)
+            cat_entries = _parse_arxiv_atom(xml_text)
+            if cat_entries:
+                entries.extend(cat_entries)
+                print(f"    [rss] {cat}: {len(cat_entries)} entries", file=sys.stderr)
+
+    if not entries:
+        return []
 
     papers = []
     filtered_by_date = 0
-    for entry in root.findall("atom:entry", ATOM_NS):
+    seen_ids: set[str] = set()
+    for entry in entries:
         title_el = entry.find("atom:title", ATOM_NS)
         summary_el = entry.find("atom:summary", ATOM_NS)
         published_el = entry.find("atom:published", ATOM_NS)
@@ -259,6 +359,12 @@ def fetch_arxiv_papers(start_date=None, end_date=None, days: int = 1) -> list[di
         entry_url = id_el.text.strip() if id_el is not None else ""
         date = published_el.text[:10] if published_el is not None else ""
         arxiv_id = entry_url.split("/abs/")[-1] if "/abs/" in entry_url else ""
+
+        # Per-entry dedup — same paper can appear in multiple category results
+        dedup_key = arxiv_id or entry_url
+        if dedup_key in seen_ids:
+            continue
+        seen_ids.add(dedup_key)
 
         # Date filter: only apply in multi-day mode (days > 1)
         # In single-day mode, arXiv batches span 2-3 days, so filtering would be too strict
