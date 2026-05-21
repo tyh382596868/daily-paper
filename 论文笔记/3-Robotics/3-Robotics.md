@@ -10,7 +10,7 @@ generated_by: dailypaper-skills
 
 ## 子目录
 
-- [[论文笔记/3-Robotics/VLA/VLA|VLA]] · 15 篇笔记 · 1 个子目录
+- [[论文笔记/3-Robotics/VLA/VLA|VLA]] · 19 篇笔记 · 1 个子目录
 
 ## 说明
 
