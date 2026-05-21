@@ -14,14 +14,18 @@ generated_by: dailypaper-skills
 
 ## 当前目录笔记
 
+- [[论文笔记/3-Robotics/VLA/CoME|CoME]]
 - [[论文笔记/3-Robotics/VLA/DAWN|DAWN]]
 - [[论文笔记/3-Robotics/VLA/EA-WM|EA-WM]]
 - [[论文笔记/3-Robotics/VLA/IntentVLA|IntentVLA]]
 - [[论文笔记/3-Robotics/VLA/LeWM|LeWM]]
 - [[论文笔记/3-Robotics/VLA/MolmoAct2|MolmoAct2]]
 - [[论文笔记/3-Robotics/VLA/OA-WAM|OA-WAM]]
+- [[论文笔记/3-Robotics/VLA/PAPO-VLA|PAPO-VLA]]
+- [[论文笔记/3-Robotics/VLA/PROWL|PROWL]]
 - [[论文笔记/3-Robotics/VLA/RLA-WM|RLA-WM]]
 - [[论文笔记/3-Robotics/VLA/RLDX-1|RLDX-1]]
+- [[论文笔记/3-Robotics/VLA/RoVLA|RoVLA]]
 - [[论文笔记/3-Robotics/VLA/RoboMemArena|RoboMemArena]]
 - [[论文笔记/3-Robotics/VLA/RobotWM-Survey|RobotWM-Survey]]
 - [[论文笔记/3-Robotics/VLA/SANA-WM|SANA-WM]]
