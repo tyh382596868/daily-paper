@@ -13,6 +13,9 @@ aliases: [RoboCasa]
 2. 支持数据增强（场景布局随机化、物体替换）
 3. 在 [[RLDX-1]]、[[OpenVLA]] 等论文中作为训练数据和评估 benchmark
 
+## 代表工作
+- [[GaussianDream]]: 在 Human-50 协议上达到平均 52.6%，Pick&Place 类任务 43.8% 显著领先
+
 ## 相关概念
 - [[LIBERO]]
 - [[SimplerEnv]]

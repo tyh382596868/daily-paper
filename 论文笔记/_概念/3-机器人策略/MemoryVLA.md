@@ -19,9 +19,11 @@ aliases: [MemoryVLA]
 ## 代表工作
 
 - [[RoboMemArena]] 中作为对比基线，平均 TSR 15.0%
+- [[EvoScene-VLA]] 相关工作对比：MemoryVLA 是 token-level 工作记忆，本方法是几何信念递归
 
 ## 相关概念
 
 - [[VLA]]
 - [[关键帧记忆库]]
 - [[MemER]]
+- [[SOMA]]: 走"显式空间 3D 记忆"路线，与 MemoryVLA 的 token 时间记忆形成正交补充

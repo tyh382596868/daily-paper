@@ -25,6 +25,7 @@ Push-T 是 [[Diffusion Policy]] (Chi et al., 2023) 引入的 2D 操作 benchmark
 
 - Chi et al., 2023: Diffusion Policy（首次引入 Push-T benchmark）
 - [[LeWM]]: 在 Push-T 上一致超越 PLDM 和 DINO-WM
+- [[TRM]]: 在 PushT go25/go50/go75 上验证学习型终端代价的**边界条件**——SCSA 排序极佳但接触瓶颈限制闭环增益
 
 ## 相关概念
 

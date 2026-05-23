@@ -20,6 +20,8 @@ aliases: [Chunk Causal, 块因果, 块级因果]
 - [[SANA-WM]]: Stage 4 chunk-causal 微调 + self-forcing 蒸馏
 - StreamingLLM、世界模型在线滚动等
 
+> 注: [[EvoScene-VLA]] 中的 "chunk-causal 缺陷" 是策略层面的另一种含义，指动作块内部条件于起始观测、忽略 chunk 中段几何变化的问题。
+
 ## 相关概念
 - [[softmax 注意力]]
 - [[Frame-wise Gated DeltaNet]]

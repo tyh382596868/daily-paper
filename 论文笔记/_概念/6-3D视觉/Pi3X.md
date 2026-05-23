@@ -19,6 +19,7 @@ aliases: [Pi3X]
 ## 代表工作
 
 - [[SANA-WM]]: 在改造版 [[VIPE]] 流水线中替代 Metric3D-Small；评测时用 Pi3X 估计生成视频的相机位姿做 Umeyama 对齐
+- [[EvoScene-VLA]]: 作为冻结的 3D 基础模型（3DFM），监督 VLA 场景槽的全局表征锚 + 未来场景预测目标
 
 ## 相关概念
 

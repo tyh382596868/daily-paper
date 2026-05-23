@@ -18,7 +18,9 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/CoME|CoME]]
 - [[论文笔记/3-Robotics/VLA/DAWN|DAWN]]
 - [[论文笔记/3-Robotics/VLA/EA-WM|EA-WM]]
+- [[论文笔记/3-Robotics/VLA/EvoScene-VLA|EvoScene-VLA]]
 - [[论文笔记/3-Robotics/VLA/FASTER|FASTER]]
+- [[论文笔记/3-Robotics/VLA/GaussianDream|GaussianDream]]
 - [[论文笔记/3-Robotics/VLA/IntentVLA|IntentVLA]]
 - [[论文笔记/3-Robotics/VLA/JEPA-WM|JEPA-WM]]
 - [[论文笔记/3-Robotics/VLA/LeWM|LeWM]]
@@ -33,6 +35,8 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/RoboMemArena|RoboMemArena]]
 - [[论文笔记/3-Robotics/VLA/RobotWM-Survey|RobotWM-Survey]]
 - [[论文笔记/3-Robotics/VLA/SANA-WM|SANA-WM]]
+- [[论文笔记/3-Robotics/VLA/SOMA|SOMA]]
+- [[论文笔记/3-Robotics/VLA/TRM|TRM]]
 
 ## 说明
 

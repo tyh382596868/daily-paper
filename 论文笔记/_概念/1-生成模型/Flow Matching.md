@@ -29,6 +29,7 @@ $$
 - [[Wan2.2]]: 基于 Flow Matching 训练的视频生成模型
 - [[EA-WM]]: 使用 Flow Matching 目标联合训练视频和 KVAF 预测
 - [[RLA-WM]]: 在紧凑的残差潜在动作（RLA）空间用 Flow Matching 生成 $z$，再单步解码未来 DINO token
+- [[EvoScene-VLA]]: 动作专家共享时间步 $\tau$ 联合去噪动作和场景 token，免在线场景预测器
 
 ## 相关概念
 

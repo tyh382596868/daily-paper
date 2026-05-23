@@ -12,6 +12,10 @@ aliases: [RoboTwin]
 1. 支持双臂机器人操作任务（StackBlock、HangMug 等）
 2. 基于 NVIDIA Isaac Sim，光线追踪渲染
 3. 常用于 WAM、VLA 类论文的仿真评估
+4. 2.0 版本提供 31 个任务，含 Clean / Rand 两种位姿设置
+
+## 代表工作
+- [[EvoScene-VLA]]: 31 任务平均成功率 87.2 % → 89.1 %（Clean）/ 86.1 % → 88.5 %（Rand）
 
 ## 相关概念
 - [[MuJoCo]]

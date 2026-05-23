@@ -18,6 +18,7 @@ aliases: [MoGe-2, Metric MoGe]
 ## 代表工作
 - [[SANA-WM]]: 与 Pi3X 配合提供度量尺度深度先验
 - MoGe / MoGe-2（Microsoft Research）
+- [[EvoScene-VLA]]: 作为冻结的 Monocular Depth Teacher，监督 VLA 场景槽的局部几何锚
 
 ## 相关概念
 - [[Pi3X]]

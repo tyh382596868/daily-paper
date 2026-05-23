@@ -19,6 +19,8 @@ VGGT（Visual Geometry Grounded Transformer）是一个 ~1B 参数、为**多视
 ## 代表工作
 
 - [[IntentVLA]]: 用 VGGT 编码最近 $K=16$ 帧历史，每帧取 camera + 4 register token，作为短期意图证据注入 [[Qwen3-VL]] 主干
+- [[GaussianDream]]: 冻结 VGGT 提取 3 帧多尺度特征，通过 [[TGE]] 时序融合得到 GaussianDream prefix
+- [[SOMA]]: 用 VGGT 一次前向得到扫描序列的相机位姿和点图，把 [[YOLO-World]] 检框 lift 到统一 3D 坐标，作为空间记忆的几何骨架
 
 ## 相关概念
 

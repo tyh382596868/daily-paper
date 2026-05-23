@@ -13,6 +13,9 @@ aliases: [LIBERO, Lifelong Robot Learning Benchmark]
 2. 专门设计用于测试序列学习、任务迁移和终身学习
 3. 是 VLA 类论文最常用的 benchmark 之一
 
+## 代表工作
+- [[GaussianDream]]: 在 4 套件上达到平均 98.4%（Spatial 99.0 / Goal 99.0 / Long 96.0）
+
 ## 相关概念
 - [[RoboCasa]]
 - [[SimplerEnv]]

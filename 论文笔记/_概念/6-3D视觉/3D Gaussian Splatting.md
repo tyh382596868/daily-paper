@@ -33,6 +33,7 @@ $$
 ## 代表工作
 
 - [[SANA-WM]]: 用 FCGS 拟合 DL3DV 场景，渲染 40 条多样相机轨迹做训练数据增广
+- [[GaussianDream]]: 用前馈高斯重建 + 未来预测给 VLA 注入 3D 监督，每帧 $256\times256 = 65536$ 个 surface-attached 高斯
 
 ## 相关概念
 
