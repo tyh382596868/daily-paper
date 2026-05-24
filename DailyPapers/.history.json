@@ -923,5 +923,80 @@
     "id": "When to Trust Imagination: Adaptive Action Executi",
     "date": "2026-05-09",
     "title": "When to Trust Imagination: Adaptive Action Execution for World Action Models"
+  },
+  {
+    "id": "2605.22748",
+    "date": "2026-05-24",
+    "title": "Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning"
+  },
+  {
+    "id": "2605.21330",
+    "date": "2026-05-24",
+    "title": "Learning Robust Dexterous In-Hand Manipulation from Joint Sensors with Proprioceptive Transformer"
+  },
+  {
+    "id": "2605.21429",
+    "date": "2026-05-24",
+    "title": "roto 2.0: The Robot Tactile Olympiad"
+  },
+  {
+    "id": "2605.21188",
+    "date": "2026-05-24",
+    "title": "A Terrain-Adaptive epsilon-Constraint MPC for Uneven Terrain Kinodynamic Planning"
+  },
+  {
+    "id": "2605.22123",
+    "date": "2026-05-24",
+    "title": "Beyond Pixels: Learning Invariant Rewards for Real-World Robotics From a Few Demonstrations"
+  },
+  {
+    "id": "2605.21257",
+    "date": "2026-05-24",
+    "title": "Reinforcement Learning for Risk Adaptation via Differentiable CVaR Barrier Functions"
+  },
+  {
+    "id": "2605.22816",
+    "date": "2026-05-24",
+    "title": "AwareVLN: Reasoning with Self-awareness for Vision-Language Navigation"
+  },
+  {
+    "id": "2605.21133",
+    "date": "2026-05-24",
+    "title": "Humanoid Whole-Body Manipulation via Active Spatial Brain and Generalizable Action Cerebellum"
+  },
+  {
+    "id": "2605.22693",
+    "date": "2026-05-24",
+    "title": "Scout-Assisted Planning for Heterogeneous Robot Teams under Partially Known Environments"
+  },
+  {
+    "id": "2605.21258",
+    "date": "2026-05-24",
+    "title": "Learning Structural Latent Points for Efficient Visual Representations in Robotic Manipulation"
+  },
+  {
+    "id": "2605.21811",
+    "date": "2026-05-24",
+    "title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation"
+  },
+  {
+    "id": "2605.21901",
+    "date": "2026-05-24",
+    "title": "Higher Order Reasoning for Collaborative Communicationless Mobile Robot Operations"
+  },
+  {
+    "id": "2605.21935",
+    "date": "2026-05-24",
+    "title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments"
+  },
+  {
+    "id": "2605.21710",
+    "date": "2026-05-24",
+    "title": "PGDG: Physically Grounded Data Generation for Robust Bimanual Policy Learning from a Single Demonstration"
+  },
+  {
+    "id": "2605.21680",
+    "date": "2026-05-24",
+    "title": "Flying Together: Human-Guided Immersive Shared Control for Aerial Robot Teams in Unknown Environments"
   }
 ]
