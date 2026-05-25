@@ -1,0 +1,17 @@
+{
+  "_comment": "Edit this file to add or remove repos. The daily-code-fetch skill reads this on every run.",
+  "tracked_repos": [
+    {"url": "https://github.com/openvla/openvla",         "topic": "robotics",       "branch": "main"},
+    {"url": "https://github.com/huggingface/lerobot",     "topic": "robotics",       "branch": "main"},
+    {"url": "https://github.com/Physical-Intelligence/openpi", "topic": "robotics",   "branch": "main"},
+    {"url": "https://github.com/huggingface/diffusers",   "topic": "diffusion",      "branch": "main"},
+    {"url": "https://github.com/NVlabs/Cosmos",           "topic": "diffusion",      "branch": "main"},
+    {"url": "https://github.com/vllm-project/vllm",       "topic": "infrastructure", "branch": "main"},
+    {"url": "https://github.com/Dao-AILab/flash-attention", "topic": "infrastructure", "branch": "main"}
+  ],
+  "trending_query": "language:python (robotics OR \"world model\" OR \"diffusion policy\" OR VLA) stars:>200 pushed:>2026-04-01",
+  "cache_dir": "/tmp/daily_code_cache",
+  "topic_rotation": ["robotics", "diffusion", "infrastructure"],
+  "min_file_lines": 30,
+  "max_snippet_lines": 120
+}
