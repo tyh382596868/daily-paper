@@ -41,6 +41,9 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/SOMA|SOMA]]
 - [[论文笔记/3-Robotics/VLA/StructLatentPoints|StructLatentPoints]]
 - [[论文笔记/3-Robotics/VLA/TRM|TRM]]
+- [[论文笔记/3-Robotics/VLA/WBench|WBench]]
+- [[论文笔记/3-Robotics/VLA/World-VLA-Loop|World-VLA-Loop]]
+- [[论文笔记/3-Robotics/VLA/X-Foresight|X-Foresight]]
 
 ## 说明
 
