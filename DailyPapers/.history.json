@@ -923,5 +923,105 @@
     "id": "When to Trust Imagination: Adaptive Action Executi",
     "date": "2026-05-09",
     "title": "When to Trust Imagination: Adaptive Action Execution for World Action Models"
+  },
+  {
+    "id": "2510.07869",
+    "date": "2026-05-25",
+    "title": "USIM and U0: A Vision-Language-Action Dataset and Model for General Underwater Robots"
+  },
+  {
+    "id": "2605.23523",
+    "date": "2026-05-25",
+    "title": "ComPose: When to Trust Hands for Object Pose Tracking"
+  },
+  {
+    "id": "2601.00969",
+    "date": "2026-05-25",
+    "title": "V-VLAPS: Value-Guided Planning for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.22896",
+    "date": "2026-05-25",
+    "title": "Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.22882",
+    "date": "2026-05-25",
+    "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation"
+  },
+  {
+    "id": "2511.05963",
+    "date": "2026-05-25",
+    "title": "Next-Latent Prediction Transformers Learn Compact World Models"
+  },
+  {
+    "id": "2605.19282",
+    "date": "2026-05-25",
+    "title": "Rethinking Muon Beyond Pretraining: Spectral Failures and High-Pass Remedies for VLA and RLVR"
+  },
+  {
+    "id": "2605.23477",
+    "date": "2026-05-25",
+    "title": "Semantically Structured Mixture-of-Experts for Compositional Robotic Manipulation"
+  },
+  {
+    "id": "2605.22894",
+    "date": "2026-05-25",
+    "title": "SCRIPT: Scalable Diffusion Policy with Multi-stage Training for Language-driven Physics-Based Humanoid Control"
+  },
+  {
+    "id": "2605.23270",
+    "date": "2026-05-25",
+    "title": "ChainFlow-VLA: Causal Flow Planning with Vision-Language Models"
+  },
+  {
+    "id": "2506.14135",
+    "date": "2026-05-25",
+    "title": "GAF: Gaussian Action Field as a 4D Representation for Dynamic World Modeling in Robotic Manipulation"
+  },
+  {
+    "id": "2605.23568",
+    "date": "2026-05-25",
+    "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation"
+  },
+  {
+    "id": "2511.02239",
+    "date": "2026-05-25",
+    "title": "LACY: A Vision-Language Model-based Language-Action Cycle for Self-Improving Robotic Manipulation"
+  },
+  {
+    "id": "2605.23089",
+    "date": "2026-05-25",
+    "title": "Dreaming Smoothly and Sample Efficiently with Gradient Penalized Latent Dynamics"
+  },
+  {
+    "id": "2605.23856",
+    "date": "2026-05-25",
+    "title": "Point Tracking Improves World Action Models"
+  },
+  {
+    "id": "2605.04568",
+    "date": "2026-05-25",
+    "title": "Dream-MPC: Gradient-Based Model Predictive Control with Latent Imagination"
+  },
+  {
+    "id": "2605.11596",
+    "date": "2026-05-25",
+    "title": "HorizonDrive: Self-Corrective Autoregressive World Model for Long-horizon Driving Simulation"
+  },
+  {
+    "id": "2605.23128",
+    "date": "2026-05-25",
+    "title": "$\\pi_0$-EqM: Equilibrium Matching for Closed-Loop Vision-Language-Action Control"
+  },
+  {
+    "id": "2605.23341",
+    "date": "2026-05-25",
+    "title": "Sparse Compositional Flow Matching by geometric assembly from motion primitives"
+  },
+  {
+    "id": "2605.23345",
+    "date": "2026-05-25",
+    "title": "SCOPE: Simulating Cross-game Operations in Playable Environments for FPS World Models"
   }
 ]
