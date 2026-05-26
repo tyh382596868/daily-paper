@@ -36,6 +36,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/RobotWM-Survey|RobotWM-Survey]]
 - [[论文笔记/3-Robotics/VLA/SANA-WM|SANA-WM]]
 - [[论文笔记/3-Robotics/VLA/SOMA|SOMA]]
+- [[论文笔记/3-Robotics/VLA/StructLatentPoints|StructLatentPoints]]
 - [[论文笔记/3-Robotics/VLA/TRM|TRM]]
 
 ## 说明
