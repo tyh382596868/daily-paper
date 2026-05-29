@@ -21,6 +21,7 @@ aliases: [WBench, WBench Benchmark, Meituan WBench]
 
 - [[WBench]]（本基准论文）：评测 20 个 SOTA 系统（Seedance / Wan / Kling / LongCat-Video / Cosmos / Genie 3 / Matrix-Game / HY-World 等）
 - 后续视频世界模型评测的事实标准（与 [[VBench]] / [[WorldArena]] 互补）
+- [[WhatIfWorld]]: 与 WBench 互补——WBench 评多轮交互一致性，WhatIfWorld 评反事实因果干预响应。
 
 ## 相关概念
 

@@ -22,6 +22,7 @@ aliases: [WorldArena Benchmark, P3CScore]
 ## 代表工作
 
 - [[EA-WM]]: 在 WorldArena 上达到 SOTA，P3CScore 76.60
+- [[WhatIfWorld]]: 与之互补的因果评测——WorldArena 评仿真域物理真实性，WhatIfWorld 评真实视频域反事实响应。
 
 ## 相关概念
 

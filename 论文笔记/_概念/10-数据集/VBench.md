@@ -20,6 +20,7 @@ aliases: [VBench, VBench-I2V]
 
 - [[SANA-WM]]: 用 VBench Overall 衡量主基准结果，加精修器后 80.62（Simple）/ 81.89（Hard）
 - 多数视频扩散模型评测的事实标准
+- [[WhatIfWorld]]: 在 VBench 基础上引入反事实配对评测，揭示单视频质量与因果一致性的"对照瓶颈"。
 
 ## 相关概念
 

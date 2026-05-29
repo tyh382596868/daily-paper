@@ -10,7 +10,7 @@ generated_by: dailypaper-skills
 
 ## 子目录
 
-- [[论文笔记/3-Robotics/VLA/assets/assets|assets]] · 0 篇笔记 · 1 个子目录
+- [[论文笔记/3-Robotics/VLA/assets/assets|assets]] · 0 篇笔记 · 0 个子目录
 
 ## 当前目录笔记
 
@@ -30,6 +30,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/LeWM|LeWM]]
 - [[论文笔记/3-Robotics/VLA/MVISTA-4D|MVISTA-4D]]
 - [[论文笔记/3-Robotics/VLA/MolmoAct2|MolmoAct2]]
+- [[论文笔记/3-Robotics/VLA/NIAF|NIAF]]
 - [[论文笔记/3-Robotics/VLA/OA-WAM|OA-WAM]]
 - [[论文笔记/3-Robotics/VLA/OrbiSim|OrbiSim]]
 - [[论文笔记/3-Robotics/VLA/PAPO-VLA|PAPO-VLA]]
@@ -47,6 +48,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/StructLatentPoints|StructLatentPoints]]
 - [[论文笔记/3-Robotics/VLA/TRM|TRM]]
 - [[论文笔记/3-Robotics/VLA/WBench|WBench]]
+- [[论文笔记/3-Robotics/VLA/WhatIfWorld|WhatIfWorld]]
 - [[论文笔记/3-Robotics/VLA/World-VLA-Loop|World-VLA-Loop]]
 - [[论文笔记/3-Robotics/VLA/X-Foresight|X-Foresight]]
 

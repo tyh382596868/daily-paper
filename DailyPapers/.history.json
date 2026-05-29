@@ -1323,5 +1323,155 @@
     "id": "2605.27003",
     "date": "2026-05-27",
     "title": "Timestep-Aware SVDQuant-GPTQ for W4A4 Quantization of Wan2.2-I2V"
+  },
+  {
+    "id": "2605.28486",
+    "date": "2026-05-28",
+    "title": "Mag-VLA: Vision-Language-Action Model for Bimanual Magnetically Actuated Microrobot Manipulation"
+  },
+  {
+    "id": "2605.28231",
+    "date": "2026-05-28",
+    "title": "ProgVLA: Progress-Aware Robot Manipulation Skill Learning"
+  },
+  {
+    "id": "2605.28083",
+    "date": "2026-05-28",
+    "title": "VLA-Hijack: A Transferable Patch Attack against Vision-Language-Action Models via Visual Proprioception Hijacking"
+  },
+  {
+    "id": "2508.21046",
+    "date": "2026-05-28",
+    "title": "CogVLA: Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsification"
+  },
+  {
+    "id": "2605.28803",
+    "date": "2026-05-28",
+    "title": "{\\Omega}-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling"
+  },
+  {
+    "id": "2605.28691",
+    "date": "2026-05-28",
+    "title": "OSP-Next: Efficient High-Quality Video Generation with Sparse Sequence Parallelism, HiF8 Quantization, and Reinforcement Learning"
+  },
+  {
+    "id": "2605.27461",
+    "date": "2026-05-28",
+    "title": "A Factory-Floor Deployment Case Study of VLA Pipelines for Industrial Packaging Task: Workflow, Failures, and Lessons"
+  },
+  {
+    "id": "2605.28527",
+    "date": "2026-05-28",
+    "title": "What Frozen VLAs Already Know About Success: A Probing Study of Value-Like Structure in Foundation Robot Policies"
+  },
+  {
+    "id": "2605.28634",
+    "date": "2026-05-28",
+    "title": "PrimitiveVLA: Learning Reusable Motion Primitives for Efficient and Generalizable Robotic Manipulation"
+  },
+  {
+    "id": "2605.28726",
+    "date": "2026-05-28",
+    "title": "How VLAs Fail Differently: Black-Box Action Monitoring Reveals Architecture-Specific Failure Signatures"
+  },
+  {
+    "id": "2605.28812",
+    "date": "2026-05-28",
+    "title": "Beyond Binary: Sim-to-Real Dexterous Manipulation with Physics-Grounded Contact Representation"
+  },
+  {
+    "id": "2603.01766",
+    "date": "2026-05-28",
+    "title": "Neural Implicit Action Fields: From Discrete Waypoints to Continuous Functions for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.27589",
+    "date": "2026-05-28",
+    "title": "What-If World: A Causal Benchmark for General World Models in Embodied Scenarios"
+  },
+  {
+    "id": "2605.28816",
+    "date": "2026-05-28",
+    "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players"
+  },
+  {
+    "id": "2605.27491",
+    "date": "2026-05-28",
+    "title": "GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation"
+  },
+  {
+    "id": "2506.07900",
+    "date": "2026-05-28",
+    "title": "MiniCPM4: Ultra-Efficient LLMs on End Devices"
+  },
+  {
+    "id": "2603.18815",
+    "date": "2026-05-28",
+    "title": "ProRL Agent: Rollout-as-a-Service for RL Training of Multi-Turn LLM Agents"
+  },
+  {
+    "id": "2408.15998",
+    "date": "2026-05-28",
+    "title": "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of   Encoders"
+  },
+  {
+    "id": "2605.25624",
+    "date": "2026-05-28",
+    "title": "CUA-Gym: Scaling Verifiable Training Environments and Tasks for Computer-Use Agents"
+  },
+  {
+    "id": "2605.27759",
+    "date": "2026-05-28",
+    "title": "Colosseum V2: Benchmarking Generalization for Vision Language Action Models"
+  },
+  {
+    "id": "2605.27886",
+    "date": "2026-05-28",
+    "title": "Tabero: Learning Gentle Manipulation with Closed-Loop Force Feedback from Vision, Touch, and Language"
+  },
+  {
+    "id": "2605.27947",
+    "date": "2026-05-28",
+    "title": "SANTS: A State-Adaptive Scheduler for World Action Models"
+  },
+  {
+    "id": "2603.09882",
+    "date": "2026-05-28",
+    "title": "Emerging Extrinsic Dexterity in Cluttered Scenes via Dynamics-aware Policy Learning"
+  },
+  {
+    "id": "2605.27659",
+    "date": "2026-05-28",
+    "title": "Transferable Reinforcement Learning via Probabilistic Latent Embeddings and Dynamic Policy Adaptation for Sim-to-Real Deployment"
+  },
+  {
+    "id": "2605.28548",
+    "date": "2026-05-28",
+    "title": "GEM: Generative Supervision Helps Embodied Intelligence"
+  },
+  {
+    "id": "2605.27582",
+    "date": "2026-05-28",
+    "title": "Uni-LaViRA: Language-Vision-Robot Actions Translation for Unified Embodied Navigation"
+  },
+  {
+    "id": "2605.27817",
+    "date": "2026-05-28",
+    "title": "Turning Video Models into Generalist Robot Policies"
+  },
+  {
+    "id": "2605.28736",
+    "date": "2026-05-28",
+    "title": "Imitation Learning for Robot Assistance in Open Surgery: A Multi-Policy Evaluation on Suture Following"
+  },
+  {
+    "id": "2506.05012",
+    "date": "2026-05-28",
+    "title": "Realizing Robotic Swimming with Unified Fluid-Robot Multiphysics"
+  },
+  {
+    "id": "2602.03668",
+    "date": "2026-05-28",
+    "title": "MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction"
   }
 ]
