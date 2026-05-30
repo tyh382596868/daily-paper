@@ -1473,5 +1473,140 @@
     "id": "2602.03668",
     "date": "2026-05-28",
     "title": "MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction"
+  },
+  {
+    "id": "Qwen-VLA: Unifying Vision-Language-Action Modeling",
+    "date": "2026-05-29",
+    "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments"
+  },
+  {
+    "id": "3DVLA: Enhancing Vision-Language-Action Models via",
+    "date": "2026-05-29",
+    "title": "3DVLA: Enhancing Vision-Language-Action Models via 3D Spatial and Instance Understanding"
+  },
+  {
+    "id": "ElegantVLA: Learning When to Think for Efficient V",
+    "date": "2026-05-29",
+    "title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models"
+  },
+  {
+    "id": "Dual-Stream Diffusion for World-Model Augmented Vi",
+    "date": "2026-05-29",
+    "title": "Dual-Stream Diffusion for World-Model Augmented Vision-Language-Action Model (DUST)"
+  },
+  {
+    "id": "Gaze2Act: Gaze-Conditioned Vision-Language-Action ",
+    "date": "2026-05-29",
+    "title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation"
+  },
+  {
+    "id": "VLA-Pro: Cross-Task Procedural Memory Transfer for",
+    "date": "2026-05-29",
+    "title": "VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models"
+  },
+  {
+    "id": "VLAConf: Calibrated Task-Success Confidence for Vi",
+    "date": "2026-05-29",
+    "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models"
+  },
+  {
+    "id": "Mitigating State Aliasing in Vision-Language-Actio",
+    "date": "2026-05-29",
+    "title": "Mitigating State Aliasing in Vision-Language-Action Models via Inverse Dynamics Learning"
+  },
+  {
+    "id": "Contrastive Representation Regularization for Visi",
+    "date": "2026-05-29",
+    "title": "Contrastive Representation Regularization for Vision-Language-Action Models"
+  },
+  {
+    "id": "VisualThink-VLA: Visual Intermediate Reasoning for",
+    "date": "2026-05-29",
+    "title": "VisualThink-VLA: Visual Intermediate Reasoning for Effective and Low-Latency Vision-Language-Action Policies"
+  },
+  {
+    "id": "Sentinel-VLA: A Metacognitive VLA Model with Activ",
+    "date": "2026-05-29",
+    "title": "Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery"
+  },
+  {
+    "id": "VLA-ATTC: Adaptive Test-Time Compute for VLA Model",
+    "date": "2026-05-29",
+    "title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model"
+  },
+  {
+    "id": "BORA: Bridging Offline Reinforcement Learning and ",
+    "date": "2026-05-29",
+    "title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models"
+  },
+  {
+    "id": "PhAIL: A Real-Robot VLA Benchmark and Distribution",
+    "date": "2026-05-29",
+    "title": "PhAIL: A Real-Robot VLA Benchmark and Distributional Methodology"
+  },
+  {
+    "id": "DynaFLIP: Rethinking Robotics Perception via Tri-M",
+    "date": "2026-05-29",
+    "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation"
+  },
+  {
+    "id": "minWM: A Full-Stack Open-Source Framework for Real",
+    "date": "2026-05-29",
+    "title": "minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models"
+  },
+  {
+    "id": "YoCausal: How Far is Video Generation from World M",
+    "date": "2026-05-29",
+    "title": "YoCausal: How Far is Video Generation from World Model? A Causality Perspective"
+  },
+  {
+    "id": "stable-worldmodel-v1: Reproducible World Modeling ",
+    "date": "2026-05-29",
+    "title": "stable-worldmodel-v1: Reproducible World Modeling Research and Evaluation"
+  },
+  {
+    "id": "MiraBench: Evaluating Action-Conditioned Reliabili",
+    "date": "2026-05-29",
+    "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models"
+  },
+  {
+    "id": "LLM-Guided Future Hypotheses for Horizon-Aware Exp",
+    "date": "2026-05-29",
+    "title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation"
+  },
+  {
+    "id": "VLA-Trace: Diagnosing Vision-Language-Action Model",
+    "date": "2026-05-29",
+    "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing"
+  },
+  {
+    "id": "ReasonBreak: Probing Vulnerabilities in Reasoning-",
+    "date": "2026-05-29",
+    "title": "ReasonBreak: Probing Vulnerabilities in Reasoning-Enabled Vision-Language-Action Models for Autonomous Driving"
+  },
+  {
+    "id": "Dynamic Mixture of Progressive Parameter-Efficient",
+    "date": "2026-05-29",
+    "title": "Dynamic Mixture of Progressive Parameter-Efficient Expert Library for Lifelong Robot Learning (DMPEL)"
+  },
+  {
+    "id": "Causal-JEPA: Learning World Models through Object-",
+    "date": "2026-05-29",
+    "title": "Causal-JEPA: Learning World Models through Object-Level Latent Masking"
+  },
+  {
+    "id": "Thoughts-as-Planning: Latent World Models for Chai",
+    "date": "2026-05-29",
+    "title": "Thoughts-as-Planning: Latent World Models for Chain-of-Thoughts Optimization via Reinforcement Planning"
+  },
+  {
+    "id": "CompilerDream: Learning a Compiler World Model for",
+    "date": "2026-05-29",
+    "title": "CompilerDream: Learning a Compiler World Model for General Code Optimization"
+  },
+  {
+    "id": "Veda: Scalable Video Diffusion via Distilled Spars",
+    "date": "2026-05-29",
+    "title": "Veda: Scalable Video Diffusion via Distilled Sparse Attention"
   }
 ]
