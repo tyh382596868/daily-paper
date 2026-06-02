@@ -1703,5 +1703,90 @@
     "id": "2605.30350",
     "date": "2026-05-30",
     "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation"
+  },
+  {
+    "id": "2606.00090",
+    "date": "2026-06-02",
+    "title": "Silent Failures in Physical AI: A Literature Review of Runtime Action Authorization for Autonomous Systems"
+  },
+  {
+    "id": "2606.00267",
+    "date": "2026-06-02",
+    "title": "StressDream: Steering Video World Models for Robust Policy Evaluation and Improvement"
+  },
+  {
+    "id": "2606.00664",
+    "date": "2026-06-02",
+    "title": "SKIP: Sparse Keyframe Interpolation Paradigm for Efficient Embodied World Models"
+  },
+  {
+    "id": "2606.00773",
+    "date": "2026-06-02",
+    "title": "SafeVLA-Bench: A Benchmark for the Success-Safety Gap in Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.00985",
+    "date": "2026-06-02",
+    "title": "Make Your VLA More Robust Without More Data By Interleaving Motion Planning"
+  },
+  {
+    "id": "2606.01027",
+    "date": "2026-06-02",
+    "title": "τ_0-WM: A Unified Video-Action World Model for Robotic Manipulation"
+  },
+  {
+    "id": "2606.01095",
+    "date": "2026-06-02",
+    "title": "Beyond Task Success: Behavioral and Representational Diagnostics for WAM and VLA"
+  },
+  {
+    "id": "2606.01241",
+    "date": "2026-06-02",
+    "title": "OneVLA: A Unified Framework for Embodied Tasks"
+  },
+  {
+    "id": "2606.01458",
+    "date": "2026-06-02",
+    "title": "LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting Sim"
+  },
+  {
+    "id": "2606.01600",
+    "date": "2026-06-02",
+    "title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation"
+  },
+  {
+    "id": "2606.01865",
+    "date": "2026-06-02",
+    "title": "Set-Supervised Diffusion Policy: Learning Action-Chunking Diffusion through Corrections"
+  },
+  {
+    "id": "2606.01950",
+    "date": "2026-06-02",
+    "title": "Learning Action-Conditional and Object-Centric Gaussian Splatting World Models for Rigid Objects"
+  },
+  {
+    "id": "2606.02027",
+    "date": "2026-06-02",
+    "title": "World-Task Factorization for Robot Learning"
+  },
+  {
+    "id": "2606.02277",
+    "date": "2026-06-02",
+    "title": "RoboSemanticBench: Diagnosing Semantic Grounding in Action Prediction for VLA Models"
+  },
+  {
+    "id": "2606.02307",
+    "date": "2026-06-02",
+    "title": "FATE-VLA: Failure-aware test generation for vision-language-action models"
+  },
+  {
+    "id": "2606.02486",
+    "date": "2026-06-02",
+    "title": "Intercepting the Future: Latent-Space Predictive World Model for Dynamic VLA Manipulation"
+  },
+  {
+    "id": "2606.02577",
+    "date": "2026-06-02",
+    "title": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis"
   }
 ]

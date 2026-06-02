@@ -19,6 +19,7 @@ DROID (Distributed Robot Interaction Dataset) 是一个跨实验室、跨场景�
 ## 代表工作
 
 - [[Pi05|π₀.₅]] 及众多 [[VLA]] 模型使用 DROID 微调
+- [[RoboDream]]: 把 ~40k 条 DROID episodes 当作 "轨迹银行"，通过 retrieval & rebirth 重生为照片级合成演示
 
 ## 相关概念
 

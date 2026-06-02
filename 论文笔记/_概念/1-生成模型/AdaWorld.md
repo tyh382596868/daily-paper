@@ -15,6 +15,7 @@ aliases: [AdaWorld, 可适应世界模型]
 
 ## 代表工作
 - [[RLA-WM]]: 指出 latent action 可以直接从 [[DINO]] 残差里学（Residual Latent Action），相比 AdaWorld 这条线 latent action 来源更"白盒"。
+- 对照路线 [[RoboDream]]: 不走 latent action，而是用**显式渲染**机器人作为 anchoring — 走的是 [[Compositional World Models]] 路线，与 AdaWorld 形成两种 scalable 数据合成范式。
 
 ## 相关概念
 - [[World Model]]
