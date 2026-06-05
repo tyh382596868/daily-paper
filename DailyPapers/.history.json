@@ -1788,5 +1788,135 @@
     "id": "2606.02577",
     "date": "2026-06-02",
     "title": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis"
+  },
+  {
+    "id": "2606.02800",
+    "date": "2026-06-05",
+    "title": "Cosmos 3: Omnimodal World Models for Physical AI"
+  },
+  {
+    "id": "2606.06155",
+    "date": "2026-06-05",
+    "title": "AffordanceVLA: A Vision-Language-Action Model Empowering Action Generation through Affordance-Aware Understanding"
+  },
+  {
+    "id": "2606.05773",
+    "date": "2026-06-05",
+    "title": "PiL-World: A Chunk-Wise World Model for VLA Policy-in-the-Loop Evaluation"
+  },
+  {
+    "id": "2606.06491",
+    "date": "2026-06-05",
+    "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies"
+  },
+  {
+    "id": "2606.05979",
+    "date": "2026-06-05",
+    "title": "World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis"
+  },
+  {
+    "id": "2606.05407",
+    "date": "2026-06-05",
+    "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping"
+  },
+  {
+    "id": "2606.06147",
+    "date": "2026-06-05",
+    "title": "WorldFly: A World-Model-Based Vision-Language-Action Model for UAV Navigation"
+  },
+  {
+    "id": "2606.04811",
+    "date": "2026-06-05",
+    "title": "Dream.exe: Can Video Generation Models Dream Executable Robot Manipulation?"
+  },
+  {
+    "id": "2606.05160",
+    "date": "2026-06-05",
+    "title": "GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors"
+  },
+  {
+    "id": "2606.04527",
+    "date": "2026-06-05",
+    "title": "Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation"
+  },
+  {
+    "id": "2606.05660",
+    "date": "2026-06-05",
+    "title": "Safe Embodied AI for Long-horizon Tasks: A Cross-layer Analysis of Robotic Manipulation"
+  },
+  {
+    "id": "2606.06033",
+    "date": "2026-06-05",
+    "title": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning"
+  },
+  {
+    "id": "2606.06049",
+    "date": "2026-06-05",
+    "title": "L-SDPPO: Policy Optimization of Spiking Diffusion Policy for Intra-vehicular Robotic Manipulation"
+  },
+  {
+    "id": "2606.05737",
+    "date": "2026-06-05",
+    "title": "Let It Be Simple: One-Step Action Generation for Vision-Language-Action Models"
+  },
+  {
+    "id": "2602.12628",
+    "date": "2026-06-05",
+    "title": "Beyond Imitation: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models"
+  },
+  {
+    "id": "2606.04708",
+    "date": "2026-06-05",
+    "title": "VISTA: Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training"
+  },
+  {
+    "id": "2606.06042",
+    "date": "2026-06-05",
+    "title": "LoomVideo: Unifying Multimodal Inputs into Video Generation and Editing"
+  },
+  {
+    "id": "2606.03890",
+    "date": "2026-06-05",
+    "title": "OVO-S-Bench: A Hierarchical Benchmark for Streaming Spatial Intelligence in Multimodal LLMs"
+  },
+  {
+    "id": "2606.05395",
+    "date": "2026-06-05",
+    "title": "VASO: Formally Verifiable Self-Evolving Skills for Physical AI Agents"
+  },
+  {
+    "id": "2606.05468",
+    "date": "2026-06-05",
+    "title": "FlowPRO: Reward-Free Reinforced Fine-Tuning of Flow-Matching VLAs via Proximalized Preference Optimization"
+  },
+  {
+    "id": "2606.06014",
+    "date": "2026-06-05",
+    "title": "PLAN-S: Bridging Planning with Latent Style Dynamics for Autonomous Driving World Models"
+  },
+  {
+    "id": "2606.04463",
+    "date": "2026-06-05",
+    "title": "OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics"
+  },
+  {
+    "id": "2605.08215",
+    "date": "2026-06-05",
+    "title": "Test-Time Training for Visual Foresight Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.05328",
+    "date": "2026-06-05",
+    "title": "The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show"
+  },
+  {
+    "id": "2606.01935",
+    "date": "2026-06-05",
+    "title": "Unified Driving Tokens: Representation- and Geometry-Guided Discrete Tokenizer for Driving World Models and Planning"
+  },
+  {
+    "id": "2606.05248",
+    "date": "2026-06-05",
+    "title": "Inverse Manipulation through Symbolic Planning and Residual Operator Learning"
   }
 ]

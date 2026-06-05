@@ -23,6 +23,7 @@ aliases: [VLM-as-Judge, VLM 作为评测器, MLLM-as-Judge]
 ## 代表工作
 
 - [[WBench]]: 用 Qwen3-VL-30B 实现 Interaction Adherence + Physical Compliance 的全自动评测
+- [[Dream-exe]]: 用 Gemini 3 Pro + Qwen3-VL 双判定评估视频生成的可执行性
 - VBench-2.0 / GenAI-Bench: 视频/图像生成评测中的 VLM 评判
 - MM-Vet, LLaVA-Bench: 早期 VLM-as-Judge 实践
 
