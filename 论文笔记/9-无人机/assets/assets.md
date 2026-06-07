@@ -2,21 +2,15 @@
 tags: [MOC, auto-generated]
 generated_by: dailypaper-skills
 ---
-# 论文目录页：3-Robotics
+# 论文目录页：assets
 
 用于浏览论文笔记、分类目录和子主题入口。
 
-- 当前目录：`3-Robotics`
-
-## 子目录
-
-- [[论文笔记/3-Robotics/VLA/VLA|VLA]] · 42 篇笔记 · 1 个子目录
+- 当前目录：`9-无人机/assets`
 
 ## 当前目录笔记
 
-- [[论文笔记/3-Robotics/AHEAD|AHEAD]]
-- [[论文笔记/3-Robotics/MAD|MAD]]
-- [[论文笔记/3-Robotics/PhysX-Omni|PhysX-Omni]]
+- 暂无内容
 
 ## 说明
 
