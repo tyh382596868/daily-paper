@@ -28,7 +28,6 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/FlowPRO|FlowPRO]]
 - [[论文笔记/3-Robotics/VLA/GAF|GAF]]
 - [[论文笔记/3-Robotics/VLA/GEM-4D|GEM-4D]]
-- [[论文笔记/3-Robotics/VLA/GRAIL|GRAIL]]
 - [[论文笔记/3-Robotics/VLA/GaussianDream|GaussianDream]]
 - [[论文笔记/3-Robotics/VLA/IntentVLA|IntentVLA]]
 - [[论文笔记/3-Robotics/VLA/JEPA-WM|JEPA-WM]]

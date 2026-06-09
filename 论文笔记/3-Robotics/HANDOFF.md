@@ -4,7 +4,7 @@ method_name: "HANDOFF"
 authors: [Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh, Robert Griffin, Georgia Gkioxari, Aaron D. Ames]
 year: 2026
 venue: arXiv
-tags: [humanoid-whole-body-control, policy-distillation, mixture-of-experts, loco-manipulation, task-space-control, agentic-planning, reinforcement-learning]
+tags: [humanoid-robot, whole-body-control, knowledge-distillation, mixture-of-experts, loco-manipulation]
 zotero_collection: 3-Robotics
 image_source: online
 arxiv_html: https://arxiv.org/html/2606.06493v1
@@ -17,25 +17,25 @@ created: 2026-06-09
 
 | 项目 | 内容 |
 |------|------|
-| 机构 | California Institute of Technology (Caltech)、The Institute for Human & Machine Cognition (IHMC) |
+| 机构 | California Institute of Technology (Caltech) / The Institute for Human & Machine Cognition (IHMC) |
 | 日期 | June 2026 |
-| 项目主页 | 暂未公开 |
-| 对比基线 | [[SONIC]]、[[FALCON]] |
-| 链接 | [arXiv](https://arxiv.org/abs/2606.06493) / Code（即将开源） |
+| 项目主页 | — |
+| 对比基线 | [[HOVER]] |
+| 链接 | [arXiv](https://arxiv.org/abs/2606.06493v1) / Code: — |
 
 ---
 
 ## 一句话总结
 
-> HANDOFF 提出一个 10 维 task-space 命令接口，通过对三个互补专家 Teacher 进行 context 条件化 KL 蒸馏，训练单一 MoE 人形机器人 [[全身控制]] 策略，在 Unitree G1 上实现了最大操作工作空间之一。
+> HANDOFF 是一个从三个互补教师策略蒸馏而来的单一人形机器人全身控制器，以 10 维紧凑命令接口连接任务规划与底层控制，在 Unitree G1 上同时达到 SOTA 速度跟踪和最大鲁棒操作工作空间。
 
 ---
 
 ## 核心贡献
 
-1. **紧凑 10 维任务空间命令接口**：设计一个对规划器友好的接口（2D 底盘速度 + 双腕 3D 位置目标 + 2D 方向），比密集运动学参考更易被各类规划器调用，同时足够灵活支持各种操作技能。
-2. **互补 Teacher 的 Context 条件化 KL 蒸馏**：将三个专门化 Teacher（全身运动跟踪、locomotion、跌倒恢复）蒸馏进单一 [[知识蒸馏|MoE 学生策略]]，body slice 按速度上下文加权融合，arm slice 锚定 WBC Teacher，跌倒恢复由离散 context 信号路由。
-3. **VLM 驱动的无微调 Agentic 规划**：通过机载 VLM（Nvidia Jetson Thor 运行本地推理，可选 ChatGPT-API fallback）将自然语言指令分解为 HANDOFF 命令序列，无需任务专属数据或控制器微调。
+1. **紧凑任务空间命令接口设计**: 提出 10 维显式命令向量（骨盆速度 + 高度 + 双腕目标），替代传统需要密集运动学参考的控制器接口，使规划器（VLM/传统规划/VLA）无需任何改造即可直接驱动全身控制
+2. **多教师 KL 蒸馏框架**: 将三个互补专家（全身运动跟踪、运动行走、跌倒恢复）通过上下文条件化门控方案蒸馏为单一 [[MoE]] 学生策略，并提出子集感知负载均衡损失和恢复路由机制
+3. **安全过滤数据 + 全身运动追踪教师**: 对运动捕捉参考数据进行安全过滤，剔除物理不可行的姿态，训练出具有大范围鲁棒操作工作空间的运动跟踪教师
 
 ---
 
@@ -43,113 +43,139 @@ created: 2026-06-09
 
 ### 要解决的问题
 
-人形机器人落地部署的核心瓶颈之一是任务规划与 [[全身控制]] 之间的**命令空间（Command Space）选择**：规划层需要向控制层发出什么格式的指令？
+人形机器人在真实世界部署中，任务规划层（语言指令、[[VLM]] 等）和底层全身控制器之间的**命令空间选择**（command space）极为关键。命令空间定义了上层规划和底层控制器之间的接口语言。
 
 ### 现有方法的局限
 
-- 现有 [[Whole-Body Control|WBC]] 控制器（如 SONIC、FALCON）通常要求密集的运动学或空间参考（如逐帧关节角轨迹、全局坐标系末端执行器位置），规划器很难从任务语义中自动合成这些参考。
-- 多 Teacher 融合策略多为简单拼接或硬切换，没有优雅地将 locomotion、操作、跌倒恢复整合进统一框架。
-- 实际部署往往需要针对每个新任务进行 controller fine-tuning 或大量示范数据。
+- [[HOVER]] 和 [[OmniH2O]] 暴露 3 点头手接口，但每个关键点仍需要在控制器频率下提供密集轨迹流，规划器难以实时合成
+- [[ExBody2]] 等追踪上身关节角或根速度，需要密集运动学参考
+- [[HOMIE]] 将上身和下身解耦，上身由外骨骼驾驶舱控制，下身独立 RL，无法端到端语言驱动
+- [[FALCON]] 共同训练下身运动和上身力自适应操作器，仍依赖较重的参考格式
+- 现有方案普遍不能直接将自然语言任务指令、VLM 输出或 VLA 模型输出作为控制命令
 
 ### 本文的动机
 
-设计一个**紧凑、显式、直觉友好、可模块扩展**的命令接口（10 维），并通过 context 条件化 [[知识蒸馏]] 将多个专家 Teacher 融合进单一 [[混合专家模型|MoE]] 学生策略，使 VLM 规划器无需额外训练就能驾驭整个系统。
+设计一个**紧凑、显式、直觉化、通用且模块化**的任务空间接口，使其同时满足：
+- 足够简洁，任何规划器可直接生成
+- 足够表达能力，覆盖多样化操作技能
+- 天然支持全身协调（蹲取、行走操作、双手操作等）
 
 ---
 
 ## 方法详解
 
-### 命令空间设计（10-D Task-Space Interface）
+### 命令空间设计
 
-HANDOFF 的命令向量 $\mathbf{c} \in \mathbb{R}^{10}$ 由以下分量构成：
+HANDOFF 的核心接口是一个 **10 维命令向量**：
 
-- $v_x, v_y \in \mathbb{R}^2$：底盘平面速度（[[locomotion]] 速度目标）
-- $\mathbf{p}_L, \mathbf{p}_R \in \mathbb{R}^{3} \times 2$：双腕在 **Pelvis 坐标系**中的 3D 位置目标（共 6 维）
-- $\psi_L, \psi_R \in \mathbb{R}^{2}$：双腕朝向指令（共 2 维）
+$$
+\mathbf{c} = (v_x,\; v_y,\; \omega_z,\; h_{\text{base}},\; \mathbf{p}^P_L,\; \mathbf{p}^P_R) \in \mathbb{R}^{10}
+$$
 
-双腕目标作为 `RelativeFrameTask`（相对于 pelvis 坐标系），使规划器无需关注全局位姿。
+- **基座速度** $(v_x, v_y, \omega_z)$：水平面线速度 + 偏航角速度，3 维
+- **基座高度** $h_{\text{base}}$：骨盆高度目标，1 维
+- **双腕目标** $\mathbf{p}^P_L, \mathbf{p}^P_R$：在骨盆坐标系中表示的左右手腕目标位置，各 3 维（共 6 维）
+
+**关键设计特性**：
+- 替换了头部跟踪需求（相比 OmniH2O/HOVER 的 3 点头手接口）
+- 骨盆坐标系表示使命令对全局位姿不变，规划器只需关心相对位置
+- 全身协调**自然涌现**：低基座高度 + 前向腕目标 → 自动触发蹲取；非零基座速度 + 不对称腕目标 → 自动触发行走操作
 
 ### 模型架构
 
-HANDOFF 采用 **[[混合专家模型|Mixture-of-Experts (MoE)]] 学生策略**，由三路 [[知识蒸馏|KL 蒸馏]] 项训练：
+HANDOFF 采用 **[[MoE|混合专家模型]] + 多教师[[KL 蒸馏|知识蒸馏]]** 架构：
 
-**三个 Teacher 专家**：
+- **输入**: 10-D 命令 $\mathbf{c}$ + 本体感知观测 $\mathbf{o}$ + 上下文向量
+- **Backbone**: 基于[[非对称 Actor-Critic]]（Asymmetric Actor-Critic）的 MoE 学生策略
+- **核心模块**: 上下文条件化门控的 3 专家 MoE
+- **输出**: 关节力矩目标（29-DoF Unitree G1）
+- **训练框架**: rsl-rl + mjlab（基于 MuJoCo-Warp 的 Isaac Lab API）
 
-| Teacher | DoF | 训练数据 | 职责 |
-|---------|-----|----------|------|
-| WBC 运动跟踪 Teacher | 29-DoF（全身） | CoP 安全过滤后的重定向动捕片段 | 复杂全身操作运动跟踪 |
-| Locomotion Teacher | 15-DoF（下半身） | 平坦地形 + 课程化手臂扰动 | 速度跟踪、稳定步态 |
-| 跌倒恢复 Teacher | 29-DoF（全身） | Locomotion + 配对跌倒恢复片段 | 跌倒后自主恢复站立 |
+### 核心模块
 
-**MoE 学生蒸馏机制**：
+#### 模块 1: 三个互补教师策略
 
-- **Body Slice（下半身）**：按连续速度 context $\alpha(v)$ 对 WBC Teacher 和 Locomotion Teacher 进行**凸组合 KL 蒸馏**（velocity-gated convex blend）
-- **Arm Slice（手臂）**：锚定到 WBC Teacher 的 KL 项
-- **跌倒恢复路由**：离散 recovery context 的 **recovery-masked KL 项**将第三个 MoE Expert 路由到跌倒恢复 Teacher
+| 教师 | 功能 | 训练数据/目标 |
+|------|------|--------------|
+| 全身运动追踪教师（WBC Teacher） | 追踪骨盆系腕目标 + 身体姿态 | 安全过滤后的运动捕捉数据（AMASS 等），82 条序列，119K 帧 @ 120Hz |
+| 运动行走教师（Locomotion Teacher） | 速度追踪 + 稳定行走 | 标准 [[PPO|RL]] 训练 |
+| 跌倒恢复教师（Fall-Recovery Teacher） | 从跌倒状态恢复站立 | 随机初始化倒地状态 RL |
 
-**Context 条件化**：
-- Context 输入包含：底盘速度幅值（连续）、是否处于跌倒恢复状态（离散二值）
-- 扩展性：新 Teacher/技能只需新增一个 Teacher head 和一个 context 通道，不改动已有 Teacher 和命令接口
+**安全过滤**：运动捕捉数据经过筛选，去除物理上不可行的姿态（关节超限、过大地面反力等），确保 WBC 教师学到安全可实现的技能。
 
-### 安全数据过滤（CoP 滤波）
+#### 模块 2: 上下文条件化 MoE 门控蒸馏
 
-WBC Teacher 的训练数据来自动捕重定向，原始片段中含有动力学不可行帧。论文使用**静态质心压力（Center of Pressure, CoP）裕量**的 [[CBF（控制障碍函数）|Control Barrier Function (CBF)]] 投影进行闭形式安全过滤，剔除 CoP 超出支撑多边形的帧，再训练 WBC Teacher。
+所有三个专家在每个时间步均被评估，其动作均值输出通过门控函数软融合，避免了硬 top-k 路由引入的双峰伪影，保持策略全程可微。
 
-### Agentic 规划层
+**关键设计**：
+- **身体-手臂分片路由（Body-Arm Slice Routing）**：
+  - **身体动作**（腿部、腰部）：速度门控的 WBC 教师和运动行走教师凸组合
+  - **手臂动作**：锚定到 WBC 教师
+- **恢复路由**：恢复掩码 KL 项将第三个专家路由到跌倒恢复教师
+- **子集感知负载均衡损失**：防止门控退化到只使用少数专家
 
-硬件上运行完整的机载推理栈：
-- **Unitree G1**（29-DoF）+ 双侧 Dex1-1 拟人夹爪 + 头部 ZED-M 立体 RGB-D 相机
-- **Nvidia Jetson Thor** 机载运行：RL 控制器 + Agentic 规划器 + 本地 VLM 推理（可选 ChatGPT-API fallback）
-- VLM 感知场景 → 语言指令分解 → 输出 10-D 命令序列 → HANDOFF WBC 执行
+### 系统部署：VLM 驱动的智能体规划器
 
-规划器无需任务专属数据或控制器微调，体现了命令接口的**规划器无关性**。
+HANDOFF 的 10-D 接口使其**规划器无关**（planner-agnostic）：
+
+- **[[VLM]] 规划器**：接收自然语言任务指令 + 视觉输入，解析为原子子目标序列，每个子目标输出 10-D 命令
+- **零次泛化**：无需任何任务专属数据采集或控制器微调
+- **接口兼容性**：传统任务规划 / 基于 VLM 的[[具身推理|智能体规划]] / [[VLA]] 模型均可直接接入
 
 ---
 
 ## 关键公式
 
-### 公式 1：[[知识蒸馏|Body Slice Context-Conditioned KL 蒸馏]]
+### 公式 1: [[KL 蒸馏|多教师 KL 蒸馏]]目标
 
 $$
-\mathcal{L}_{\text{body}} = \alpha(v) \cdot \text{KL}\!\left(\pi_{\theta}^{\text{body}}(\cdot|s) \,\|\, \pi_{\text{WBC}}(\cdot|s)\right) + (1 - \alpha(v)) \cdot \text{KL}\!\left(\pi_{\theta}^{\text{body}}(\cdot|s) \,\|\, \pi_{\text{loco}}(\cdot|s)\right)
+\mathcal{L}_{\text{KL}} = \sum_{i \in \{\text{wbc, loco, recovery}\}} w_i(\mathbf{c}, \mathbf{o}) \cdot D_{\text{KL}}\!\left(\pi_{\text{student}}(\cdot|\mathbf{o},\mathbf{c}) \,\|\, \pi_i(\cdot|\mathbf{o},\mathbf{c})\right)
 $$
 
-**含义**：下半身 MoE Expert 按速度上下文 $\alpha(v)$ 在 WBC Teacher 和 Locomotion Teacher 之间做凸组合蒸馏，速度越小越偏向 WBC Teacher（精细操作），速度越大越偏向 Locomotion Teacher（稳定步态）。
+**含义**: 学生策略向多个教师策略的加权 KL 散度之和，权重 $w_i$ 由上下文条件化门控函数决定。
 
-**符号说明**：
-- $\alpha(v) \in [0,1]$：由底盘速度幅值 $v$ 决定的连续 gating 权重
-- $\pi_{\theta}^{\text{body}}$：学生策略的下半身 Expert
-- $\pi_{\text{WBC}}$：全身运动跟踪 Teacher 策略
-- $\pi_{\text{loco}}$：Locomotion Teacher 策略
+**符号说明**:
+- $\pi_{\text{student}}$: 学生（MoE）策略的动作分布
+- $\pi_i$: 第 $i$ 个教师策略的动作分布
+- $w_i(\mathbf{c}, \mathbf{o})$: 与命令 $\mathbf{c}$ 和观测 $\mathbf{o}$ 相关的上下文门控权重，满足 $\sum_i w_i = 1$
+- $D_{\text{KL}}$: [[KL 散度]]
 
-### 公式 2：[[知识蒸馏|Arm Slice KL 蒸馏]]
-
-$$
-\mathcal{L}_{\text{arm}} = \text{KL}\!\left(\pi_{\theta}^{\text{arm}}(\cdot|s) \,\|\, \pi_{\text{WBC}}(\cdot|s)\right)
-$$
-
-**含义**：手臂 MoE Expert 始终锚定到 WBC Teacher，确保操作精度与运动质量。
-
-### 公式 3：[[知识蒸馏|Recovery-Masked KL 蒸馏]]
+### 公式 2: [[MoE|MoE 动作软融合]]
 
 $$
-\mathcal{L}_{\text{rec}} = \mathbb{1}[\text{recovery}] \cdot \text{KL}\!\left(\pi_{\theta}^{\text{rec}}(\cdot|s) \,\|\, \pi_{\text{fall-rec}}(\cdot|s)\right)
+a_{\text{student}} = \sum_{i=1}^{3} g_i(\mathbf{c}, \mathbf{o}) \cdot \mu_i(\mathbf{o}, \mathbf{c})
 $$
 
-**含义**：跌倒恢复 KL 项仅在机器人处于跌倒恢复状态（离散 context=1）时激活，将第三个 MoE Expert 路由到跌倒恢复 Teacher。
+**含义**: 所有专家动作均值通过软门控权重线性融合，得到最终控制动作，避免 hard top-k 路由引入双峰不稳定性。
 
-**符号说明**：
-- $\mathbb{1}[\text{recovery}]$：离散跌倒恢复 context 指示函数
-- $\pi_{\theta}^{\text{rec}}$：学生策略的跌倒恢复 Expert
-- $\pi_{\text{fall-rec}}$：跌倒恢复 Teacher 策略
+**符号说明**:
+- $g_i(\mathbf{c}, \mathbf{o})$: 上下文条件化软门控权重（满足 $\sum_i g_i = 1$，由 softmax 归一化）
+- $\mu_i(\mathbf{o}, \mathbf{c})$: 第 $i$ 个专家网络输出的动作均值
 
-### 公式 4：[[CBF（控制障碍函数）|CoP 安全过滤 CBF 投影]]
+### 公式 3: 工作空间可行性评估
 
 $$
-\mathbf{q}^* = \arg\min_{\mathbf{q}} \|\mathbf{q} - \mathbf{q}_{\text{raw}}\|^2 \quad \text{s.t.} \quad h_{\text{CoP}}(\mathbf{q}) \geq 0
+\text{Feasibility} = \frac{\left|\left\{\text{trials}: \|\mathbf{e}_{\text{wrist}}\| < 15\,\text{cm},\; \text{no-fall},\; \|\Delta\mathbf{p}_{\text{pelvis}}\| < 25\,\text{cm}\right\}\right|}{|\text{total trials}|}
 $$
 
-**含义**：对原始重定向动捕帧 $\mathbf{q}_{\text{raw}}$ 做最近可行点投影，约束为静态 CoP 裕量 $h_{\text{CoP}} \geq 0$，保证训练数据动力学可行。
+**含义**: 双腕目标可行率——在所有双腕目标试验中，手腕误差小于阈值、无跌倒且骨盆漂移在范围内的比例。
+
+**符号说明**:
+- $\|\mathbf{e}_{\text{wrist}}\|$: 指令腕目标与实际手腕位置的欧氏距离误差
+- $\Delta\mathbf{p}_{\text{pelvis}}$: 骨盆在水平面的位移漂移量
+- 15 cm：手腕误差阈值；25 cm：骨盆漂移阈值
+
+### 公式 4: 速度追踪误差指标
+
+$$
+\text{VelTracking} = |\Delta \mathbf{v}| = \mathbb{E}\!\left[\|\mathbf{v}_{\text{cmd}} - \mathbf{v}_{\text{actual}}\|_1\right]
+$$
+
+**含义**: 指令基座速度与实际速度的平均绝对误差（MAE），用于定量评估运动行走性能。
+
+**符号说明**:
+- $\mathbf{v}_{\text{cmd}} = (v_x^{\text{cmd}}, v_y^{\text{cmd}}, \omega_z^{\text{cmd}})$: 指令基座速度向量
+- $\mathbf{v}_{\text{actual}}$: 实际执行的基座速度向量
 
 ---
 
@@ -157,75 +183,85 @@ $$
 
 ### Figure 1: 系统概览
 
-![Figure 1 - HANDOFF Overview](https://arxiv.org/html/2606.06493v1/x1.png)
+![HANDOFF Fig1 Overview](https://arxiv.org/html/2606.06493v1/x1.png)
 
-**说明**：HANDOFF 整体框架图。展示从自然语言指令出发，经 VLM Agentic 规划器分解为 10-D task-space 命令序列，驱动 MoE 学生策略（三路 Teacher 蒸馏）控制 Unitree G1 完成操作任务的完整流程。
+**说明**: HANDOFF 整体系统图。上层 VLM 驱动的智能体规划器将自然语言任务分解为原子子目标，每个子目标输出 10-D 命令向量驱动底层全身控制器，机器人执行多步长程操作任务，无需任务特定数据或微调。
 
-### Figure 2: CoP 安全滤波
+### Figure 2: 10-D 命令空间与全身协调涌现
 
-![Figure 2 - CoP Filtering](https://arxiv.org/html/2606.06493v1/x2.png)
+![HANDOFF Fig2 Command Space](https://arxiv.org/html/2606.06493v1/x2.png)
 
-**说明**：原始重定向动捕数据集中含有动力学不可行帧（CoP 超出支撑多边形），通过静态 CoP 裕量的 [[CBF（控制障碍函数）|CBF]] 闭形式投影进行安全过滤，确保 WBC Teacher 训练数据质量。
+**说明**: 展示 10-D 命令如何自然诱导全身协调行为。低骨盆高度 + 前向腕目标 → 蹲取动作；非零基座速度 + 不对称腕目标 → 行走操作；双侧腕目标组合 → 双手抓取。同一命令向量的不同分量组合产生不同的全身运动模式。
 
-### Figure 3: 蒸馏架构
+### Figure 3: 多教师 MoE 蒸馏架构
 
-![Figure 3 - Distillation Architecture](https://arxiv.org/html/2606.06493v1/x3.png)
+![HANDOFF Fig3 Architecture](https://arxiv.org/html/2606.06493v1/x3.png)
 
-**说明**：三路 context 条件化 KL 蒸馏方案。Body Slice 按速度 gating 在 WBC/Locomotion Teacher 之间做凸组合；Arm Slice 锚定 WBC Teacher；Recovery Expert 由离散 context 路由到跌倒恢复 Teacher。
+**说明**: 三个互补教师（WBC 运动追踪、运动行走、跌倒恢复）在训练时通过 [[KL 散度|KL 蒸馏]] + 上下文条件化门控监督单一学生网络。推理时只运行学生策略，接受 10-D 命令输出 29-DoF 关节控制。
 
-### Figure 4: 双腕操作工作空间对比
+### Figure 4: 双腕工作空间覆盖可视化
 
-![Figure 4 - Workspace Comparison](https://arxiv.org/html/2606.06493v1/x4.png)
+![HANDOFF Fig4 Workspace](https://arxiv.org/html/2606.06493v1/x4.png)
 
-**说明**：在 pelvis 坐标系下从三个正交视角（XY 俯视、YZ 正面、XZ 侧面）展示双腕可达工作空间的凸包，仅显示前半空间。HANDOFF 覆盖了对比方法中最大的前半工作空间，可行性与 SONIC 持平，FALCON 的工作空间在侧向和顶端明显受限。
+**说明**: 双腕可达工作空间凸包从骨盆坐标系三个正交视角（XY 俯视、YZ 正视、XZ 侧视）可视化。HANDOFF 在前向半空间覆盖最大，以与 SOTA baseline 相当的可行率实现了对比方法中最大的操作工作空间。
 
-### Table 1: 速度跟踪与操作工作空间定量对比
+### Figure 5: 真实硬件任务演示
 
-| 方法 | 速度跟踪 (↑) | 可行工作空间体积 (↑) | 跌倒恢复 |
-|------|------------|------------------|--------|
-| SONIC | SOTA | 较小 | 无 |
-| FALCON | 较低 | 更小（侧向/顶部受限） | 无 |
-| **HANDOFF（无恢复）** | **匹配 SOTA** | **最大之一** | 无 |
-| **HANDOFF（完整）** | **匹配 SOTA** | **最大之一** | **有** |
+![HANDOFF Fig5 Hardware Demo](https://arxiv.org/html/2606.06493v1/x5.png)
 
-> 工作空间可行性判定条件：2000 个发现目标 + 400 个精度目标，双腕在测量窗口内始终保持在目标 15 cm 以内，策略不跌倒，pelvis 水平漂移 < 25 cm。
+**说明**: Unitree G1 + Dex1-1 灵巧手在真实场景执行的 5 类任务演示：Pick-and-Place、Pick-Transport-Place、Squat-Pick、Bimanual-Pick-and-Hand-Off、Bilateral Pick-and-Place。所有任务均由同一个 VLM 驱动的智能体规划器端到端控制，控制器无需修改。
 
-### Table 2: Agentic 规划硬件任务
+### Table 1: 速度追踪性能对比
 
-| 任务 | 描述 |
-|------|------|
-| 步行取物 | 根据语言指令步行到指定位置取物 |
-| 双手传递 | 从一侧手传到另一侧手 |
-| 桌面整理 | 多步操作序列，VLM 自主规划步骤 |
-| 跌倒恢复 | 受扰动跌倒后自主恢复站立继续任务 |
+| 方法 | 命令空间类型 | 速度追踪 $|\Delta v|$ | 操作工作空间大小 | 规划器无关性 |
+|------|------------|---------------------|----------------|------------|
+| HOVER | 3 点头手接口（密集轨迹） | ≈SOTA | 中等 | 否（需流式轨迹） |
+| ExBody2 | 上身关节角 | — | 较小 | 否 |
+| OmniH2O | 头+双手位置（密集） | — | 中等 | 否 |
+| **HANDOFF (ours)** | **10-D 紧凑命令** | **≈SOTA** | **最大** | **是** |
 
-所有任务均由 VLM 驱动的 Agentic 规划器控制，无需任务专属数据或控制器微调。
+**说明**: HANDOFF 在速度追踪上达到 SOTA 水准，同时工作空间在所有对比方法中最大，且接口设计使其天然支持规划器无关的语言驱动。
+
+### Table 2: 消融实验
+
+| 配置 | 速度追踪 | 工作空间可行率 | 关键影响 |
+|------|---------|-------------|---------|
+| w/o 安全过滤数据 | 相近 | 显著下降 | 无安全过滤导致 WBC 教师学到不可行姿态 |
+| w/o 跌倒恢复教师 | 相近 | 跌落率上升 | 缺少第三个专家使鲁棒性下降 |
+| w/o 软门控（硬 top-k） | 存在抖动 | 下降 | 双峰输出引起不稳定性 |
+| w/o 子集负载均衡损失 | 相近 | 轻微下降 | 专家不均衡使用 |
+| **HANDOFF Full** | **最佳** | **最佳** | 所有组件均有贡献 |
+
+**关键发现**: 安全过滤数据对工作空间可行率贡献最显著；软门控融合比硬路由更稳定，是整体性能的关键设计。
 
 ---
 
 ## 实验
 
-### 环境设置
+### 数据集与平台
 
-- **仿真**：Isaac Lab（基于 [[IsaacLab]] 物理引擎），评估速度跟踪和工作空间指标
-- **实机**：Unitree G1（29-DoF）
-  - 末端执行器：股票 3 指手替换为双侧 **Dex1-1 拟人夹爪**
-  - 感知：头部 **ZED-M 立体 RGB-D 相机**（供 VLM 和路径点投影）
-  - 计算：背部 **Nvidia Jetson Thor**（机载运行全栈）
+| 资源 | 规模 | 特点 | 用途 |
+|------|------|------|------|
+| AMASS 运动数据（安全过滤后） | 82 条序列，119K 帧 @ 120Hz | 人体运动，经安全过滤保留物理可行姿态 | WBC 教师训练参考数据 |
+| Unitree G1 仿真模型 | 29-DoF | mjlab/MuJoCo-Warp，含外挂 Jetson Thor + Dex1-1 | 策略训练与评估 |
+| Unitree G1 真实硬件 | 29-DoF + 双侧 Dex1-1 灵巧手 | 真实部署平台，含机载 Jetson Thor 算力 | 真机验证 |
 
 ### 实现细节
 
-- **Teacher 训练**：三个 Teacher 分别用 [[PPO]] 训练：
-  - WBC Teacher：29-DoF，CoP 过滤后的重定向动捕片段
-  - Locomotion Teacher：15-DoF（下半身），平坦地形 + 课程化手臂扰动
-  - 跌倒恢复 Teacher：29-DoF，Locomotion + 配对跌倒恢复片段
-- **学生蒸馏**：MoE 学生通过三路 context 条件化 KL 项从 Teacher 蒸馏
+- **机器人平台**: Unitree G1（29 自由度）+ 双侧 Dex1-1 拟人灵巧抓手
+- **训练框架**: [[强化学习|rsl-rl]] + mjlab（MuJoCo-Warp 加速仿真，Isaac Lab API）
+- **策略架构**: [[非对称 Actor-Critic]]（Asymmetric Actor-Critic）——Critic 可访问完整特权状态，Actor 只用本体感知 + 命令
+- **上层规划器**: VLM 驱动的智能体规划器，接收语言 + 视觉输入，无需额外数据采集或微调
 
-### 工作空间评估方法
+### 真机任务
 
-- 2000 个**发现性目标**：随机采样探索可达边界
-- 400 个**精度目标**：更细粒度的精度验证
-- 可行判定：双腕 ≤15 cm 目标误差 + 不跌倒 + pelvis 水平漂移 ≤25 cm
+在 Unitree G1 硬件上演示的 5 类长程操作任务（均由同一 VLM 智能体规划器驱动，**控制器无修改**）：
+
+1. **Pick-and-Place**：单手抓取物体放到目标位置
+2. **Pick-Transport-Place**：抓取 + 行走搬运 + 放置
+3. **Squat-Pick**：蹲低 + 抓取低处物体（需全身协调）
+4. **Bimanual-Pick-and-Hand-Off**：双手抓取后内部交接换手
+5. **Bilateral Pick-and-Place**：双手同时分别抓取放置
 
 ---
 
@@ -233,30 +269,33 @@ $$
 
 ### 优点
 
-1. **接口设计优雅**：10-D 命令向量对规划器高度友好，既足够紧凑（不要求全身关节轨迹），又足够表达力（支持多样操作技能）
-2. **蒸馏框架可扩展**：新技能只需添加 Teacher head + context 通道，无需修改已有组件，系统性好
-3. **端到端机载部署**：Jetson Thor 运行全栈（RL 控制器 + VLM 规划），真正 zero-shot 部署无需任务微调
-4. **跌倒恢复整合**：将跌倒恢复作为 Teacher 之一蒸馏进统一框架，而非单独模块，是现有同类工作的重要改进
+1. **接口设计优雅**: 10-D 命令在信息密度和表达能力之间取得极佳平衡，使规划器复杂度降至最低，工程落地友好
+2. **零适配泛化**: 同一控制器无需任何修改即可被 VLM/传统规划/VLA 模型驱动，真正实现规划器无关
+3. **全身协调自然涌现**: 蹲取、行走操作等复杂协调行为作为命令的自然结果涌现，无需显式编程
+4. **安全性考量到位**: 安全过滤训练数据是有价值的贡献，实验消融证明其对工作空间可行率的关键作用
+5. **多教师蒸馏框架**: 优雅解决不同技能专家难以合并的问题，软门控设计避免 hard routing 的不稳定性
 
 ### 局限性
 
-1. **命令接口相对简单**：10-D 接口目前不包含接触力/阻抗控制信号，对接触丰富（contact-rich）操作任务可能不够
-2. **VLM 规划器的可靠性**：依赖 VLM 感知和规划，在遮挡复杂或语义歧义场景下可能失败
-3. **平坦地形假设**：Locomotion Teacher 仅在平坦地形训练，非结构化地形泛化能力未验证
-4. **缺乏精细灵巧操作**：Dex1-1 夹爪相对简单，复杂灵巧手操作尚未展示
+1. **腕目标仅位置、无方向**: 10-D 命令中腕目标只有 3D 位置，缺少方向分量（$\text{SE}(3)$ 旋转部分），限制精确抓取姿态控制
+2. **依赖外部感知质量**: VLM 规划器需要高质量视觉输入，感知失效直接影响任务成功率；论文未系统讨论感知鲁棒性
+3. **手指控制粒度有限**: 实验使用 Dex1-1 灵巧手，但控制层面停留在手腕目标，未展示精细手指级控制
+4. **工作空间评估与任务成功率脱节**: 定量评估主要是工作空间覆盖率，未系统报告各类任务成功率
+5. **受控实验环境**: 真机实验在室内结构化场景进行，室外/非结构化环境的泛化能力未验证
 
 ### 潜在改进方向
 
-1. 扩展命令接口，纳入阻抗/接触力维度，支持接触丰富操作
-2. 引入视觉状态估计以减少对 ZED-M 点云的依赖
-3. 将课程化训练推广到非结构化地形
+1. 扩展命令空间至 $\text{SE}(3)$ 腕目标（位置 + 方向），提升抓取姿态控制精度
+2. 结合视觉伺服闭环（末端执行器视觉反馈），减少对精确 VLM 感知的依赖
+3. 与 [[VLA]] 模型（如 [[π₀]]）深度集成，探索端到端视觉语言动作到 10-D 接口的映射
+4. 扩展到更多自由度硬件（手指级控制），支持精细操作任务
 
 ### 可复现性评估
 
-- [ ] 代码开源（论文声明即将开源）
-- [ ] 预训练模型（未发布）
-- [ ] 训练细节完整（论文描述较详细）
-- [ ] 数据集可获取（动捕数据集未公开）
+- [ ] 代码开源（论文发布时未见代码链接）
+- [ ] 预训练模型（未提供）
+- [x] 训练细节完整（rsl-rl + mjlab 框架有足够细节）
+- [x] 数据集可获取（AMASS 公开可用）
 
 ---
 
@@ -264,36 +303,39 @@ $$
 
 ### 基于
 
-- [[PPO]]: Teacher 策略训练使用的 RL 算法
-- [[知识蒸馏]]: 核心蒸馏框架
-- [[混合专家模型]]: MoE 学生策略架构
-- [[CBF（控制障碍函数）]]: CoP 安全数据滤波
+- [[HOVER]]: HANDOFF 的主要对比基线，也是多命令空间全身控制器，但需密集轨迹流
+- [[OmniH2O]]: 人类到人形机器人的全身远操作，HANDOFF 参考的相关工作
+- [[ExBody2]]: 上身表情化全身控制，HANDOFF 的对比基线之一
+- [[FALCON]]: 力自适应人形机器人运动-操作，HANDOFF 对比的相关工作
 
 ### 对比
 
-- [[SONIC]]: SOTA 速度跟踪基线，HANDOFF 在工作空间上超越
-- [[FALCON]]: 力自适应 loco-manipulation，工作空间相对受限
+- [[HOVER]]: 同样解决全身控制但命令空间更密集（需要流式轨迹），无法被 VLM 直接驱动
+- [[HOMIE]]: 上下身解耦方案，通过外骨骼驾驶上身，无法端到端语言驱动
+- [[WholeBodyVLA]]: 从端到端 VLA 角度解决全身控制，HANDOFF 则从控制器接口设计角度切入
 
 ### 方法相关
 
-- [[全身控制]]: 核心任务
-- [[Whole-Body Control]]: 人形机器人全身协调控制
-- [[locomotion]]: 双足运动 Teacher 专家
-- [[IsaacLab]]: 仿真训练平台
+- [[MoE]]: HANDOFF 的核心学生架构，软门控融合三专家
+- [[KL 蒸馏]]: 多教师 KL 蒸馏是 HANDOFF 的训练范式
+- [[KL 散度]]: 蒸馏损失的核心度量
+- [[非对称 Actor-Critic]]: 训练框架，Critic 有特权信息
+- [[强化学习]]: 底层训练算法（PPO 框架）
 
-### 硬件相关
+### 硬件/数据相关
 
-- [[Unitree G1]]: 实验机器人平台（29-DoF）
+- [[Unitree G1]]: 实验平台，29-DoF 人形机器人
+- [[AMASS]]: 运动捕捉数据集，WBC 教师训练数据来源
 
 ---
 
 ## 速查卡片
 
-> [!summary] HANDOFF (arXiv 2606.06493)
-> - **核心**: 10-D task-space 命令接口 + 三 Teacher KL 蒸馏 → 单一 MoE 人形全身控制策略
-> - **方法**: Context 条件化 KL 蒸馏（velocity-gated body/arm/recovery 三路）
-> - **结果**: Unitree G1 上最大双腕工作空间之一，速度跟踪匹配 SOTA，VLM 无微调 agentic 部署
-> - **代码**: 即将开源
+> [!summary] HANDOFF: Humanoid Agentic Task-Space Whole-Body Control
+> - **核心**: 10-D 紧凑命令接口（骨盆速度+高度+双腕目标）连接规划与控制
+> - **方法**: 三教师（WBC/运动/恢复）→ KL 蒸馏 + 上下文门控 MoE 学生
+> - **结果**: Unitree G1 上 SOTA 速度追踪 + 最大鲁棒操作工作空间，VLM 驱动 5 类长程任务零微调
+> - **代码**: 未公开
 
 ---
 
