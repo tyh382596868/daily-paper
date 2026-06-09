@@ -31,6 +31,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/GaussianDream|GaussianDream]]
 - [[论文笔记/3-Robotics/VLA/IntentVLA|IntentVLA]]
 - [[论文笔记/3-Robotics/VLA/JEPA-WM|JEPA-WM]]
+- [[论文笔记/3-Robotics/VLA/LARA|LARA]]
 - [[论文笔记/3-Robotics/VLA/LeWM|LeWM]]
 - [[论文笔记/3-Robotics/VLA/MVISTA-4D|MVISTA-4D]]
 - [[论文笔记/3-Robotics/VLA/MolmoAct2|MolmoAct2]]
