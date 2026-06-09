@@ -1,1183 +1,323 @@
 [
   {
-    "id": "2606.06491",
-    "date": "2026-06-05",
-    "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies"
+    "id": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
+    "date": "2026-05-10",
+    "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models"
   },
   {
-    "id": "2606.06155",
-    "date": "2026-06-05",
-    "title": "AffordanceVLA: A Vision-Language-Action Model Empowering Action Generation through Affordance-Aware Understanding"
+    "id": "Splatting Physical Scenes: End-to-End Real-to-Sim from Imperfect Robot Data",
+    "date": "2026-05-10",
+    "title": "Splatting Physical Scenes: End-to-End Real-to-Sim from Imperfect Robot Data"
   },
   {
-    "id": "2606.06147",
-    "date": "2026-06-05",
-    "title": "WorldFly: A World-Model-Based Vision-Language-Action Model for UAV Navigation"
+    "id": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
+    "date": "2026-05-10",
+    "title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies"
   },
   {
-    "id": "2606.06049",
-    "date": "2026-06-05",
-    "title": "L-SDPPO: Policy Optimization of Spiking Diffusion Policy for Intra-vehicular Robotic Manipulation"
+    "id": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting",
+    "date": "2026-05-10",
+    "title": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting"
   },
   {
-    "id": "2606.06042",
-    "date": "2026-06-05",
-    "title": "LoomVideo: Unifying Multimodal Inputs into Video Generation and Editing"
+    "id": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks",
+    "date": "2026-05-10",
+    "title": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks"
   },
   {
-    "id": "2606.06033",
-    "date": "2026-06-05",
-    "title": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning"
+    "id": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
+    "date": "2026-05-10",
+    "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos"
   },
   {
-    "id": "2606.06014",
-    "date": "2026-06-05",
-    "title": "PLAN-S: Bridging Planning with Latent Style Dynamics for Autonomous Driving World Models"
+    "id": "2605.07943",
+    "date": "2026-05-12",
+    "title": "TAVIS: A Benchmark for Egocentric Active Vision and Anticipatory Gaze in Imitation Learning"
   },
   {
-    "id": "2606.05979",
-    "date": "2026-06-05",
-    "title": "World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis"
+    "id": "2605.07931",
+    "date": "2026-05-12",
+    "title": "One Token Per Frame: Reconsidering Visual Bandwidth in World Models for VLA Policy"
   },
   {
-    "id": "2606.05773",
-    "date": "2026-06-05",
-    "title": "PiL-World: A Chunk-Wise World Model for VLA Policy-in-the-Loop Evaluation"
+    "id": "2605.07800",
+    "date": "2026-05-12",
+    "title": "SARA: Semantically Adaptive Relational Alignment for Video Diffusion Models"
   },
   {
-    "id": "2606.05737",
-    "date": "2026-06-05",
-    "title": "Let It Be Simple: One-Step Action Generation for Vision-Language-Action Models"
+    "id": "2605.07687",
+    "date": "2026-05-12",
+    "title": "PhySPRING: Structure-Preserving Reduction of Physics-Informed Twins via GNN"
   },
   {
-    "id": "2606.05660",
-    "date": "2026-06-05",
-    "title": "Safe Embodied AI for Long-horizon Tasks: A Cross-layer Analysis of Robotic Manipulation"
+    "id": "2605.07503",
+    "date": "2026-05-12",
+    "title": "Diffusion-APO: Trajectory-Aware Direct Preference Alignment for Video Diffusion Transformers"
   },
   {
-    "id": "2606.05468",
-    "date": "2026-06-05",
-    "title": "FlowPRO: Reward-Free Reinforced Fine-Tuning of Flow-Matching VLAs via Proximalized Preference Optimization"
+    "id": "2605.07496",
+    "date": "2026-05-12",
+    "title": "PathPainter: Transferring the Generalization Ability of Image Generation Models to Embodied Navigation"
   },
   {
-    "id": "2606.05407",
-    "date": "2026-06-05",
-    "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping"
+    "id": "2605.07474",
+    "date": "2026-05-12",
+    "title": "ForgeVLA: Federated Vision-Language-Action Learning without Language Annotations"
   },
   {
-    "id": "2606.05395",
-    "date": "2026-06-05",
-    "title": "VASO: Formally Verifiable Self-Evolving Skills for Physical AI Agents"
+    "id": "2605.07390",
+    "date": "2026-05-12",
+    "title": "ST-Gen4D: Embedding 4D Spatiotemporal Cognition into World Model for 4D Generation"
   },
   {
-    "id": "2606.05328",
-    "date": "2026-06-05",
-    "title": "The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show"
+    "id": "2605.07381",
+    "date": "2026-05-12",
+    "title": "Escaping the Diversity Trap in Robotic Manipulation via Anchor-Centric Adaptation"
   },
   {
-    "id": "2606.05248",
-    "date": "2026-06-05",
-    "title": "Inverse Manipulation through Symbolic Planning and Residual Operator Learning"
+    "id": "2605.07326",
+    "date": "2026-05-12",
+    "title": "GEM: Generating LiDAR World Model via Deformable Mamba"
   },
   {
-    "id": "2606.05160",
-    "date": "2026-06-05",
-    "title": "GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors"
+    "id": "2605.07325",
+    "date": "2026-05-12",
+    "title": "CSR: Infinite-Horizon Real-Time Policies with Massive Cached State Representations"
   },
   {
-    "id": "2606.04811",
-    "date": "2026-06-05",
-    "title": "Dream.exe: Can Video Generation Models Dream Executable Robot Manipulation?"
+    "id": "2605.07308",
+    "date": "2026-05-12",
+    "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models"
   },
   {
-    "id": "2606.04708",
-    "date": "2026-06-05",
-    "title": "VISTA: Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training"
+    "id": "2605.07306",
+    "date": "2026-05-12",
+    "title": "BioProVLA-Agent: An Affordable, Protocol-Driven, Vision-Enhanced VLA-Enabled Embodied Multi-Agent System with Closed-Loop-Capable Reasoning for Biological Laboratory Manipulation"
   },
   {
-    "id": "2606.04527",
-    "date": "2026-06-05",
-    "title": "Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation"
+    "id": "2605.07288",
+    "date": "2026-05-12",
+    "title": "Sword: Style-Robust World Models as Simulators via Dynamic Latent Bootstrapping for VLA Policy Post-Training"
   },
   {
-    "id": "2606.04463",
-    "date": "2026-06-05",
-    "title": "OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics"
+    "id": "2605.07278",
+    "date": "2026-05-12",
+    "title": "Predictive but Not Plannable: RC-aux for Latent World Models"
   },
   {
-    "id": "2606.03890",
-    "date": "2026-06-05",
-    "title": "OVO-S-Bench: A Hierarchical Benchmark for Streaming Spatial Intelligence in Multimodal LLMs"
+    "id": "2605.07215",
+    "date": "2026-05-12",
+    "title": "PISTO: Proximal Inference for Stochastic Trajectory Optimization"
   },
   {
-    "id": "2606.02800",
-    "date": "2026-06-05",
-    "title": "Cosmos 3: Omnimodal World Models for Physical AI"
+    "id": "2605.07199",
+    "date": "2026-05-12",
+    "title": "Three-in-One World Model: Energy-Based Consistency, Prediction, and Counterfactual Inference for Marketing Intervention"
   },
   {
-    "id": "2606.01935",
-    "date": "2026-06-05",
-    "title": "Unified Driving Tokens: Representation- and Geometry-Guided Discrete Tokenizer for Driving World Models and Planning"
+    "id": "2605.07195",
+    "date": "2026-05-12",
+    "title": "See Tomorrow, Act Today: Foresight-Driven Autonomous Driving"
   },
   {
-    "id": "2605.08215",
-    "date": "2026-06-05",
-    "title": "Test-Time Training for Visual Foresight Vision-Language-Action Models"
+    "id": "2605.07177",
+    "date": "2026-05-12",
+    "title": "HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents"
   },
   {
-    "id": "2602.12628",
-    "date": "2026-06-05",
-    "title": "Beyond Imitation: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models"
+    "id": "2605.07079",
+    "date": "2026-05-12",
+    "title": "Learning Visual Feature-Based World Models via Residual Latent Action"
   },
   {
-    "id": "2606.02577",
-    "date": "2026-06-02",
-    "title": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis"
+    "id": "2605.06892",
+    "date": "2026-05-12",
+    "title": "Not All Tokens Need 40 Steps: Heterogeneous Step Allocation in Diffusion Transformers for Efficient Video Generation"
   },
   {
-    "id": "2606.02486",
-    "date": "2026-06-02",
-    "title": "Intercepting the Future: Latent-Space Predictive World Model for Dynamic VLA Manipulation"
+    "id": "2605.06863",
+    "date": "2026-05-12",
+    "title": "Bi3: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation"
   },
   {
-    "id": "2606.02307",
-    "date": "2026-06-02",
-    "title": "FATE-VLA: Failure-aware test generation for vision-language-action models"
+    "id": "2605.06841",
+    "date": "2026-05-12",
+    "title": "AGWM: Affordance-Grounded World Models for Environments with Compositional Prerequisites"
   },
   {
-    "id": "2606.02277",
-    "date": "2026-06-02",
-    "title": "RoboSemanticBench: Diagnosing Semantic Grounding in Action Prediction for VLA Models"
+    "id": "2605.06759",
+    "date": "2026-05-12",
+    "title": "An Aerial Manipulator for Perception-Driven Flower Targeting Toward Contactless Pollination in Vertical Farming"
   },
   {
-    "id": "2606.02027",
-    "date": "2026-06-02",
-    "title": "World-Task Factorization for Robot Learning"
+    "id": "2605.06747",
+    "date": "2026-05-12",
+    "title": "HumanNet: Scaling Human-centric Video Learning to One Million Hours"
   },
   {
-    "id": "2606.01950",
-    "date": "2026-06-02",
-    "title": "Learning Action-Conditional and Object-Centric Gaussian Splatting World Models for Rigid Objects"
+    "id": "2605.13775",
+    "date": "2026-05-14",
+    "title": "RoboEvolve: Co-Evolving Planner-Simulator for Robotic Manipulation with Limited Data"
   },
   {
-    "id": "2606.01865",
-    "date": "2026-06-02",
-    "title": "Set-Supervised Diffusion Policy: Learning Action-Chunking Diffusion through Corrections"
+    "id": "2605.13757",
+    "date": "2026-05-14",
+    "title": "FrameSkip: Learning from Fewer but More Informative Frames in VLA Training"
   },
   {
-    "id": "2606.01600",
-    "date": "2026-06-02",
-    "title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation"
+    "id": "2605.13724",
+    "date": "2026-05-14",
+    "title": "AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation"
   },
   {
-    "id": "2606.01458",
-    "date": "2026-06-02",
-    "title": "LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting Sim"
+    "id": "2605.12587",
+    "date": "2026-05-14",
+    "title": "TrackCraft3R: Repurposing Video Diffusion Transformers for Dense 3D Tracking"
   },
   {
-    "id": "2606.01241",
-    "date": "2026-06-02",
-    "title": "OneVLA: A Unified Framework for Embodied Tasks"
+    "id": "2605.12500",
+    "date": "2026-05-14",
+    "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture"
   },
   {
-    "id": "2606.01095",
-    "date": "2026-06-02",
-    "title": "Beyond Task Success: Behavioral and Representational Diagnostics for WAM and VLA"
+    "id": "2605.12495",
+    "date": "2026-05-14",
+    "title": "AlphaGRPO: Unlocking Self-Reflective Multimodal Generation in UMMs via Decompositional Verifiable Reward"
   },
   {
-    "id": "2606.01027",
-    "date": "2026-06-02",
-    "title": "τ_0-WM: A Unified Video-Action World Model for Robotic Manipulation"
+    "id": "2605.12090",
+    "date": "2026-05-14",
+    "title": "World Action Models: The Next Frontier in Embodied AI"
   },
   {
-    "id": "2606.00985",
-    "date": "2026-06-02",
-    "title": "Make Your VLA More Robust Without More Data By Interleaving Motion Planning"
+    "id": "2605.11550",
+    "date": "2026-05-14",
+    "title": "The DAWN of World-Action Interactive Models"
   },
   {
-    "id": "2606.00773",
-    "date": "2026-06-02",
-    "title": "SafeVLA-Bench: A Benchmark for the Success-Safety Gap in Vision-Language-Action Models"
+    "id": "2605.10921",
+    "date": "2026-05-14",
+    "title": "RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark"
   },
   {
-    "id": "2606.00664",
-    "date": "2026-06-02",
-    "title": "SKIP: Sparse Keyframe Interpolation Paradigm for Efficient Embodied World Models"
+    "id": "2605.10903",
+    "date": "2026-05-14",
+    "title": "CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models"
   },
   {
-    "id": "2606.00267",
-    "date": "2026-06-02",
-    "title": "StressDream: Steering Video World Models for Robust Policy Evaluation and Improvement"
+    "id": "2605.10832",
+    "date": "2026-05-14",
+    "title": "Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents"
   },
   {
-    "id": "2606.00090",
-    "date": "2026-06-02",
-    "title": "Silent Failures in Physical AI: A Literature Review of Runtime Action Authorization for Autonomous Systems"
+    "id": "2605.10813",
+    "date": "2026-05-14",
+    "title": "NanoResearch: Co-Evolving Skills, Memory, and Policy for Personalized Research Automation"
   },
   {
-    "id": "2605.30350",
-    "date": "2026-05-30",
-    "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation"
+    "id": "2605.02881",
+    "date": "2026-05-14",
+    "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment"
   },
   {
-    "id": "2605.30346",
-    "date": "2026-05-30",
-    "title": "YoCausal: How Far is Video Generation from World Model? A Causality Perspective"
+    "id": "2605.00080",
+    "date": "2026-05-14",
+    "title": "World Model for Robot Learning: A Comprehensive Survey"
   },
   {
-    "id": "2605.30326",
-    "date": "2026-05-30",
-    "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving"
+    "id": "2604.18486",
+    "date": "2026-05-14",
+    "title": "OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation"
   },
   {
-    "id": "2605.30325",
-    "date": "2026-05-30",
-    "title": "Veda: Scalable Video Diffusion via Distilled Sparse Attention"
+    "id": "2509.18154",
+    "date": "2026-05-14",
+    "title": "MiniCPM-V 4.5: Cooking Efficient MLLMs via Architecture, Data, and\n  Training Recipe"
   },
   {
-    "id": "2605.30282",
-    "date": "2026-05-30",
-    "title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation"
+    "id": "2605.15190",
+    "date": "2026-05-15",
+    "title": "RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO"
   },
   {
-    "id": "2605.30280",
-    "date": "2026-05-30",
-    "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments"
+    "id": "2605.15185",
+    "date": "2026-05-15",
+    "title": "Quantitative Video World Model Evaluation for Geometric-Consistency"
   },
   {
-    "id": "2605.30263",
-    "date": "2026-05-30",
-    "title": "minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models"
+    "id": "2605.15178",
+    "date": "2026-05-15",
+    "title": "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer"
   },
   {
-    "id": "2605.30226",
-    "date": "2026-05-30",
-    "title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models"
+    "id": "2605.14876",
+    "date": "2026-05-15",
+    "title": "Unlocking Complex Visual Generation via Closed-Loop Verified Reasoning"
   },
   {
-    "id": "2605.30117",
-    "date": "2026-05-30",
-    "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing"
+    "id": "2605.14712",
+    "date": "2026-05-15",
+    "title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation"
   },
   {
-    "id": "2605.30056",
-    "date": "2026-05-30",
-    "title": "Sample-Efficient Diffusion-based Reinforcement Learning with Critic Guidance"
+    "id": "2605.13169",
+    "date": "2026-05-15",
+    "title": "PanoWorld: Towards Spatial Supersensing in 360^circ Panorama World"
   },
   {
-    "id": "2605.30011",
-    "date": "2026-05-30",
-    "title": "VisualThink-VLA: Visual Intermediate Reasoning for Effective and Low-Latency Vision-Language-Action Policies"
+    "id": "2605.11459",
+    "date": "2026-05-15",
+    "title": "Overcoming Dynamics-Blindness: Training-Free Pace-and-Path Correction for VLA Models"
   },
   {
-    "id": "2605.29864",
-    "date": "2026-05-30",
-    "title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation"
+    "id": "2605.09681",
+    "date": "2026-05-15",
+    "title": "Forcing-KV: Hybrid KV Cache Compression for Efficient Autoregressive Video Diffusion Models"
   },
   {
-    "id": "2605.29710",
-    "date": "2026-05-30",
-    "title": "PhAIL: A Real-Robot VLA Benchmark and Distributional Methodology"
+    "id": "2605.07637",
+    "date": "2026-05-15",
+    "title": "Learning to Communicate Locally for Large-Scale Multi-Agent Pathfinding"
   },
   {
-    "id": "2605.29605",
-    "date": "2026-05-30",
-    "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models"
+    "id": "2605.15155",
+    "date": "2026-05-17",
+    "title": "Self-Distilled Agentic Reinforcement Learning"
   },
   {
-    "id": "2605.29562",
-    "date": "2026-05-30",
-    "title": "VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models"
+    "id": "2605.16257",
+    "date": "2026-05-18",
+    "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo"
   },
   {
-    "id": "2605.29438",
-    "date": "2026-05-30",
-    "title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models"
+    "id": "2605.15980",
+    "date": "2026-05-18",
+    "title": "Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization"
   },
   {
-    "id": "2605.29416",
-    "date": "2026-05-30",
-    "title": "3DVLA: Enhancing Vision-Language-Action Models via 3D Spatial and Instance Understanding"
+    "id": "2605.15843",
+    "date": "2026-05-18",
+    "title": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes"
   },
   {
-    "id": "2605.29114",
-    "date": "2026-05-30",
-    "title": "ReasonBreak: Probing Vulnerabilities in Reasoning-Enabled Vision-Language-Action Models for Autonomous Driving"
+    "id": "2605.15298",
+    "date": "2026-05-18",
+    "title": "PhysBrain 1.0 Technical Report"
   },
   {
-    "id": "2602.08968",
-    "date": "2026-05-30",
-    "title": "stable-worldmodel-v1: Reproducible World Modeling Research and Evaluation"
+    "id": "2605.15256",
+    "date": "2026-05-18",
+    "title": "ReactiveGWM: Steering NPC in Reactive Game World Models"
   },
   {
-    "id": "stable-worldmodel-v1: Reproducible World Modeling ",
-    "date": "2026-05-29",
-    "title": "stable-worldmodel-v1: Reproducible World Modeling Research and Evaluation"
+    "id": "2605.13740",
+    "date": "2026-05-18",
+    "title": "Learning POMDP World Models from Observations with Language-Model Priors"
   },
   {
-    "id": "minWM: A Full-Stack Open-Source Framework for Real",
-    "date": "2026-05-29",
-    "title": "minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models"
-  },
-  {
-    "id": "YoCausal: How Far is Video Generation from World M",
-    "date": "2026-05-29",
-    "title": "YoCausal: How Far is Video Generation from World Model? A Causality Perspective"
-  },
-  {
-    "id": "VisualThink-VLA: Visual Intermediate Reasoning for",
-    "date": "2026-05-29",
-    "title": "VisualThink-VLA: Visual Intermediate Reasoning for Effective and Low-Latency Vision-Language-Action Policies"
-  },
-  {
-    "id": "Veda: Scalable Video Diffusion via Distilled Spars",
-    "date": "2026-05-29",
-    "title": "Veda: Scalable Video Diffusion via Distilled Sparse Attention"
-  },
-  {
-    "id": "VLAConf: Calibrated Task-Success Confidence for Vi",
-    "date": "2026-05-29",
-    "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models"
-  },
-  {
-    "id": "VLA-Trace: Diagnosing Vision-Language-Action Model",
-    "date": "2026-05-29",
-    "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing"
-  },
-  {
-    "id": "VLA-Pro: Cross-Task Procedural Memory Transfer for",
-    "date": "2026-05-29",
-    "title": "VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models"
-  },
-  {
-    "id": "VLA-ATTC: Adaptive Test-Time Compute for VLA Model",
-    "date": "2026-05-29",
-    "title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model"
-  },
-  {
-    "id": "Thoughts-as-Planning: Latent World Models for Chai",
-    "date": "2026-05-29",
-    "title": "Thoughts-as-Planning: Latent World Models for Chain-of-Thoughts Optimization via Reinforcement Planning"
-  },
-  {
-    "id": "Sentinel-VLA: A Metacognitive VLA Model with Activ",
-    "date": "2026-05-29",
-    "title": "Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery"
-  },
-  {
-    "id": "ReasonBreak: Probing Vulnerabilities in Reasoning-",
-    "date": "2026-05-29",
-    "title": "ReasonBreak: Probing Vulnerabilities in Reasoning-Enabled Vision-Language-Action Models for Autonomous Driving"
-  },
-  {
-    "id": "Qwen-VLA: Unifying Vision-Language-Action Modeling",
-    "date": "2026-05-29",
-    "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments"
-  },
-  {
-    "id": "PhAIL: A Real-Robot VLA Benchmark and Distribution",
-    "date": "2026-05-29",
-    "title": "PhAIL: A Real-Robot VLA Benchmark and Distributional Methodology"
-  },
-  {
-    "id": "Mitigating State Aliasing in Vision-Language-Actio",
-    "date": "2026-05-29",
-    "title": "Mitigating State Aliasing in Vision-Language-Action Models via Inverse Dynamics Learning"
-  },
-  {
-    "id": "MiraBench: Evaluating Action-Conditioned Reliabili",
-    "date": "2026-05-29",
-    "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models"
-  },
-  {
-    "id": "LLM-Guided Future Hypotheses for Horizon-Aware Exp",
-    "date": "2026-05-29",
-    "title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation"
-  },
-  {
-    "id": "Gaze2Act: Gaze-Conditioned Vision-Language-Action ",
-    "date": "2026-05-29",
-    "title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation"
-  },
-  {
-    "id": "ElegantVLA: Learning When to Think for Efficient V",
-    "date": "2026-05-29",
-    "title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models"
-  },
-  {
-    "id": "Dynamic Mixture of Progressive Parameter-Efficient",
-    "date": "2026-05-29",
-    "title": "Dynamic Mixture of Progressive Parameter-Efficient Expert Library for Lifelong Robot Learning (DMPEL)"
-  },
-  {
-    "id": "DynaFLIP: Rethinking Robotics Perception via Tri-M",
-    "date": "2026-05-29",
-    "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation"
-  },
-  {
-    "id": "Dual-Stream Diffusion for World-Model Augmented Vi",
-    "date": "2026-05-29",
-    "title": "Dual-Stream Diffusion for World-Model Augmented Vision-Language-Action Model (DUST)"
-  },
-  {
-    "id": "Contrastive Representation Regularization for Visi",
-    "date": "2026-05-29",
-    "title": "Contrastive Representation Regularization for Vision-Language-Action Models"
-  },
-  {
-    "id": "CompilerDream: Learning a Compiler World Model for",
-    "date": "2026-05-29",
-    "title": "CompilerDream: Learning a Compiler World Model for General Code Optimization"
-  },
-  {
-    "id": "Causal-JEPA: Learning World Models through Object-",
-    "date": "2026-05-29",
-    "title": "Causal-JEPA: Learning World Models through Object-Level Latent Masking"
-  },
-  {
-    "id": "BORA: Bridging Offline Reinforcement Learning and ",
-    "date": "2026-05-29",
-    "title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models"
-  },
-  {
-    "id": "3DVLA: Enhancing Vision-Language-Action Models via",
-    "date": "2026-05-29",
-    "title": "3DVLA: Enhancing Vision-Language-Action Models via 3D Spatial and Instance Understanding"
-  },
-  {
-    "id": "2605.28816",
-    "date": "2026-05-28",
-    "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players"
-  },
-  {
-    "id": "2605.28812",
-    "date": "2026-05-28",
-    "title": "Beyond Binary: Sim-to-Real Dexterous Manipulation with Physics-Grounded Contact Representation"
-  },
-  {
-    "id": "2605.28803",
-    "date": "2026-05-28",
-    "title": "{\\Omega}-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling"
-  },
-  {
-    "id": "2605.28736",
-    "date": "2026-05-28",
-    "title": "Imitation Learning for Robot Assistance in Open Surgery: A Multi-Policy Evaluation on Suture Following"
-  },
-  {
-    "id": "2605.28726",
-    "date": "2026-05-28",
-    "title": "How VLAs Fail Differently: Black-Box Action Monitoring Reveals Architecture-Specific Failure Signatures"
-  },
-  {
-    "id": "2605.28691",
-    "date": "2026-05-28",
-    "title": "OSP-Next: Efficient High-Quality Video Generation with Sparse Sequence Parallelism, HiF8 Quantization, and Reinforcement Learning"
-  },
-  {
-    "id": "2605.28634",
-    "date": "2026-05-28",
-    "title": "PrimitiveVLA: Learning Reusable Motion Primitives for Efficient and Generalizable Robotic Manipulation"
-  },
-  {
-    "id": "2605.28548",
-    "date": "2026-05-28",
-    "title": "GEM: Generative Supervision Helps Embodied Intelligence"
-  },
-  {
-    "id": "2605.28527",
-    "date": "2026-05-28",
-    "title": "What Frozen VLAs Already Know About Success: A Probing Study of Value-Like Structure in Foundation Robot Policies"
-  },
-  {
-    "id": "2605.28486",
-    "date": "2026-05-28",
-    "title": "Mag-VLA: Vision-Language-Action Model for Bimanual Magnetically Actuated Microrobot Manipulation"
-  },
-  {
-    "id": "2605.28231",
-    "date": "2026-05-28",
-    "title": "ProgVLA: Progress-Aware Robot Manipulation Skill Learning"
-  },
-  {
-    "id": "2605.28083",
-    "date": "2026-05-28",
-    "title": "VLA-Hijack: A Transferable Patch Attack against Vision-Language-Action Models via Visual Proprioception Hijacking"
-  },
-  {
-    "id": "2605.27947",
-    "date": "2026-05-28",
-    "title": "SANTS: A State-Adaptive Scheduler for World Action Models"
-  },
-  {
-    "id": "2605.27886",
-    "date": "2026-05-28",
-    "title": "Tabero: Learning Gentle Manipulation with Closed-Loop Force Feedback from Vision, Touch, and Language"
-  },
-  {
-    "id": "2605.27817",
-    "date": "2026-05-28",
-    "title": "Turning Video Models into Generalist Robot Policies"
-  },
-  {
-    "id": "2605.27759",
-    "date": "2026-05-28",
-    "title": "Colosseum V2: Benchmarking Generalization for Vision Language Action Models"
-  },
-  {
-    "id": "2605.27659",
-    "date": "2026-05-28",
-    "title": "Transferable Reinforcement Learning via Probabilistic Latent Embeddings and Dynamic Policy Adaptation for Sim-to-Real Deployment"
-  },
-  {
-    "id": "2605.27589",
-    "date": "2026-05-28",
-    "title": "What-If World: A Causal Benchmark for General World Models in Embodied Scenarios"
-  },
-  {
-    "id": "2605.27582",
-    "date": "2026-05-28",
-    "title": "Uni-LaViRA: Language-Vision-Robot Actions Translation for Unified Embodied Navigation"
-  },
-  {
-    "id": "2605.27491",
-    "date": "2026-05-28",
-    "title": "GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation"
-  },
-  {
-    "id": "2605.27461",
-    "date": "2026-05-28",
-    "title": "A Factory-Floor Deployment Case Study of VLA Pipelines for Industrial Packaging Task: Workflow, Failures, and Lessons"
-  },
-  {
-    "id": "2605.25624",
-    "date": "2026-05-28",
-    "title": "CUA-Gym: Scaling Verifiable Training Environments and Tasks for Computer-Use Agents"
-  },
-  {
-    "id": "2603.18815",
-    "date": "2026-05-28",
-    "title": "ProRL Agent: Rollout-as-a-Service for RL Training of Multi-Turn LLM Agents"
-  },
-  {
-    "id": "2603.09882",
-    "date": "2026-05-28",
-    "title": "Emerging Extrinsic Dexterity in Cluttered Scenes via Dynamics-aware Policy Learning"
-  },
-  {
-    "id": "2603.01766",
-    "date": "2026-05-28",
-    "title": "Neural Implicit Action Fields: From Discrete Waypoints to Continuous Functions for Vision-Language-Action Models"
-  },
-  {
-    "id": "2602.03668",
-    "date": "2026-05-28",
-    "title": "MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction"
-  },
-  {
-    "id": "2508.21046",
-    "date": "2026-05-28",
-    "title": "CogVLA: Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsification"
-  },
-  {
-    "id": "2506.07900",
-    "date": "2026-05-28",
-    "title": "MiniCPM4: Ultra-Efficient LLMs on End Devices"
-  },
-  {
-    "id": "2506.05012",
-    "date": "2026-05-28",
-    "title": "Realizing Robotic Swimming with Unified Fluid-Robot Multiphysics"
-  },
-  {
-    "id": "2408.15998",
-    "date": "2026-05-28",
-    "title": "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of   Encoders"
-  },
-  {
-    "id": "2605.27314",
-    "date": "2026-05-27",
-    "title": "Riding the Shifting Potential: When Reactive Control Suffices for Multi-Goal Behavior"
-  },
-  {
-    "id": "2605.27310",
-    "date": "2026-05-27",
-    "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning"
-  },
-  {
-    "id": "2605.27284",
-    "date": "2026-05-27",
-    "title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies"
-  },
-  {
-    "id": "2605.27102",
-    "date": "2026-05-27",
-    "title": "JLT: Clean-Latent Prediction in Latent Diffusion Transformers"
-  },
-  {
-    "id": "2605.27095",
-    "date": "2026-05-27",
-    "title": "Adversarial Dual On-Policy Distillation from Expressive Flow-based Teacher"
-  },
-  {
-    "id": "2605.27075",
-    "date": "2026-05-27",
-    "title": "SoftCap: Soft-Budget Control for Diffusion Transformer Acceleration"
-  },
-  {
-    "id": "2605.27003",
-    "date": "2026-05-27",
-    "title": "Timestep-Aware SVDQuant-GPTQ for W4A4 Quantization of Wan2.2-I2V"
-  },
-  {
-    "id": "2605.26820",
-    "date": "2026-05-27",
-    "title": "Can VLA Models Learn from Real-World Data Continually without Forgetting?"
-  },
-  {
-    "id": "2605.26649",
-    "date": "2026-05-27",
-    "title": "On the Generalization Capabilities, Design Choices and Limitations of Keypoint Imitation Learning"
-  },
-  {
-    "id": "2605.26638",
-    "date": "2026-05-27",
-    "title": "HyperSim: A Holistic Sim-To-Real Framework For Robust Robotic Manipulation"
-  },
-  {
-    "id": "2605.26478",
-    "date": "2026-05-27",
-    "title": "Efficient On-policy Visual-RL via Stochastic Decoupled Policy Gradient"
-  },
-  {
-    "id": "2605.26349",
-    "date": "2026-05-27",
-    "title": "Closing the Loop in Teleoperation: Episode-Level Data Quality Assessment and Feedback for High-Quality Robot Demonstration"
-  },
-  {
-    "id": "2605.26266",
-    "date": "2026-05-27",
-    "title": "Quantized Keys Steal Attention: Bias Correction for KV-Cache Compression in Video Diffusion"
-  },
-  {
-    "id": "2605.25979",
-    "date": "2026-05-27",
-    "title": "LLaVA-OneVision-2: Towards Next-Generation Perceptual Intelligence"
-  },
-  {
-    "id": "2605.25802",
-    "date": "2026-05-27",
-    "title": "Rethinking VLM Representation for VLA Initialization"
-  },
-  {
-    "id": "2605.18137",
-    "date": "2026-05-27",
-    "title": "Xiaomi Auto World Model: A Joint World Model Integrating Reconstruction and Generation for Autonomous Driving"
-  },
-  {
-    "id": "2605.15477",
-    "date": "2026-05-27",
-    "title": "EgoExo-WM: Unlocking Exo Video for Ego World Models"
-  },
-  {
-    "id": "2605.00412",
-    "date": "2026-05-27",
-    "title": "Physically Native World Models: A Hamiltonian Perspective on Generative World Modeling"
-  },
-  {
-    "id": "2603.28730",
-    "date": "2026-05-27",
-    "title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning"
-  },
-  {
-    "id": "2603.25415",
-    "date": "2026-05-27",
-    "title": "Modernising Reinforcement Learning-Based Navigation for Embodied Semantic Scene Graph Generation"
-  },
-  {
-    "id": "2602.10104",
-    "date": "2026-05-27",
-    "title": "Olaf-World: Orienting Latent Actions for Video World Modeling"
-  },
-  {
-    "id": "2602.09878",
-    "date": "2026-05-27",
-    "title": "MVISTA-4D: View-Consistent 4D World Model with Test-Time Action Inference for Robotic Manipulation"
-  },
-  {
-    "id": "2009.11997",
-    "date": "2026-05-27",
-    "title": "Continual Model-Based Reinforcement Learning with Hypernetworks"
-  },
-  {
-    "id": "2605.25874",
-    "date": "2026-05-26",
-    "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation"
-  },
-  {
-    "id": "2605.25477",
-    "date": "2026-05-26",
-    "title": "EXPO-FT: Sample-Efficient Reinforcement Learning Finetuning for Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.25077",
-    "date": "2026-05-26",
-    "title": "WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models"
-  },
-  {
-    "id": "2605.25044",
-    "date": "2026-05-26",
-    "title": "X-DiffVLA: X-Embodied Diffusion Action Heads for Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.24934",
-    "date": "2026-05-26",
-    "title": "HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos"
-  },
-  {
-    "id": "2605.24892",
-    "date": "2026-05-26",
-    "title": "X-Foresight: A Joint Vision-Action Causal Forecasting Network via Predictive World Modeling"
-  },
-  {
-    "id": "2605.24890",
-    "date": "2026-05-26",
-    "title": "QuoVLA: Quotient Space for Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.24761",
-    "date": "2026-05-26",
-    "title": "Drift-Resistant Navigation World Model with Anchored Epipolar Guidance"
-  },
-  {
-    "id": "2605.24630",
-    "date": "2026-05-26",
-    "title": "DexSIM: Real-time Dexterous Simulation with Unified Causal Video Diffusion"
-  },
-  {
-    "id": "2605.24203",
-    "date": "2026-05-26",
-    "title": "Afford-VLA: Action-Aligned Visual Planning via Internalized Affordance"
-  },
-  {
-    "id": "2605.23993",
-    "date": "2026-05-26",
-    "title": "Nano World Models: A Minimalist Implementation of Future Video Prediction"
-  },
-  {
-    "id": "2605.23987",
-    "date": "2026-05-26",
-    "title": "Beyond Predefined Learning Objects: A Thinking-Learning Interaction Model for Up-to-Date Autonomous Robot Learning"
-  },
-  {
-    "id": "2605.02900",
-    "date": "2026-05-26",
-    "title": "Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses"
-  },
-  {
-    "id": "2605.02037",
-    "date": "2026-05-26",
-    "title": "VILAS: A VLA-Integrated Low-cost Architecture with Soft Grasping for Robotic Manipulation"
-  },
-  {
-    "id": "2602.06508",
-    "date": "2026-05-26",
-    "title": "World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy"
-  },
-  {
-    "id": "2602.03983",
-    "date": "2026-05-26",
-    "title": "Efficient Long-Horizon Vision-Language-Action Models via Static-Dynamic Disentanglement"
-  },
-  {
-    "id": "2512.04733",
-    "date": "2026-05-26",
-    "title": "E3AD: An Emotion-Aware Vision-Language-Action Model for Human-Centric End-to-End Autonomous Driving"
-  },
-  {
-    "id": "2511.16449",
-    "date": "2026-05-26",
-    "title": "Bridging the Semantic-Action Gap in Visual Token Pruning for Efficient VLA Inference"
-  },
-  {
-    "id": "2510.23509",
-    "date": "2026-05-26",
-    "title": "Logic-Guided Socially-aware Robot Navigation World Model"
-  },
-  {
-    "id": "2510.20390",
-    "date": "2026-05-26",
-    "title": "NeuralTouch: Neural Descriptors for Precise Sim-to-Real Tactile Robot Control"
-  },
-  {
-    "id": "2510.03827",
-    "date": "2026-05-26",
-    "title": "LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization"
-  },
-  {
-    "id": "2509.05614",
-    "date": "2026-05-26",
-    "title": "SpecPrune-VLA: Accelerating Vision-Language-Action Models via Action-Aware Self-Speculative Pruning"
-  },
-  {
-    "id": "2605.23856",
-    "date": "2026-05-25",
-    "title": "Point Tracking Improves World Action Models"
-  },
-  {
-    "id": "2605.23568",
-    "date": "2026-05-25",
-    "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation"
-  },
-  {
-    "id": "2605.23523",
-    "date": "2026-05-25",
-    "title": "ComPose: When to Trust Hands for Object Pose Tracking"
-  },
-  {
-    "id": "2605.23477",
-    "date": "2026-05-25",
-    "title": "Semantically Structured Mixture-of-Experts for Compositional Robotic Manipulation"
-  },
-  {
-    "id": "2605.23345",
-    "date": "2026-05-25",
-    "title": "SCOPE: Simulating Cross-game Operations in Playable Environments for FPS World Models"
-  },
-  {
-    "id": "2605.23341",
-    "date": "2026-05-25",
-    "title": "Sparse Compositional Flow Matching by geometric assembly from motion primitives"
-  },
-  {
-    "id": "2605.23270",
-    "date": "2026-05-25",
-    "title": "ChainFlow-VLA: Causal Flow Planning with Vision-Language Models"
-  },
-  {
-    "id": "2605.23128",
-    "date": "2026-05-25",
-    "title": "$\\pi_0$-EqM: Equilibrium Matching for Closed-Loop Vision-Language-Action Control"
-  },
-  {
-    "id": "2605.23089",
-    "date": "2026-05-25",
-    "title": "Dreaming Smoothly and Sample Efficiently with Gradient Penalized Latent Dynamics"
-  },
-  {
-    "id": "2605.22896",
-    "date": "2026-05-25",
-    "title": "Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.22894",
-    "date": "2026-05-25",
-    "title": "SCRIPT: Scalable Diffusion Policy with Multi-stage Training for Language-driven Physics-Based Humanoid Control"
-  },
-  {
-    "id": "2605.22882",
-    "date": "2026-05-25",
-    "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation"
-  },
-  {
-    "id": "2605.19282",
-    "date": "2026-05-25",
-    "title": "Rethinking Muon Beyond Pretraining: Spectral Failures and High-Pass Remedies for VLA and RLVR"
-  },
-  {
-    "id": "2605.11596",
-    "date": "2026-05-25",
-    "title": "HorizonDrive: Self-Corrective Autoregressive World Model for Long-horizon Driving Simulation"
-  },
-  {
-    "id": "2605.04568",
-    "date": "2026-05-25",
-    "title": "Dream-MPC: Gradient-Based Model Predictive Control with Latent Imagination"
-  },
-  {
-    "id": "2601.00969",
-    "date": "2026-05-25",
-    "title": "V-VLAPS: Value-Guided Planning for Vision-Language-Action Models"
-  },
-  {
-    "id": "2511.05963",
-    "date": "2026-05-25",
-    "title": "Next-Latent Prediction Transformers Learn Compact World Models"
-  },
-  {
-    "id": "2511.02239",
-    "date": "2026-05-25",
-    "title": "LACY: A Vision-Language Model-based Language-Action Cycle for Self-Improving Robotic Manipulation"
-  },
-  {
-    "id": "2510.07869",
-    "date": "2026-05-25",
-    "title": "USIM and U0: A Vision-Language-Action Dataset and Model for General Underwater Robots"
-  },
-  {
-    "id": "2506.14135",
-    "date": "2026-05-25",
-    "title": "GAF: Gaussian Action Field as a 4D Representation for Dynamic World Modeling in Robotic Manipulation"
-  },
-  {
-    "id": "2605.22816",
-    "date": "2026-05-24",
-    "title": "AwareVLN: Reasoning with Self-awareness for Vision-Language Navigation"
-  },
-  {
-    "id": "2605.22748",
-    "date": "2026-05-24",
-    "title": "Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning"
-  },
-  {
-    "id": "2605.22693",
-    "date": "2026-05-24",
-    "title": "Scout-Assisted Planning for Heterogeneous Robot Teams under Partially Known Environments"
-  },
-  {
-    "id": "2605.22123",
-    "date": "2026-05-24",
-    "title": "Beyond Pixels: Learning Invariant Rewards for Real-World Robotics From a Few Demonstrations"
-  },
-  {
-    "id": "2605.21935",
-    "date": "2026-05-24",
-    "title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments"
-  },
-  {
-    "id": "2605.21901",
-    "date": "2026-05-24",
-    "title": "Higher Order Reasoning for Collaborative Communicationless Mobile Robot Operations"
-  },
-  {
-    "id": "2605.21811",
-    "date": "2026-05-24",
-    "title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation"
-  },
-  {
-    "id": "2605.21710",
-    "date": "2026-05-24",
-    "title": "PGDG: Physically Grounded Data Generation for Robust Bimanual Policy Learning from a Single Demonstration"
-  },
-  {
-    "id": "2605.21680",
-    "date": "2026-05-24",
-    "title": "Flying Together: Human-Guided Immersive Shared Control for Aerial Robot Teams in Unknown Environments"
-  },
-  {
-    "id": "2605.21429",
-    "date": "2026-05-24",
-    "title": "roto 2.0: The Robot Tactile Olympiad"
-  },
-  {
-    "id": "2605.21330",
-    "date": "2026-05-24",
-    "title": "Learning Robust Dexterous In-Hand Manipulation from Joint Sensors with Proprioceptive Transformer"
-  },
-  {
-    "id": "2605.21258",
-    "date": "2026-05-24",
-    "title": "Learning Structural Latent Points for Efficient Visual Representations in Robotic Manipulation"
-  },
-  {
-    "id": "2605.21257",
-    "date": "2026-05-24",
-    "title": "Reinforcement Learning for Risk Adaptation via Differentiable CVaR Barrier Functions"
-  },
-  {
-    "id": "2605.21188",
-    "date": "2026-05-24",
-    "title": "A Terrain-Adaptive epsilon-Constraint MPC for Uneven Terrain Kinodynamic Planning"
-  },
-  {
-    "id": "2605.21133",
-    "date": "2026-05-24",
-    "title": "Humanoid Whole-Body Manipulation via Active Spatial Brain and Generalizable Action Cerebellum"
-  },
-  {
-    "id": "2605.22812",
-    "date": "2026-05-23",
-    "title": "GesVLA: Gesture-Aware Vision-Language-Action Model Embedded Representations"
-  },
-  {
-    "id": "2605.22791",
-    "date": "2026-05-23",
-    "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
-  },
-  {
-    "id": "2605.22671",
-    "date": "2026-05-23",
-    "title": "From Abstraction to Instantiation: Learning Behavioral Representation for Vision-Language-Action Model"
-  },
-  {
-    "id": "2605.22668",
-    "date": "2026-05-23",
-    "title": "SEGA: Spectral-Energy Guided Attention for Resolution Extrapolation in Diffusion Transformers"
-  },
-  {
-    "id": "2605.22597",
-    "date": "2026-05-23",
-    "title": "MoSA: Motion-constrained Stress Adaptation for Mitigating Real-to-Sim Gap in Continuum Dynamics via Learning Residual Anisotropy"
-  },
-  {
-    "id": "2605.22446",
-    "date": "2026-05-23",
-    "title": "Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts"
-  },
-  {
-    "id": "2605.22344",
-    "date": "2026-05-23",
-    "title": "Bernini: Latent Semantic Planning for Video Diffusion"
-  },
-  {
-    "id": "2605.22283",
-    "date": "2026-05-23",
-    "title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action"
-  },
-  {
-    "id": "2605.22183",
-    "date": "2026-05-23",
-    "title": "Action with Visual Primitives"
-  },
-  {
-    "id": "2605.22164",
-    "date": "2026-05-23",
-    "title": "Beyond Euclidean Proximity: Repairing Latent World Models with Horizon-Matched Trajectory Reachability Metrics"
-  },
-  {
-    "id": "2605.22138",
-    "date": "2026-05-23",
-    "title": "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning"
-  },
-  {
-    "id": "2605.21976",
-    "date": "2026-05-23",
-    "title": "TacO: Benchmarking Tactile Sensors for Object Manipulation"
-  },
-  {
-    "id": "2605.21862",
-    "date": "2026-05-23",
-    "title": "EvoScene-VLA: Evolving Scene Beliefs Inside the Action Decoder for Chunked Robot Control"
-  },
-  {
-    "id": "2605.21800",
-    "date": "2026-05-23",
-    "title": "stable-worldmodel: A Platform for Reproducible World Modeling Research and Evaluation"
-  },
-  {
-    "id": "2605.21688",
-    "date": "2026-05-23",
-    "title": "Closed-Loop Sim-to-Real Reinforcement Learning for Deformable Microfiber Shape Control"
-  },
-  {
-    "id": "2605.21572",
-    "date": "2026-05-23",
-    "title": "PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects"
-  },
-  {
-    "id": "2605.21487",
-    "date": "2026-05-23",
-    "title": "Uni-Edit: Intelligent Editing Is A General Task For Unified Model Tuning"
-  },
-  {
-    "id": "2605.21446",
-    "date": "2026-05-23",
-    "title": "Lost in Fog: Sensor Perturbations Expose Reasoning Fragility in Driving VLAs"
-  },
-  {
-    "id": "2605.21414",
-    "date": "2026-05-23",
-    "title": "PointACT: Vision-Language-Action Models with Multi-Scale Point-Action Interaction"
-  },
-  {
-    "id": "2605.21061",
-    "date": "2026-05-23",
-    "title": "Grounding Driving VLA via Inverse Kinematics"
-  },
-  {
-    "id": "2605.20894",
-    "date": "2026-05-23",
-    "title": "Mobile UMI: Cross-View Diffusion Policy with Decoupled Kinematics for Mobile Manipulation"
-  },
-  {
-    "id": "2605.20811",
-    "date": "2026-05-23",
-    "title": "Demo-JEPA: Joint-Embedding Predictive Architecture for One-shot Cross-Embodiment Imitation"
-  },
-  {
-    "id": "2605.20774",
-    "date": "2026-05-23",
-    "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.20752",
-    "date": "2026-05-23",
-    "title": "GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation"
-  },
-  {
-    "id": "2605.18747",
-    "date": "2026-05-23",
-    "title": "Code as Agent Harness"
-  },
-  {
-    "id": "2510.22200",
-    "date": "2026-05-23",
-    "title": "LongCat-Video Technical Report"
-  },
-  {
-    "id": "2605.19678",
-    "date": "2026-05-20",
-    "title": "RoVLA: Multi-Consistency Constraints for Robust Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.19600",
-    "date": "2026-05-20",
-    "title": "FlyMirage: A Fully Automated Generation Pipeline for Diverse and Scalable UAV Flight Data via Generative World Model"
-  },
-  {
-    "id": "2605.19580",
-    "date": "2026-05-20",
-    "title": "PAPO-VLA: Planning-Aware Policy Optimization for Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.19319",
-    "date": "2026-05-20",
-    "title": "SWEET: Sparse World Modeling with Image Editing for Embodied Task Execution"
-  },
-  {
-    "id": "2605.19294",
-    "date": "2026-05-20",
-    "title": "DEFLECT: Delay-Robust Execution via Flow-matching Likelihood-Estimated Counterfactual Tuning for VLA Policies"
-  },
-  {
-    "id": "2605.19293",
-    "date": "2026-05-20",
-    "title": "Domain-Adaptive Communication-Rate Optimization for Sim-to-Real Humanoid-Robot Wireless XR Teleoperation"
-  },
-  {
-    "id": "2605.19242",
-    "date": "2026-05-20",
-    "title": "PhyWorld: Physics-Faithful World Model for Video Generation"
-  },
-  {
-    "id": "2605.18813",
-    "date": "2026-05-20",
-    "title": "Composition of Memory Experts for Diffusion World Models"
-  },
-  {
-    "id": "2605.18803",
-    "date": "2026-05-20",
-    "title": "PROWL: Prioritized Regret-Driven Optimization for World Model Learning"
-  },
-  {
-    "id": "2605.08879",
-    "date": "2026-05-20",
-    "title": "Preserving Foundational Capabilities in Flow-Matching VLAs through Conservative SFT"
-  },
-  {
-    "id": "2510.00600",
-    "date": "2026-05-20",
-    "title": "Hybrid Training for Vision-Language-Action Models"
+    "id": "2504.12626",
+    "date": "2026-05-18",
+    "title": "Packing Input Frame Context in Next-Frame Prediction Models for Video\n  Generation"
   },
   {
     "id": "2605.18748",
@@ -1450,474 +590,1184 @@
     "title": "DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving"
   },
   {
-    "id": "2605.16257",
-    "date": "2026-05-18",
-    "title": "DexJoCo: A Benchmark and Toolkit for Task-Oriented Dexterous Manipulation on MuJoCo"
+    "id": "2605.19678",
+    "date": "2026-05-20",
+    "title": "RoVLA: Multi-Consistency Constraints for Robust Vision-Language-Action Models"
   },
   {
-    "id": "2605.15980",
-    "date": "2026-05-18",
-    "title": "Flash-GRPO: Efficient Alignment for Video Diffusion via One-Step Policy Optimization"
+    "id": "2605.19600",
+    "date": "2026-05-20",
+    "title": "FlyMirage: A Fully Automated Generation Pipeline for Diverse and Scalable UAV Flight Data via Generative World Model"
   },
   {
-    "id": "2605.15843",
-    "date": "2026-05-18",
-    "title": "WorldAct: Activating Monolithic 3D Worlds into Interactive-Ready Object-Centric Scenes"
+    "id": "2605.19580",
+    "date": "2026-05-20",
+    "title": "PAPO-VLA: Planning-Aware Policy Optimization for Vision-Language-Action Models"
   },
   {
-    "id": "2605.15298",
-    "date": "2026-05-18",
-    "title": "PhysBrain 1.0 Technical Report"
+    "id": "2605.19319",
+    "date": "2026-05-20",
+    "title": "SWEET: Sparse World Modeling with Image Editing for Embodied Task Execution"
   },
   {
-    "id": "2605.15256",
-    "date": "2026-05-18",
-    "title": "ReactiveGWM: Steering NPC in Reactive Game World Models"
+    "id": "2605.19294",
+    "date": "2026-05-20",
+    "title": "DEFLECT: Delay-Robust Execution via Flow-matching Likelihood-Estimated Counterfactual Tuning for VLA Policies"
   },
   {
-    "id": "2605.13740",
-    "date": "2026-05-18",
-    "title": "Learning POMDP World Models from Observations with Language-Model Priors"
+    "id": "2605.19293",
+    "date": "2026-05-20",
+    "title": "Domain-Adaptive Communication-Rate Optimization for Sim-to-Real Humanoid-Robot Wireless XR Teleoperation"
   },
   {
-    "id": "2504.12626",
-    "date": "2026-05-18",
-    "title": "Packing Input Frame Context in Next-Frame Prediction Models for Video\n  Generation"
+    "id": "2605.19242",
+    "date": "2026-05-20",
+    "title": "PhyWorld: Physics-Faithful World Model for Video Generation"
   },
   {
-    "id": "2605.15155",
-    "date": "2026-05-17",
-    "title": "Self-Distilled Agentic Reinforcement Learning"
+    "id": "2605.18813",
+    "date": "2026-05-20",
+    "title": "Composition of Memory Experts for Diffusion World Models"
   },
   {
-    "id": "2605.15190",
-    "date": "2026-05-15",
-    "title": "RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO"
+    "id": "2605.18803",
+    "date": "2026-05-20",
+    "title": "PROWL: Prioritized Regret-Driven Optimization for World Model Learning"
   },
   {
-    "id": "2605.15185",
-    "date": "2026-05-15",
-    "title": "Quantitative Video World Model Evaluation for Geometric-Consistency"
+    "id": "2605.08879",
+    "date": "2026-05-20",
+    "title": "Preserving Foundational Capabilities in Flow-Matching VLAs through Conservative SFT"
   },
   {
-    "id": "2605.15178",
-    "date": "2026-05-15",
-    "title": "SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer"
+    "id": "2510.00600",
+    "date": "2026-05-20",
+    "title": "Hybrid Training for Vision-Language-Action Models"
   },
   {
-    "id": "2605.14876",
-    "date": "2026-05-15",
-    "title": "Unlocking Complex Visual Generation via Closed-Loop Verified Reasoning"
+    "id": "2605.22812",
+    "date": "2026-05-23",
+    "title": "GesVLA: Gesture-Aware Vision-Language-Action Model Embedded Representations"
   },
   {
-    "id": "2605.14712",
-    "date": "2026-05-15",
-    "title": "IntentVLA: Short-Horizon Intent Modeling for Aliased Robot Manipulation"
+    "id": "2605.22791",
+    "date": "2026-05-23",
+    "title": "Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention"
   },
   {
-    "id": "2605.13169",
-    "date": "2026-05-15",
-    "title": "PanoWorld: Towards Spatial Supersensing in 360^circ Panorama World"
+    "id": "2605.22671",
+    "date": "2026-05-23",
+    "title": "From Abstraction to Instantiation: Learning Behavioral Representation for Vision-Language-Action Model"
   },
   {
-    "id": "2605.11459",
-    "date": "2026-05-15",
-    "title": "Overcoming Dynamics-Blindness: Training-Free Pace-and-Path Correction for VLA Models"
+    "id": "2605.22668",
+    "date": "2026-05-23",
+    "title": "SEGA: Spectral-Energy Guided Attention for Resolution Extrapolation in Diffusion Transformers"
   },
   {
-    "id": "2605.09681",
-    "date": "2026-05-15",
-    "title": "Forcing-KV: Hybrid KV Cache Compression for Efficient Autoregressive Video Diffusion Models"
+    "id": "2605.22597",
+    "date": "2026-05-23",
+    "title": "MoSA: Motion-constrained Stress Adaptation for Mitigating Real-to-Sim Gap in Continuum Dynamics via Learning Residual Anisotropy"
   },
   {
-    "id": "2605.07637",
-    "date": "2026-05-15",
-    "title": "Learning to Communicate Locally for Large-Scale Multi-Agent Pathfinding"
+    "id": "2605.22446",
+    "date": "2026-05-23",
+    "title": "Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts"
   },
   {
-    "id": "2605.13775",
-    "date": "2026-05-14",
-    "title": "RoboEvolve: Co-Evolving Planner-Simulator for Robotic Manipulation with Limited Data"
+    "id": "2605.22344",
+    "date": "2026-05-23",
+    "title": "Bernini: Latent Semantic Planning for Video Diffusion"
   },
   {
-    "id": "2605.13757",
-    "date": "2026-05-14",
-    "title": "FrameSkip: Learning from Fewer but More Informative Frames in VLA Training"
+    "id": "2605.22283",
+    "date": "2026-05-23",
+    "title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action"
   },
   {
-    "id": "2605.13724",
-    "date": "2026-05-14",
-    "title": "AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation"
+    "id": "2605.22183",
+    "date": "2026-05-23",
+    "title": "Action with Visual Primitives"
   },
   {
-    "id": "2605.12587",
-    "date": "2026-05-14",
-    "title": "TrackCraft3R: Repurposing Video Diffusion Transformers for Dense 3D Tracking"
+    "id": "2605.22164",
+    "date": "2026-05-23",
+    "title": "Beyond Euclidean Proximity: Repairing Latent World Models with Horizon-Matched Trajectory Reachability Metrics"
   },
   {
-    "id": "2605.12500",
-    "date": "2026-05-14",
-    "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture"
+    "id": "2605.22138",
+    "date": "2026-05-23",
+    "title": "Efficient Agentic Reasoning Through Self-Regulated Simulative Planning"
   },
   {
-    "id": "2605.12495",
-    "date": "2026-05-14",
-    "title": "AlphaGRPO: Unlocking Self-Reflective Multimodal Generation in UMMs via Decompositional Verifiable Reward"
+    "id": "2605.21976",
+    "date": "2026-05-23",
+    "title": "TacO: Benchmarking Tactile Sensors for Object Manipulation"
   },
   {
-    "id": "2605.12090",
-    "date": "2026-05-14",
-    "title": "World Action Models: The Next Frontier in Embodied AI"
+    "id": "2605.21862",
+    "date": "2026-05-23",
+    "title": "EvoScene-VLA: Evolving Scene Beliefs Inside the Action Decoder for Chunked Robot Control"
   },
   {
-    "id": "2605.11550",
-    "date": "2026-05-14",
-    "title": "The DAWN of World-Action Interactive Models"
+    "id": "2605.21800",
+    "date": "2026-05-23",
+    "title": "stable-worldmodel: A Platform for Reproducible World Modeling Research and Evaluation"
   },
   {
-    "id": "2605.10921",
-    "date": "2026-05-14",
-    "title": "RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark"
+    "id": "2605.21688",
+    "date": "2026-05-23",
+    "title": "Closed-Loop Sim-to-Real Reinforcement Learning for Deformable Microfiber Shape Control"
   },
   {
-    "id": "2605.10903",
-    "date": "2026-05-14",
-    "title": "CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models"
+    "id": "2605.21572",
+    "date": "2026-05-23",
+    "title": "PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects"
   },
   {
-    "id": "2605.10832",
-    "date": "2026-05-14",
-    "title": "Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents"
+    "id": "2605.21487",
+    "date": "2026-05-23",
+    "title": "Uni-Edit: Intelligent Editing Is A General Task For Unified Model Tuning"
   },
   {
-    "id": "2605.10813",
-    "date": "2026-05-14",
-    "title": "NanoResearch: Co-Evolving Skills, Memory, and Policy for Personalized Research Automation"
+    "id": "2605.21446",
+    "date": "2026-05-23",
+    "title": "Lost in Fog: Sensor Perturbations Expose Reasoning Fragility in Driving VLAs"
   },
   {
-    "id": "2605.02881",
-    "date": "2026-05-14",
-    "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment"
+    "id": "2605.21414",
+    "date": "2026-05-23",
+    "title": "PointACT: Vision-Language-Action Models with Multi-Scale Point-Action Interaction"
   },
   {
-    "id": "2605.00080",
-    "date": "2026-05-14",
-    "title": "World Model for Robot Learning: A Comprehensive Survey"
+    "id": "2605.21061",
+    "date": "2026-05-23",
+    "title": "Grounding Driving VLA via Inverse Kinematics"
   },
   {
-    "id": "2604.18486",
-    "date": "2026-05-14",
-    "title": "OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation"
+    "id": "2605.20894",
+    "date": "2026-05-23",
+    "title": "Mobile UMI: Cross-View Diffusion Policy with Decoupled Kinematics for Mobile Manipulation"
   },
   {
-    "id": "2509.18154",
-    "date": "2026-05-14",
-    "title": "MiniCPM-V 4.5: Cooking Efficient MLLMs via Architecture, Data, and\n  Training Recipe"
+    "id": "2605.20811",
+    "date": "2026-05-23",
+    "title": "Demo-JEPA: Joint-Embedding Predictive Architecture for One-shot Cross-Embodiment Imitation"
   },
   {
-    "id": "2605.07943",
-    "date": "2026-05-12",
-    "title": "TAVIS: A Benchmark for Egocentric Active Vision and Anticipatory Gaze in Imitation Learning"
+    "id": "2605.20774",
+    "date": "2026-05-23",
+    "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models"
   },
   {
-    "id": "2605.07931",
-    "date": "2026-05-12",
-    "title": "One Token Per Frame: Reconsidering Visual Bandwidth in World Models for VLA Policy"
+    "id": "2605.20752",
+    "date": "2026-05-23",
+    "title": "GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation"
   },
   {
-    "id": "2605.07800",
-    "date": "2026-05-12",
-    "title": "SARA: Semantically Adaptive Relational Alignment for Video Diffusion Models"
+    "id": "2605.18747",
+    "date": "2026-05-23",
+    "title": "Code as Agent Harness"
   },
   {
-    "id": "2605.07687",
-    "date": "2026-05-12",
-    "title": "PhySPRING: Structure-Preserving Reduction of Physics-Informed Twins via GNN"
+    "id": "2510.22200",
+    "date": "2026-05-23",
+    "title": "LongCat-Video Technical Report"
   },
   {
-    "id": "2605.07503",
-    "date": "2026-05-12",
-    "title": "Diffusion-APO: Trajectory-Aware Direct Preference Alignment for Video Diffusion Transformers"
+    "id": "2605.22816",
+    "date": "2026-05-24",
+    "title": "AwareVLN: Reasoning with Self-awareness for Vision-Language Navigation"
   },
   {
-    "id": "2605.07496",
-    "date": "2026-05-12",
-    "title": "PathPainter: Transferring the Generalization Ability of Image Generation Models to Embodied Navigation"
+    "id": "2605.22748",
+    "date": "2026-05-24",
+    "title": "Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning"
   },
   {
-    "id": "2605.07474",
-    "date": "2026-05-12",
-    "title": "ForgeVLA: Federated Vision-Language-Action Learning without Language Annotations"
+    "id": "2605.22693",
+    "date": "2026-05-24",
+    "title": "Scout-Assisted Planning for Heterogeneous Robot Teams under Partially Known Environments"
   },
   {
-    "id": "2605.07390",
-    "date": "2026-05-12",
-    "title": "ST-Gen4D: Embedding 4D Spatiotemporal Cognition into World Model for 4D Generation"
+    "id": "2605.22123",
+    "date": "2026-05-24",
+    "title": "Beyond Pixels: Learning Invariant Rewards for Real-World Robotics From a Few Demonstrations"
   },
   {
-    "id": "2605.07381",
-    "date": "2026-05-12",
-    "title": "Escaping the Diversity Trap in Robotic Manipulation via Anchor-Centric Adaptation"
+    "id": "2605.21935",
+    "date": "2026-05-24",
+    "title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments"
   },
   {
-    "id": "2605.07326",
-    "date": "2026-05-12",
-    "title": "GEM: Generating LiDAR World Model via Deformable Mamba"
+    "id": "2605.21901",
+    "date": "2026-05-24",
+    "title": "Higher Order Reasoning for Collaborative Communicationless Mobile Robot Operations"
   },
   {
-    "id": "2605.07325",
-    "date": "2026-05-12",
-    "title": "CSR: Infinite-Horizon Real-Time Policies with Massive Cached State Representations"
+    "id": "2605.21811",
+    "date": "2026-05-24",
+    "title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation"
   },
   {
-    "id": "2605.07308",
-    "date": "2026-05-12",
-    "title": "AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models"
+    "id": "2605.21710",
+    "date": "2026-05-24",
+    "title": "PGDG: Physically Grounded Data Generation for Robust Bimanual Policy Learning from a Single Demonstration"
   },
   {
-    "id": "2605.07306",
-    "date": "2026-05-12",
-    "title": "BioProVLA-Agent: An Affordable, Protocol-Driven, Vision-Enhanced VLA-Enabled Embodied Multi-Agent System with Closed-Loop-Capable Reasoning for Biological Laboratory Manipulation"
+    "id": "2605.21680",
+    "date": "2026-05-24",
+    "title": "Flying Together: Human-Guided Immersive Shared Control for Aerial Robot Teams in Unknown Environments"
   },
   {
-    "id": "2605.07288",
-    "date": "2026-05-12",
-    "title": "Sword: Style-Robust World Models as Simulators via Dynamic Latent Bootstrapping for VLA Policy Post-Training"
+    "id": "2605.21429",
+    "date": "2026-05-24",
+    "title": "roto 2.0: The Robot Tactile Olympiad"
   },
   {
-    "id": "2605.07278",
-    "date": "2026-05-12",
-    "title": "Predictive but Not Plannable: RC-aux for Latent World Models"
+    "id": "2605.21330",
+    "date": "2026-05-24",
+    "title": "Learning Robust Dexterous In-Hand Manipulation from Joint Sensors with Proprioceptive Transformer"
   },
   {
-    "id": "2605.07215",
-    "date": "2026-05-12",
-    "title": "PISTO: Proximal Inference for Stochastic Trajectory Optimization"
+    "id": "2605.21258",
+    "date": "2026-05-24",
+    "title": "Learning Structural Latent Points for Efficient Visual Representations in Robotic Manipulation"
   },
   {
-    "id": "2605.07199",
-    "date": "2026-05-12",
-    "title": "Three-in-One World Model: Energy-Based Consistency, Prediction, and Counterfactual Inference for Marketing Intervention"
+    "id": "2605.21257",
+    "date": "2026-05-24",
+    "title": "Reinforcement Learning for Risk Adaptation via Differentiable CVaR Barrier Functions"
   },
   {
-    "id": "2605.07195",
-    "date": "2026-05-12",
-    "title": "See Tomorrow, Act Today: Foresight-Driven Autonomous Driving"
+    "id": "2605.21188",
+    "date": "2026-05-24",
+    "title": "A Terrain-Adaptive epsilon-Constraint MPC for Uneven Terrain Kinodynamic Planning"
   },
   {
-    "id": "2605.07177",
-    "date": "2026-05-12",
-    "title": "HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents"
+    "id": "2605.21133",
+    "date": "2026-05-24",
+    "title": "Humanoid Whole-Body Manipulation via Active Spatial Brain and Generalizable Action Cerebellum"
   },
   {
-    "id": "2605.07079",
-    "date": "2026-05-12",
-    "title": "Learning Visual Feature-Based World Models via Residual Latent Action"
+    "id": "2605.23856",
+    "date": "2026-05-25",
+    "title": "Point Tracking Improves World Action Models"
   },
   {
-    "id": "2605.06892",
-    "date": "2026-05-12",
-    "title": "Not All Tokens Need 40 Steps: Heterogeneous Step Allocation in Diffusion Transformers for Efficient Video Generation"
+    "id": "2605.23568",
+    "date": "2026-05-25",
+    "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation"
   },
   {
-    "id": "2605.06863",
-    "date": "2026-05-12",
-    "title": "Bi3: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation"
+    "id": "2605.23523",
+    "date": "2026-05-25",
+    "title": "ComPose: When to Trust Hands for Object Pose Tracking"
   },
   {
-    "id": "2605.06841",
-    "date": "2026-05-12",
-    "title": "AGWM: Affordance-Grounded World Models for Environments with Compositional Prerequisites"
+    "id": "2605.23477",
+    "date": "2026-05-25",
+    "title": "Semantically Structured Mixture-of-Experts for Compositional Robotic Manipulation"
   },
   {
-    "id": "2605.06759",
-    "date": "2026-05-12",
-    "title": "An Aerial Manipulator for Perception-Driven Flower Targeting Toward Contactless Pollination in Vertical Farming"
+    "id": "2605.23345",
+    "date": "2026-05-25",
+    "title": "SCOPE: Simulating Cross-game Operations in Playable Environments for FPS World Models"
   },
   {
-    "id": "2605.06747",
-    "date": "2026-05-12",
-    "title": "HumanNet: Scaling Human-centric Video Learning to One Million Hours"
+    "id": "2605.23341",
+    "date": "2026-05-25",
+    "title": "Sparse Compositional Flow Matching by geometric assembly from motion primitives"
   },
   {
-    "id": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
-    "date": "2026-05-10",
-    "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models"
+    "id": "2605.23270",
+    "date": "2026-05-25",
+    "title": "ChainFlow-VLA: Causal Flow Planning with Vision-Language Models"
   },
   {
-    "id": "Splatting Physical Scenes: End-to-End Real-to-Sim from Imperfect Robot Data",
-    "date": "2026-05-10",
-    "title": "Splatting Physical Scenes: End-to-End Real-to-Sim from Imperfect Robot Data"
+    "id": "2605.23128",
+    "date": "2026-05-25",
+    "title": "$\\pi_0$-EqM: Equilibrium Matching for Closed-Loop Vision-Language-Action Control"
   },
   {
-    "id": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
-    "date": "2026-05-10",
-    "title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies"
+    "id": "2605.23089",
+    "date": "2026-05-25",
+    "title": "Dreaming Smoothly and Sample Efficiently with Gradient Penalized Latent Dynamics"
   },
   {
-    "id": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting",
-    "date": "2026-05-10",
-    "title": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting"
+    "id": "2605.22896",
+    "date": "2026-05-25",
+    "title": "Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models"
   },
   {
-    "id": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks",
-    "date": "2026-05-10",
-    "title": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks"
+    "id": "2605.22894",
+    "date": "2026-05-25",
+    "title": "SCRIPT: Scalable Diffusion Policy with Multi-stage Training for Language-driven Physics-Based Humanoid Control"
   },
   {
-    "id": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
-    "date": "2026-05-10",
-    "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos"
+    "id": "2605.22882",
+    "date": "2026-05-25",
+    "title": "GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation"
   },
   {
-    "id": "When to Trust Imagination: Adaptive Action Executi",
-    "date": "2026-05-09",
-    "title": "When to Trust Imagination: Adaptive Action Execution for World Action Models"
+    "id": "2605.19282",
+    "date": "2026-05-25",
+    "title": "Rethinking Muon Beyond Pretraining: Spectral Failures and High-Pass Remedies for VLA and RLVR"
   },
   {
-    "id": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning ",
-    "date": "2026-05-09",
-    "title": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning in VLA with Generalized and Specialized Experts"
+    "id": "2605.11596",
+    "date": "2026-05-25",
+    "title": "HorizonDrive: Self-Corrective Autoregressive World Model for Long-horizon Driving Simulation"
   },
   {
-    "id": "UniVidX: A Unified Multimodal Framework for Versat",
-    "date": "2026-05-09",
-    "title": "UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors"
+    "id": "2605.04568",
+    "date": "2026-05-25",
+    "title": "Dream-MPC: Gradient-Based Model Predictive Control with Latent Imagination"
   },
   {
-    "id": "Toward Visually Realistic Simulation: A Benchmark ",
-    "date": "2026-05-09",
-    "title": "Toward Visually Realistic Simulation: A Benchmark for Evaluating Robot Manipulation in Simulation"
+    "id": "2601.00969",
+    "date": "2026-05-25",
+    "title": "V-VLAPS: Value-Guided Planning for Vision-Language-Action Models"
   },
   {
-    "id": "TouchDrive: Electronics-Free Tactile Sensing Inter",
-    "date": "2026-05-09",
-    "title": "TouchDrive: Electronics-Free Tactile Sensing Interface for Assistive Grasping"
+    "id": "2511.05963",
+    "date": "2026-05-25",
+    "title": "Next-Latent Prediction Transformers Learn Compact World Models"
   },
   {
-    "id": "RobotEQ: Transitioning from Passive Intelligence t",
-    "date": "2026-05-09",
-    "title": "RobotEQ: Transitioning from Passive Intelligence to Active Intelligence in Embodied AI"
+    "id": "2511.02239",
+    "date": "2026-05-25",
+    "title": "LACY: A Vision-Language Model-based Language-Action Cycle for Self-Improving Robotic Manipulation"
   },
   {
-    "id": "Render, Don't Decode: Weight-Space World Models wi",
-    "date": "2026-05-09",
-    "title": "Render, Don't Decode: Weight-Space World Models with Latent Structural Disentanglement"
+    "id": "2510.07869",
+    "date": "2026-05-25",
+    "title": "USIM and U0: A Vision-Language-Action Dataset and Model for General Underwater Robots"
   },
   {
-    "id": "Reconstruction or Semantics? What Makes a Latent S",
-    "date": "2026-05-09",
-    "title": "Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models"
+    "id": "2506.14135",
+    "date": "2026-05-25",
+    "title": "GAF: Gaussian Action Field as a 4D Representation for Dynamic World Modeling in Robotic Manipulation"
   },
   {
-    "id": "ReActor: Reinforcement Learning for Physics-Aware ",
-    "date": "2026-05-09",
-    "title": "ReActor: Reinforcement Learning for Physics-Aware Motion Retargeting"
+    "id": "2605.25874",
+    "date": "2026-05-26",
+    "title": "WBench: A Comprehensive Multi-turn Benchmark for Interactive Video World Model Evaluation"
   },
   {
-    "id": "RLDX-1 Technical Report",
-    "date": "2026-05-09",
-    "title": "RLDX-1 Technical Report"
+    "id": "2605.25477",
+    "date": "2026-05-26",
+    "title": "EXPO-FT: Sample-Efficient Reinforcement Learning Finetuning for Vision-Language-Action Models"
   },
   {
-    "id": "PhysForge: Generating Physics-Grounded 3D Assets f",
-    "date": "2026-05-09",
-    "title": "PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World"
+    "id": "2605.25077",
+    "date": "2026-05-26",
+    "title": "WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models"
   },
   {
-    "id": "OA-WAM: Object-Addressable World Action Model for ",
-    "date": "2026-05-09",
-    "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation"
+    "id": "2605.25044",
+    "date": "2026-05-26",
+    "title": "X-DiffVLA: X-Embodied Diffusion Action Heads for Vision-Language-Action Models"
   },
   {
-    "id": "Novelty-based Tree-of-Thought Search for LLM Reaso",
-    "date": "2026-05-09",
-    "title": "Novelty-based Tree-of-Thought Search for LLM Reasoning and Planning"
+    "id": "2605.24934",
+    "date": "2026-05-26",
+    "title": "HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos"
   },
   {
-    "id": "NavOne: One-Step Global Planning for Vision-Langua",
-    "date": "2026-05-09",
-    "title": "NavOne: One-Step Global Planning for Vision-Language Navigation on Top-Down Maps"
+    "id": "2605.24892",
+    "date": "2026-05-26",
+    "title": "X-Foresight: A Joint Vision-Action Causal Forecasting Network via Predictive World Modeling"
   },
   {
-    "id": "MolmoAct2: Action Reasoning Models for Real-world ",
-    "date": "2026-05-09",
-    "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment"
+    "id": "2605.24890",
+    "date": "2026-05-26",
+    "title": "QuoVLA: Quotient Space for Vision-Language-Action Models"
   },
   {
-    "id": "Milestone-Guided Policy Learning for Long-Horizon ",
-    "date": "2026-05-09",
-    "title": "Milestone-Guided Policy Learning for Long-Horizon Language Agents"
+    "id": "2605.24761",
+    "date": "2026-05-26",
+    "title": "Drift-Resistant Navigation World Model with Anchored Epipolar Guidance"
   },
   {
-    "id": "Mean Mode Screaming: Mean--Variance Split Residual",
-    "date": "2026-05-09",
-    "title": "Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers"
+    "id": "2605.24630",
+    "date": "2026-05-26",
+    "title": "DexSIM: Real-time Dexterous Simulation with Unified Causal Video Diffusion"
   },
   {
-    "id": "MARBLE: Multi-Aspect Reward Balance for Diffusion ",
-    "date": "2026-05-09",
-    "title": "MARBLE: Multi-Aspect Reward Balance for Diffusion RL"
+    "id": "2605.24203",
+    "date": "2026-05-26",
+    "title": "Afford-VLA: Action-Aligned Visual Planning via Internalized Affordance"
   },
   {
-    "id": "LeWorldModel: Stable End-to-End Joint-Embedding Pr",
-    "date": "2026-05-09",
-    "title": "LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels"
+    "id": "2605.23993",
+    "date": "2026-05-26",
+    "title": "Nano World Models: A Minimalist Implementation of Future Video Prediction"
   },
   {
-    "id": "Hitting Time Isomorphism for Multi-Stage Planning ",
-    "date": "2026-05-09",
-    "title": "Hitting Time Isomorphism for Multi-Stage Planning with Foundation Policies"
+    "id": "2605.23987",
+    "date": "2026-05-26",
+    "title": "Beyond Predefined Learning Objects: A Thinking-Learning Interaction Model for Up-to-Date Autonomous Robot Learning"
   },
   {
-    "id": "HaM-World: Soft-Hamiltonian World Models with Sele",
-    "date": "2026-05-09",
-    "title": "HaM-World: Soft-Hamiltonian World Models with Selective Memory for Planning"
+    "id": "2605.02900",
+    "date": "2026-05-26",
+    "title": "Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses"
   },
   {
-    "id": "Earth-o1: A Grid-free Observation-native Atmospher",
-    "date": "2026-05-09",
-    "title": "Earth-o1: A Grid-free Observation-native Atmospheric World Model"
+    "id": "2605.02037",
+    "date": "2026-05-26",
+    "title": "VILAS: A VLA-Integrated Low-cost Architecture with Soft Grasping for Robotic Manipulation"
   },
   {
-    "id": "EA-WM: Event-Aware Generative World Model with Str",
-    "date": "2026-05-09",
-    "title": "EA-WM: Event-Aware Generative World Model with Structured Kinematic-to-Visual Action Fields"
+    "id": "2602.06508",
+    "date": "2026-05-26",
+    "title": "World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy"
   },
   {
-    "id": "DexSynRefine: Synthesizing and Refining Human-Obje",
-    "date": "2026-05-09",
-    "title": "DexSynRefine: Synthesizing and Refining Human-Object Interaction Motion for Physically Feasible Dexterous Robot Actions"
+    "id": "2602.03983",
+    "date": "2026-05-26",
+    "title": "Efficient Long-Horizon Vision-Language-Action Models via Static-Dynamic Disentanglement"
   },
   {
-    "id": "D-OPSD: On-Policy Self-Distillation for Continuous",
-    "date": "2026-05-09",
-    "title": "D-OPSD: On-Policy Self-Distillation for Continuously Tuning Step-Distilled Diffusion Models"
+    "id": "2512.04733",
+    "date": "2026-05-26",
+    "title": "E3AD: An Emotion-Aware Vision-Language-Action Model for Human-Centric End-to-End Autonomous Driving"
   },
   {
-    "id": "Cross-Modal Navigation with Multi-Agent Reinforcem",
-    "date": "2026-05-09",
-    "title": "Cross-Modal Navigation with Multi-Agent Reinforcement Learning"
+    "id": "2511.16449",
+    "date": "2026-05-26",
+    "title": "Bridging the Semantic-Action Gap in Visual Token Pruning for Efficient VLA Inference"
   },
   {
-    "id": "Can RL Teach Long-Horizon Reasoning to LLMs? Expre",
-    "date": "2026-05-09",
-    "title": "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key"
+    "id": "2510.23509",
+    "date": "2026-05-26",
+    "title": "Logic-Guided Socially-aware Robot Navigation World Model"
   },
   {
-    "id": "Beyond SFT-to-RL: Pre-alignment via Black-Box On-P",
-    "date": "2026-05-09",
-    "title": "Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL"
+    "id": "2510.20390",
+    "date": "2026-05-26",
+    "title": "NeuralTouch: Neural Descriptors for Precise Sim-to-Real Tactile Robot Control"
   },
   {
-    "id": "AssistDLO: Assistive Teleoperation for Deformable ",
-    "date": "2026-05-09",
-    "title": "AssistDLO: Assistive Teleoperation for Deformable Linear Object Manipulation"
+    "id": "2510.03827",
+    "date": "2026-05-26",
+    "title": "LIBERO-PRO: Towards Robust and Fair Evaluation of Vision-Language-Action Models Beyond Memorization"
   },
   {
-    "id": "AdaGamma: State-Dependent Discounting for Temporal",
-    "date": "2026-05-09",
-    "title": "AdaGamma: State-Dependent Discounting for Temporal Adaptation in Reinforcement Learning"
+    "id": "2509.05614",
+    "date": "2026-05-26",
+    "title": "SpecPrune-VLA: Accelerating Vision-Language-Action Models via Action-Aware Self-Speculative Pruning"
+  },
+  {
+    "id": "2605.27314",
+    "date": "2026-05-27",
+    "title": "Riding the Shifting Potential: When Reactive Control Suffices for Multi-Goal Behavior"
+  },
+  {
+    "id": "2605.27310",
+    "date": "2026-05-27",
+    "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning"
+  },
+  {
+    "id": "2605.27284",
+    "date": "2026-05-27",
+    "title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies"
+  },
+  {
+    "id": "2605.27102",
+    "date": "2026-05-27",
+    "title": "JLT: Clean-Latent Prediction in Latent Diffusion Transformers"
+  },
+  {
+    "id": "2605.27095",
+    "date": "2026-05-27",
+    "title": "Adversarial Dual On-Policy Distillation from Expressive Flow-based Teacher"
+  },
+  {
+    "id": "2605.27075",
+    "date": "2026-05-27",
+    "title": "SoftCap: Soft-Budget Control for Diffusion Transformer Acceleration"
+  },
+  {
+    "id": "2605.27003",
+    "date": "2026-05-27",
+    "title": "Timestep-Aware SVDQuant-GPTQ for W4A4 Quantization of Wan2.2-I2V"
+  },
+  {
+    "id": "2605.26820",
+    "date": "2026-05-27",
+    "title": "Can VLA Models Learn from Real-World Data Continually without Forgetting?"
+  },
+  {
+    "id": "2605.26649",
+    "date": "2026-05-27",
+    "title": "On the Generalization Capabilities, Design Choices and Limitations of Keypoint Imitation Learning"
+  },
+  {
+    "id": "2605.26638",
+    "date": "2026-05-27",
+    "title": "HyperSim: A Holistic Sim-To-Real Framework For Robust Robotic Manipulation"
+  },
+  {
+    "id": "2605.26478",
+    "date": "2026-05-27",
+    "title": "Efficient On-policy Visual-RL via Stochastic Decoupled Policy Gradient"
+  },
+  {
+    "id": "2605.26349",
+    "date": "2026-05-27",
+    "title": "Closing the Loop in Teleoperation: Episode-Level Data Quality Assessment and Feedback for High-Quality Robot Demonstration"
+  },
+  {
+    "id": "2605.26266",
+    "date": "2026-05-27",
+    "title": "Quantized Keys Steal Attention: Bias Correction for KV-Cache Compression in Video Diffusion"
+  },
+  {
+    "id": "2605.25979",
+    "date": "2026-05-27",
+    "title": "LLaVA-OneVision-2: Towards Next-Generation Perceptual Intelligence"
+  },
+  {
+    "id": "2605.25802",
+    "date": "2026-05-27",
+    "title": "Rethinking VLM Representation for VLA Initialization"
+  },
+  {
+    "id": "2605.18137",
+    "date": "2026-05-27",
+    "title": "Xiaomi Auto World Model: A Joint World Model Integrating Reconstruction and Generation for Autonomous Driving"
+  },
+  {
+    "id": "2605.15477",
+    "date": "2026-05-27",
+    "title": "EgoExo-WM: Unlocking Exo Video for Ego World Models"
+  },
+  {
+    "id": "2605.00412",
+    "date": "2026-05-27",
+    "title": "Physically Native World Models: A Hamiltonian Perspective on Generative World Modeling"
+  },
+  {
+    "id": "2603.28730",
+    "date": "2026-05-27",
+    "title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning"
+  },
+  {
+    "id": "2603.25415",
+    "date": "2026-05-27",
+    "title": "Modernising Reinforcement Learning-Based Navigation for Embodied Semantic Scene Graph Generation"
+  },
+  {
+    "id": "2602.10104",
+    "date": "2026-05-27",
+    "title": "Olaf-World: Orienting Latent Actions for Video World Modeling"
+  },
+  {
+    "id": "2602.09878",
+    "date": "2026-05-27",
+    "title": "MVISTA-4D: View-Consistent 4D World Model with Test-Time Action Inference for Robotic Manipulation"
+  },
+  {
+    "id": "2009.11997",
+    "date": "2026-05-27",
+    "title": "Continual Model-Based Reinforcement Learning with Hypernetworks"
+  },
+  {
+    "id": "2605.28816",
+    "date": "2026-05-28",
+    "title": "Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players"
+  },
+  {
+    "id": "2605.28812",
+    "date": "2026-05-28",
+    "title": "Beyond Binary: Sim-to-Real Dexterous Manipulation with Physics-Grounded Contact Representation"
+  },
+  {
+    "id": "2605.28803",
+    "date": "2026-05-28",
+    "title": "{\\Omega}-QVLA: Robust Quantization for Vision-Language-Action Models via Composite Rotation and Per-step Scaling"
+  },
+  {
+    "id": "2605.28736",
+    "date": "2026-05-28",
+    "title": "Imitation Learning for Robot Assistance in Open Surgery: A Multi-Policy Evaluation on Suture Following"
+  },
+  {
+    "id": "2605.28726",
+    "date": "2026-05-28",
+    "title": "How VLAs Fail Differently: Black-Box Action Monitoring Reveals Architecture-Specific Failure Signatures"
+  },
+  {
+    "id": "2605.28691",
+    "date": "2026-05-28",
+    "title": "OSP-Next: Efficient High-Quality Video Generation with Sparse Sequence Parallelism, HiF8 Quantization, and Reinforcement Learning"
+  },
+  {
+    "id": "2605.28634",
+    "date": "2026-05-28",
+    "title": "PrimitiveVLA: Learning Reusable Motion Primitives for Efficient and Generalizable Robotic Manipulation"
+  },
+  {
+    "id": "2605.28548",
+    "date": "2026-05-28",
+    "title": "GEM: Generative Supervision Helps Embodied Intelligence"
+  },
+  {
+    "id": "2605.28527",
+    "date": "2026-05-28",
+    "title": "What Frozen VLAs Already Know About Success: A Probing Study of Value-Like Structure in Foundation Robot Policies"
+  },
+  {
+    "id": "2605.28486",
+    "date": "2026-05-28",
+    "title": "Mag-VLA: Vision-Language-Action Model for Bimanual Magnetically Actuated Microrobot Manipulation"
+  },
+  {
+    "id": "2605.28231",
+    "date": "2026-05-28",
+    "title": "ProgVLA: Progress-Aware Robot Manipulation Skill Learning"
+  },
+  {
+    "id": "2605.28083",
+    "date": "2026-05-28",
+    "title": "VLA-Hijack: A Transferable Patch Attack against Vision-Language-Action Models via Visual Proprioception Hijacking"
+  },
+  {
+    "id": "2605.27947",
+    "date": "2026-05-28",
+    "title": "SANTS: A State-Adaptive Scheduler for World Action Models"
+  },
+  {
+    "id": "2605.27886",
+    "date": "2026-05-28",
+    "title": "Tabero: Learning Gentle Manipulation with Closed-Loop Force Feedback from Vision, Touch, and Language"
+  },
+  {
+    "id": "2605.27817",
+    "date": "2026-05-28",
+    "title": "Turning Video Models into Generalist Robot Policies"
+  },
+  {
+    "id": "2605.27759",
+    "date": "2026-05-28",
+    "title": "Colosseum V2: Benchmarking Generalization for Vision Language Action Models"
+  },
+  {
+    "id": "2605.27659",
+    "date": "2026-05-28",
+    "title": "Transferable Reinforcement Learning via Probabilistic Latent Embeddings and Dynamic Policy Adaptation for Sim-to-Real Deployment"
+  },
+  {
+    "id": "2605.27589",
+    "date": "2026-05-28",
+    "title": "What-If World: A Causal Benchmark for General World Models in Embodied Scenarios"
+  },
+  {
+    "id": "2605.27582",
+    "date": "2026-05-28",
+    "title": "Uni-LaViRA: Language-Vision-Robot Actions Translation for Unified Embodied Navigation"
+  },
+  {
+    "id": "2605.27491",
+    "date": "2026-05-28",
+    "title": "GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation"
+  },
+  {
+    "id": "2605.27461",
+    "date": "2026-05-28",
+    "title": "A Factory-Floor Deployment Case Study of VLA Pipelines for Industrial Packaging Task: Workflow, Failures, and Lessons"
+  },
+  {
+    "id": "2605.25624",
+    "date": "2026-05-28",
+    "title": "CUA-Gym: Scaling Verifiable Training Environments and Tasks for Computer-Use Agents"
+  },
+  {
+    "id": "2603.18815",
+    "date": "2026-05-28",
+    "title": "ProRL Agent: Rollout-as-a-Service for RL Training of Multi-Turn LLM Agents"
+  },
+  {
+    "id": "2603.09882",
+    "date": "2026-05-28",
+    "title": "Emerging Extrinsic Dexterity in Cluttered Scenes via Dynamics-aware Policy Learning"
+  },
+  {
+    "id": "2603.01766",
+    "date": "2026-05-28",
+    "title": "Neural Implicit Action Fields: From Discrete Waypoints to Continuous Functions for Vision-Language-Action Models"
+  },
+  {
+    "id": "2602.03668",
+    "date": "2026-05-28",
+    "title": "MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction"
+  },
+  {
+    "id": "2508.21046",
+    "date": "2026-05-28",
+    "title": "CogVLA: Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsification"
+  },
+  {
+    "id": "2506.07900",
+    "date": "2026-05-28",
+    "title": "MiniCPM4: Ultra-Efficient LLMs on End Devices"
+  },
+  {
+    "id": "2506.05012",
+    "date": "2026-05-28",
+    "title": "Realizing Robotic Swimming with Unified Fluid-Robot Multiphysics"
+  },
+  {
+    "id": "2408.15998",
+    "date": "2026-05-28",
+    "title": "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of   Encoders"
+  },
+  {
+    "id": "stable-worldmodel-v1: Reproducible World Modeling ",
+    "date": "2026-05-29",
+    "title": "stable-worldmodel-v1: Reproducible World Modeling Research and Evaluation"
+  },
+  {
+    "id": "minWM: A Full-Stack Open-Source Framework for Real",
+    "date": "2026-05-29",
+    "title": "minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models"
+  },
+  {
+    "id": "YoCausal: How Far is Video Generation from World M",
+    "date": "2026-05-29",
+    "title": "YoCausal: How Far is Video Generation from World Model? A Causality Perspective"
+  },
+  {
+    "id": "VisualThink-VLA: Visual Intermediate Reasoning for",
+    "date": "2026-05-29",
+    "title": "VisualThink-VLA: Visual Intermediate Reasoning for Effective and Low-Latency Vision-Language-Action Policies"
+  },
+  {
+    "id": "Veda: Scalable Video Diffusion via Distilled Spars",
+    "date": "2026-05-29",
+    "title": "Veda: Scalable Video Diffusion via Distilled Sparse Attention"
+  },
+  {
+    "id": "VLAConf: Calibrated Task-Success Confidence for Vi",
+    "date": "2026-05-29",
+    "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models"
+  },
+  {
+    "id": "VLA-Trace: Diagnosing Vision-Language-Action Model",
+    "date": "2026-05-29",
+    "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing"
+  },
+  {
+    "id": "VLA-Pro: Cross-Task Procedural Memory Transfer for",
+    "date": "2026-05-29",
+    "title": "VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models"
+  },
+  {
+    "id": "VLA-ATTC: Adaptive Test-Time Compute for VLA Model",
+    "date": "2026-05-29",
+    "title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model"
+  },
+  {
+    "id": "Thoughts-as-Planning: Latent World Models for Chai",
+    "date": "2026-05-29",
+    "title": "Thoughts-as-Planning: Latent World Models for Chain-of-Thoughts Optimization via Reinforcement Planning"
+  },
+  {
+    "id": "Sentinel-VLA: A Metacognitive VLA Model with Activ",
+    "date": "2026-05-29",
+    "title": "Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery"
+  },
+  {
+    "id": "ReasonBreak: Probing Vulnerabilities in Reasoning-",
+    "date": "2026-05-29",
+    "title": "ReasonBreak: Probing Vulnerabilities in Reasoning-Enabled Vision-Language-Action Models for Autonomous Driving"
+  },
+  {
+    "id": "Qwen-VLA: Unifying Vision-Language-Action Modeling",
+    "date": "2026-05-29",
+    "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments"
+  },
+  {
+    "id": "PhAIL: A Real-Robot VLA Benchmark and Distribution",
+    "date": "2026-05-29",
+    "title": "PhAIL: A Real-Robot VLA Benchmark and Distributional Methodology"
+  },
+  {
+    "id": "Mitigating State Aliasing in Vision-Language-Actio",
+    "date": "2026-05-29",
+    "title": "Mitigating State Aliasing in Vision-Language-Action Models via Inverse Dynamics Learning"
+  },
+  {
+    "id": "MiraBench: Evaluating Action-Conditioned Reliabili",
+    "date": "2026-05-29",
+    "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models"
+  },
+  {
+    "id": "LLM-Guided Future Hypotheses for Horizon-Aware Exp",
+    "date": "2026-05-29",
+    "title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation"
+  },
+  {
+    "id": "Gaze2Act: Gaze-Conditioned Vision-Language-Action ",
+    "date": "2026-05-29",
+    "title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation"
+  },
+  {
+    "id": "ElegantVLA: Learning When to Think for Efficient V",
+    "date": "2026-05-29",
+    "title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models"
+  },
+  {
+    "id": "Dynamic Mixture of Progressive Parameter-Efficient",
+    "date": "2026-05-29",
+    "title": "Dynamic Mixture of Progressive Parameter-Efficient Expert Library for Lifelong Robot Learning (DMPEL)"
+  },
+  {
+    "id": "DynaFLIP: Rethinking Robotics Perception via Tri-M",
+    "date": "2026-05-29",
+    "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation"
+  },
+  {
+    "id": "Dual-Stream Diffusion for World-Model Augmented Vi",
+    "date": "2026-05-29",
+    "title": "Dual-Stream Diffusion for World-Model Augmented Vision-Language-Action Model (DUST)"
+  },
+  {
+    "id": "Contrastive Representation Regularization for Visi",
+    "date": "2026-05-29",
+    "title": "Contrastive Representation Regularization for Vision-Language-Action Models"
+  },
+  {
+    "id": "CompilerDream: Learning a Compiler World Model for",
+    "date": "2026-05-29",
+    "title": "CompilerDream: Learning a Compiler World Model for General Code Optimization"
+  },
+  {
+    "id": "Causal-JEPA: Learning World Models through Object-",
+    "date": "2026-05-29",
+    "title": "Causal-JEPA: Learning World Models through Object-Level Latent Masking"
+  },
+  {
+    "id": "BORA: Bridging Offline Reinforcement Learning and ",
+    "date": "2026-05-29",
+    "title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models"
+  },
+  {
+    "id": "3DVLA: Enhancing Vision-Language-Action Models via",
+    "date": "2026-05-29",
+    "title": "3DVLA: Enhancing Vision-Language-Action Models via 3D Spatial and Instance Understanding"
+  },
+  {
+    "id": "2605.30350",
+    "date": "2026-05-30",
+    "title": "DynaFLIP: Rethinking Robotics Perception via Tri-Modal-Dynamics Guided Representation"
+  },
+  {
+    "id": "2605.30346",
+    "date": "2026-05-30",
+    "title": "YoCausal: How Far is Video Generation from World Model? A Causality Perspective"
+  },
+  {
+    "id": "2605.30326",
+    "date": "2026-05-30",
+    "title": "RoboWits: Unexpected Challenges for Robotic Creative Problem Solving"
+  },
+  {
+    "id": "2605.30325",
+    "date": "2026-05-30",
+    "title": "Veda: Scalable Video Diffusion via Distilled Sparse Attention"
+  },
+  {
+    "id": "2605.30282",
+    "date": "2026-05-30",
+    "title": "Gaze2Act: Gaze-Conditioned Vision-Language-Action Policies for Interactive Robot Manipulation"
+  },
+  {
+    "id": "2605.30280",
+    "date": "2026-05-30",
+    "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments"
+  },
+  {
+    "id": "2605.30263",
+    "date": "2026-05-30",
+    "title": "minWM: A Full-Stack Open-Source Framework for Real-Time Interactive Video World Models"
+  },
+  {
+    "id": "2605.30226",
+    "date": "2026-05-30",
+    "title": "BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models"
+  },
+  {
+    "id": "2605.30117",
+    "date": "2026-05-30",
+    "title": "VLA-Trace: Diagnosing Vision-Language-Action Models through Representation and Behavior Tracing"
+  },
+  {
+    "id": "2605.30056",
+    "date": "2026-05-30",
+    "title": "Sample-Efficient Diffusion-based Reinforcement Learning with Critic Guidance"
+  },
+  {
+    "id": "2605.30011",
+    "date": "2026-05-30",
+    "title": "VisualThink-VLA: Visual Intermediate Reasoning for Effective and Low-Latency Vision-Language-Action Policies"
+  },
+  {
+    "id": "2605.29864",
+    "date": "2026-05-30",
+    "title": "LLM-Guided Future Hypotheses for Horizon-Aware Exploration in Multi-Step Robot Manipulation"
+  },
+  {
+    "id": "2605.29710",
+    "date": "2026-05-30",
+    "title": "PhAIL: A Real-Robot VLA Benchmark and Distributional Methodology"
+  },
+  {
+    "id": "2605.29605",
+    "date": "2026-05-30",
+    "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.29562",
+    "date": "2026-05-30",
+    "title": "VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.29438",
+    "date": "2026-05-30",
+    "title": "ElegantVLA: Learning When to Think for Efficient Vision-Language-Action Models"
+  },
+  {
+    "id": "2605.29416",
+    "date": "2026-05-30",
+    "title": "3DVLA: Enhancing Vision-Language-Action Models via 3D Spatial and Instance Understanding"
+  },
+  {
+    "id": "2605.29114",
+    "date": "2026-05-30",
+    "title": "ReasonBreak: Probing Vulnerabilities in Reasoning-Enabled Vision-Language-Action Models for Autonomous Driving"
+  },
+  {
+    "id": "2602.08968",
+    "date": "2026-05-30",
+    "title": "stable-worldmodel-v1: Reproducible World Modeling Research and Evaluation"
+  },
+  {
+    "id": "2606.02577",
+    "date": "2026-06-02",
+    "title": "RoboDream: Compositional World Models for Scalable Robot Data Synthesis"
+  },
+  {
+    "id": "2606.02486",
+    "date": "2026-06-02",
+    "title": "Intercepting the Future: Latent-Space Predictive World Model for Dynamic VLA Manipulation"
+  },
+  {
+    "id": "2606.02307",
+    "date": "2026-06-02",
+    "title": "FATE-VLA: Failure-aware test generation for vision-language-action models"
+  },
+  {
+    "id": "2606.02277",
+    "date": "2026-06-02",
+    "title": "RoboSemanticBench: Diagnosing Semantic Grounding in Action Prediction for VLA Models"
+  },
+  {
+    "id": "2606.02027",
+    "date": "2026-06-02",
+    "title": "World-Task Factorization for Robot Learning"
+  },
+  {
+    "id": "2606.01950",
+    "date": "2026-06-02",
+    "title": "Learning Action-Conditional and Object-Centric Gaussian Splatting World Models for Rigid Objects"
+  },
+  {
+    "id": "2606.01865",
+    "date": "2026-06-02",
+    "title": "Set-Supervised Diffusion Policy: Learning Action-Chunking Diffusion through Corrections"
+  },
+  {
+    "id": "2606.01600",
+    "date": "2026-06-02",
+    "title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation"
+  },
+  {
+    "id": "2606.01458",
+    "date": "2026-06-02",
+    "title": "LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting Sim"
+  },
+  {
+    "id": "2606.01241",
+    "date": "2026-06-02",
+    "title": "OneVLA: A Unified Framework for Embodied Tasks"
+  },
+  {
+    "id": "2606.01095",
+    "date": "2026-06-02",
+    "title": "Beyond Task Success: Behavioral and Representational Diagnostics for WAM and VLA"
+  },
+  {
+    "id": "2606.01027",
+    "date": "2026-06-02",
+    "title": "τ_0-WM: A Unified Video-Action World Model for Robotic Manipulation"
+  },
+  {
+    "id": "2606.00985",
+    "date": "2026-06-02",
+    "title": "Make Your VLA More Robust Without More Data By Interleaving Motion Planning"
+  },
+  {
+    "id": "2606.00773",
+    "date": "2026-06-02",
+    "title": "SafeVLA-Bench: A Benchmark for the Success-Safety Gap in Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.00664",
+    "date": "2026-06-02",
+    "title": "SKIP: Sparse Keyframe Interpolation Paradigm for Efficient Embodied World Models"
+  },
+  {
+    "id": "2606.00267",
+    "date": "2026-06-02",
+    "title": "StressDream: Steering Video World Models for Robust Policy Evaluation and Improvement"
+  },
+  {
+    "id": "2606.00090",
+    "date": "2026-06-02",
+    "title": "Silent Failures in Physical AI: A Literature Review of Runtime Action Authorization for Autonomous Systems"
+  },
+  {
+    "id": "2606.06491",
+    "date": "2026-06-05",
+    "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies"
+  },
+  {
+    "id": "2606.06155",
+    "date": "2026-06-05",
+    "title": "AffordanceVLA: A Vision-Language-Action Model Empowering Action Generation through Affordance-Aware Understanding"
+  },
+  {
+    "id": "2606.06147",
+    "date": "2026-06-05",
+    "title": "WorldFly: A World-Model-Based Vision-Language-Action Model for UAV Navigation"
+  },
+  {
+    "id": "2606.06049",
+    "date": "2026-06-05",
+    "title": "L-SDPPO: Policy Optimization of Spiking Diffusion Policy for Intra-vehicular Robotic Manipulation"
+  },
+  {
+    "id": "2606.06042",
+    "date": "2026-06-05",
+    "title": "LoomVideo: Unifying Multimodal Inputs into Video Generation and Editing"
+  },
+  {
+    "id": "2606.06033",
+    "date": "2026-06-05",
+    "title": "RealDexUMI: A Wearable Universal Manipulation Interface for Dexterous Robot Learning"
+  },
+  {
+    "id": "2606.06014",
+    "date": "2026-06-05",
+    "title": "PLAN-S: Bridging Planning with Latent Style Dynamics for Autonomous Driving World Models"
+  },
+  {
+    "id": "2606.05979",
+    "date": "2026-06-05",
+    "title": "World-Language-Action Model for Unified World Modeling, Language Reasoning, and Action Synthesis"
+  },
+  {
+    "id": "2606.05773",
+    "date": "2026-06-05",
+    "title": "PiL-World: A Chunk-Wise World Model for VLA Policy-in-the-Loop Evaluation"
+  },
+  {
+    "id": "2606.05737",
+    "date": "2026-06-05",
+    "title": "Let It Be Simple: One-Step Action Generation for Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.05660",
+    "date": "2026-06-05",
+    "title": "Safe Embodied AI for Long-horizon Tasks: A Cross-layer Analysis of Robotic Manipulation"
+  },
+  {
+    "id": "2606.05468",
+    "date": "2026-06-05",
+    "title": "FlowPRO: Reward-Free Reinforced Fine-Tuning of Flow-Matching VLAs via Proximalized Preference Optimization"
+  },
+  {
+    "id": "2606.05407",
+    "date": "2026-06-05",
+    "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping"
+  },
+  {
+    "id": "2606.05395",
+    "date": "2026-06-05",
+    "title": "VASO: Formally Verifiable Self-Evolving Skills for Physical AI Agents"
+  },
+  {
+    "id": "2606.05328",
+    "date": "2026-06-05",
+    "title": "The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show"
+  },
+  {
+    "id": "2606.05248",
+    "date": "2026-06-05",
+    "title": "Inverse Manipulation through Symbolic Planning and Residual Operator Learning"
+  },
+  {
+    "id": "2606.05160",
+    "date": "2026-06-05",
+    "title": "GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors"
+  },
+  {
+    "id": "2606.04811",
+    "date": "2026-06-05",
+    "title": "Dream.exe: Can Video Generation Models Dream Executable Robot Manipulation?"
+  },
+  {
+    "id": "2606.04708",
+    "date": "2026-06-05",
+    "title": "VISTA: Vision-Grounded and Physics-Validated Adaptation of UMI data for VLA Training"
+  },
+  {
+    "id": "2606.04527",
+    "date": "2026-06-05",
+    "title": "Echo-Infinity: Learning Evolving Memory for Real-Time Infinite Video Generation"
+  },
+  {
+    "id": "2606.04463",
+    "date": "2026-06-05",
+    "title": "OSCAR: Omni-Embodiment Action-Conditioned World Model for Robotics"
+  },
+  {
+    "id": "2606.03890",
+    "date": "2026-06-05",
+    "title": "OVO-S-Bench: A Hierarchical Benchmark for Streaming Spatial Intelligence in Multimodal LLMs"
+  },
+  {
+    "id": "2606.02800",
+    "date": "2026-06-05",
+    "title": "Cosmos 3: Omnimodal World Models for Physical AI"
+  },
+  {
+    "id": "2606.01935",
+    "date": "2026-06-05",
+    "title": "Unified Driving Tokens: Representation- and Geometry-Guided Discrete Tokenizer for Driving World Models and Planning"
+  },
+  {
+    "id": "2605.08215",
+    "date": "2026-06-05",
+    "title": "Test-Time Training for Visual Foresight Vision-Language-Action Models"
+  },
+  {
+    "id": "2602.12628",
+    "date": "2026-06-05",
+    "title": "Beyond Imitation: Reinforcement Learning-Based Sim-Real Co-Training for VLA Models"
   },
   {
     "id": "2606.04436",
@@ -2018,5 +1868,70 @@
     "id": "2606.06485",
     "date": "2026-06-08",
     "title": "PAR3D: A Unified 3D-MLLM with Part-Aware Representation for Scene Understanding"
+  },
+  {
+    "id": "2606.07100",
+    "date": "2026-06-09",
+    "title": "LARA: Latent Action Representation Alignment for Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.08094",
+    "date": "2026-06-09",
+    "title": "vla.cpp: A Unified Inference Runtime for Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.09828",
+    "date": "2026-06-09",
+    "title": "Latent Spatial Memory for Video World Models"
+  },
+  {
+    "id": "2606.09827",
+    "date": "2026-06-09",
+    "title": "MemoryVLA++: Temporal Modeling via Memory and Imagination in Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.09813",
+    "date": "2026-06-09",
+    "title": "iMaC: Translating Actions into Motion and Contact Images for Embodied World Models"
+  },
+  {
+    "id": "2606.08737",
+    "date": "2026-06-09",
+    "title": "Dream-Tac: A Unified Tactile World Action Model for Contact-Rich Robot Manipulation"
+  },
+  {
+    "id": "2606.07895",
+    "date": "2026-06-09",
+    "title": "TBD-VLA: Temporal Block Diffusion for Efficient Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.09507",
+    "date": "2026-06-09",
+    "title": "Prisma-World: Camera-Controllable Multi-Agent Video World Model for Embodied Planning"
+  },
+  {
+    "id": "2606.09803",
+    "date": "2026-06-09",
+    "title": "Echo-Memory: A Controlled Study of Memory Mechanisms in Action World Models"
+  },
+  {
+    "id": "2606.09572",
+    "date": "2026-06-09",
+    "title": "CT-VAM: A Cerebello-Thalamic-Inspired Vision-Action Model for Reactive Robot Control"
+  },
+  {
+    "id": "2606.09381",
+    "date": "2026-06-09",
+    "title": "ReGIL: Retrieval-Guided Imitation Learning from Single Demonstrations for Robot Manipulation"
+  },
+  {
+    "id": "2606.09758",
+    "date": "2026-06-09",
+    "title": "Difference-Aware Retrieval Policies for Efficient Robot Imitation Learning"
+  },
+  {
+    "id": "2606.09749",
+    "date": "2026-06-09",
+    "title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models"
   }
 ]
