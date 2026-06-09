@@ -1983,5 +1983,40 @@
     "id": "2606.04206",
     "date": "2026-06-07",
     "title": "DLO-Lab: Benchmarking Deformable Linear Object Manipulations with Differentiable Physics"
+  },
+  {
+    "id": "2606.05687",
+    "date": "2026-06-08",
+    "title": "Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation"
+  },
+  {
+    "id": "2606.04968",
+    "date": "2026-06-08",
+    "title": "Potential-Guided Flow Matching for Vision-Language-Action Policy Improvement"
+  },
+  {
+    "id": "2606.00515",
+    "date": "2026-06-08",
+    "title": "PaCo-VLA: Passivity-Shielded Compliance Prior for Contact-Rich Vision-Language-Action Manipulation"
+  },
+  {
+    "id": "2606.02551",
+    "date": "2026-06-08",
+    "title": "AFUN: Towards an Affordance Foundation Model for Functionality Understanding"
+  },
+  {
+    "id": "2606.01951",
+    "date": "2026-06-08",
+    "title": "Co-training with Ego-centric Video and Demonstration for Robot Navigation Task"
+  },
+  {
+    "id": "2606.04111",
+    "date": "2026-06-08",
+    "title": "AgenticDiffusion: Agentic Diffusion-based Path Planning for Vision-Based UAV Navigation"
+  },
+  {
+    "id": "2606.06485",
+    "date": "2026-06-08",
+    "title": "PAR3D: A Unified 3D-MLLM with Part-Aware Representation for Scene Understanding"
   }
 ]
