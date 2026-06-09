@@ -32,6 +32,7 @@ $$
 - Hinton et al., 2015: 原始 KD 论文
 - [[CoT-VLA]]: explicit CoT 文本蒸馏
 - [[3DThinkVLA]]: latent reasoning anchor 蒸馏
+- [[HANDOFF]]: context 条件化多 Teacher KL 蒸馏（velocity-gated 凸组合 + recovery-masked），用于人形机器人全身控制
 
 ## 相关概念
 - [[Latent Distillation]]

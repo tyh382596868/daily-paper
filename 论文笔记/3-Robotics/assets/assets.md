@@ -2,15 +2,15 @@
 tags: [MOC, auto-generated]
 generated_by: dailypaper-skills
 ---
-# 概念目录页：4-足式运动
+# 论文目录页：assets
 
-用于浏览概念笔记和对应分类入口。
+用于浏览论文笔记、分类目录和子主题入口。
 
-- 当前目录：`4-足式运动`
+- 当前目录：`3-Robotics/assets`
 
 ## 当前目录笔记
 
-- [[论文笔记/_概念/4-足式运动/locomotion|locomotion]]
+- 暂无内容
 
 ## 说明
 
