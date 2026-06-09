@@ -34,6 +34,8 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/LARA|LARA]]
 - [[论文笔记/3-Robotics/VLA/LeWM|LeWM]]
 - [[论文笔记/3-Robotics/VLA/MVISTA-4D|MVISTA-4D]]
+- [[论文笔记/3-Robotics/VLA/MemoryVLA++|MemoryVLA++]]
+- [[论文笔记/3-Robotics/VLA/MemoryVLAPP|MemoryVLAPP]]
 - [[论文笔记/3-Robotics/VLA/MolmoAct2|MolmoAct2]]
 - [[论文笔记/3-Robotics/VLA/NIAF|NIAF]]
 - [[论文笔记/3-Robotics/VLA/OA-WAM|OA-WAM]]
