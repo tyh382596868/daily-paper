@@ -20,6 +20,7 @@ aliases: [Depth Anything V2, DAv2]
 ## 代表工作
 
 - [[GaussianDream]]: 用 Depth Anything V2 生成训练时的伪 GT 深度，结合相机内参转度量深度，用于深度损失与 3D 场景流构造
+- [[RoboScape]]: 用 Depth Anything V2 自动标注机器人操作视频的深度伪标签，支持大规模物理先验数据构建
 
 ## 相关概念
 

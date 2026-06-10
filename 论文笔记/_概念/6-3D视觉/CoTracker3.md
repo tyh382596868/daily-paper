@@ -22,6 +22,7 @@ Meta FAIR 提出的视频点追踪（point tracking）模型，sparse tracking �
 
 - 物体追踪驱动的策略学习
 - [[AHEAD]] 中作为 RAFT 的消融对照（性能略低 ~10%）
+- [[RoboScape]]: 用作关键点热图伪标签生成器，自动标注操作视频的物体动力学轨迹
 
 ## 相关概念
 

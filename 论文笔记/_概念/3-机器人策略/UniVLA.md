@@ -20,6 +20,7 @@ UniVLA 是一类用**潜在动作（latent action）**桥接无动作视频与�
 
 - 作为基线出现在 [[RLA-WM]]（Zhang et al., 2026）
 - 同类：[[AdaWorld]]
+- **注意**: [[UniVLA-ICLR2026]]（BAAI, Wang et al. 2025）是另一个同名但不同方向的工作，采用统一离散 Token 自回归框架（非潜在动作方法），在 CALVIN/LIBERO/SimplerEnv 上达到 SOTA。
 
 ## 相关概念
 
@@ -27,3 +28,4 @@ UniVLA 是一类用**潜在动作（latent action）**桥接无动作视频与�
 - [[AdaWorld]]
 - [[World Action Model]]
 - [[VLA]]
+- [[UniVLA-ICLR2026]]

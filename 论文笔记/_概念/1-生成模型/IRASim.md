@@ -18,6 +18,7 @@ aliases: [IRA-Sim]
 ## 代表工作
 
 - [[EA-WM]]: 在 Table 4 中与 IRASim 对比，验证 KVAF 表征的优越性
+- [[RoboScape]]: 与 IRASim 对比视频生成质量及策略评估相关性，RoboScape 作为策略评估器的 Pearson 相关系数（0.953）远超 IRASim
 
 ## 相关概念
 

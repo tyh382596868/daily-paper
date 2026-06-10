@@ -52,6 +52,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/SOMA|SOMA]]
 - [[论文笔记/3-Robotics/VLA/StructLatentPoints|StructLatentPoints]]
 - [[论文笔记/3-Robotics/VLA/TRM|TRM]]
+- [[论文笔记/3-Robotics/VLA/UniVLA|UniVLA]]
 - [[论文笔记/3-Robotics/VLA/WBench|WBench]]
 - [[论文笔记/3-Robotics/VLA/WLA|WLA]]
 - [[论文笔记/3-Robotics/VLA/WhatIfWorld|WhatIfWorld]]
