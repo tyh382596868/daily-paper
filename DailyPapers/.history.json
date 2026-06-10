@@ -1740,186 +1740,6 @@
     "title": "HumanNet: Scaling Human-centric Video Learning to One Million Hours"
   },
   {
-    "id": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models",
-    "date": "2026-05-10",
-    "title": "WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models"
-  },
-  {
-    "id": "Splatting Physical Scenes: End-to-End Real-to-Sim from Imperfect Robot Data",
-    "date": "2026-05-10",
-    "title": "Splatting Physical Scenes: End-to-End Real-to-Sim from Imperfect Robot Data"
-  },
-  {
-    "id": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
-    "date": "2026-05-10",
-    "title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies"
-  },
-  {
-    "id": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting",
-    "date": "2026-05-10",
-    "title": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting"
-  },
-  {
-    "id": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks",
-    "date": "2026-05-10",
-    "title": "BridgeV2W: Bridging Video Generation Models to Embodied World Models via Embodiment Masks"
-  },
-  {
-    "id": "Being-H0.7: A Latent World-Action Model from Egocentric Videos",
-    "date": "2026-05-10",
-    "title": "Being-H0.7: A Latent World-Action Model from Egocentric Videos"
-  },
-  {
-    "id": "When to Trust Imagination: Adaptive Action Executi",
-    "date": "2026-05-09",
-    "title": "When to Trust Imagination: Adaptive Action Execution for World Action Models"
-  },
-  {
-    "id": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning ",
-    "date": "2026-05-09",
-    "title": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning in VLA with Generalized and Specialized Experts"
-  },
-  {
-    "id": "UniVidX: A Unified Multimodal Framework for Versat",
-    "date": "2026-05-09",
-    "title": "UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors"
-  },
-  {
-    "id": "Toward Visually Realistic Simulation: A Benchmark ",
-    "date": "2026-05-09",
-    "title": "Toward Visually Realistic Simulation: A Benchmark for Evaluating Robot Manipulation in Simulation"
-  },
-  {
-    "id": "TouchDrive: Electronics-Free Tactile Sensing Inter",
-    "date": "2026-05-09",
-    "title": "TouchDrive: Electronics-Free Tactile Sensing Interface for Assistive Grasping"
-  },
-  {
-    "id": "RobotEQ: Transitioning from Passive Intelligence t",
-    "date": "2026-05-09",
-    "title": "RobotEQ: Transitioning from Passive Intelligence to Active Intelligence in Embodied AI"
-  },
-  {
-    "id": "Render, Don't Decode: Weight-Space World Models wi",
-    "date": "2026-05-09",
-    "title": "Render, Don't Decode: Weight-Space World Models with Latent Structural Disentanglement"
-  },
-  {
-    "id": "Reconstruction or Semantics? What Makes a Latent S",
-    "date": "2026-05-09",
-    "title": "Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models"
-  },
-  {
-    "id": "ReActor: Reinforcement Learning for Physics-Aware ",
-    "date": "2026-05-09",
-    "title": "ReActor: Reinforcement Learning for Physics-Aware Motion Retargeting"
-  },
-  {
-    "id": "RLDX-1 Technical Report",
-    "date": "2026-05-09",
-    "title": "RLDX-1 Technical Report"
-  },
-  {
-    "id": "PhysForge: Generating Physics-Grounded 3D Assets f",
-    "date": "2026-05-09",
-    "title": "PhysForge: Generating Physics-Grounded 3D Assets for Interactive Virtual World"
-  },
-  {
-    "id": "OA-WAM: Object-Addressable World Action Model for ",
-    "date": "2026-05-09",
-    "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation"
-  },
-  {
-    "id": "Novelty-based Tree-of-Thought Search for LLM Reaso",
-    "date": "2026-05-09",
-    "title": "Novelty-based Tree-of-Thought Search for LLM Reasoning and Planning"
-  },
-  {
-    "id": "NavOne: One-Step Global Planning for Vision-Langua",
-    "date": "2026-05-09",
-    "title": "NavOne: One-Step Global Planning for Vision-Language Navigation on Top-Down Maps"
-  },
-  {
-    "id": "MolmoAct2: Action Reasoning Models for Real-world ",
-    "date": "2026-05-09",
-    "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment"
-  },
-  {
-    "id": "Milestone-Guided Policy Learning for Long-Horizon ",
-    "date": "2026-05-09",
-    "title": "Milestone-Guided Policy Learning for Long-Horizon Language Agents"
-  },
-  {
-    "id": "Mean Mode Screaming: Mean--Variance Split Residual",
-    "date": "2026-05-09",
-    "title": "Mean Mode Screaming: Mean--Variance Split Residuals for 1000-Layer Diffusion Transformers"
-  },
-  {
-    "id": "MARBLE: Multi-Aspect Reward Balance for Diffusion ",
-    "date": "2026-05-09",
-    "title": "MARBLE: Multi-Aspect Reward Balance for Diffusion RL"
-  },
-  {
-    "id": "LeWorldModel: Stable End-to-End Joint-Embedding Pr",
-    "date": "2026-05-09",
-    "title": "LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels"
-  },
-  {
-    "id": "Hitting Time Isomorphism for Multi-Stage Planning ",
-    "date": "2026-05-09",
-    "title": "Hitting Time Isomorphism for Multi-Stage Planning with Foundation Policies"
-  },
-  {
-    "id": "HaM-World: Soft-Hamiltonian World Models with Sele",
-    "date": "2026-05-09",
-    "title": "HaM-World: Soft-Hamiltonian World Models with Selective Memory for Planning"
-  },
-  {
-    "id": "Earth-o1: A Grid-free Observation-native Atmospher",
-    "date": "2026-05-09",
-    "title": "Earth-o1: A Grid-free Observation-native Atmospheric World Model"
-  },
-  {
-    "id": "EA-WM: Event-Aware Generative World Model with Str",
-    "date": "2026-05-09",
-    "title": "EA-WM: Event-Aware Generative World Model with Structured Kinematic-to-Visual Action Fields"
-  },
-  {
-    "id": "DexSynRefine: Synthesizing and Refining Human-Obje",
-    "date": "2026-05-09",
-    "title": "DexSynRefine: Synthesizing and Refining Human-Object Interaction Motion for Physically Feasible Dexterous Robot Actions"
-  },
-  {
-    "id": "D-OPSD: On-Policy Self-Distillation for Continuous",
-    "date": "2026-05-09",
-    "title": "D-OPSD: On-Policy Self-Distillation for Continuously Tuning Step-Distilled Diffusion Models"
-  },
-  {
-    "id": "Cross-Modal Navigation with Multi-Agent Reinforcem",
-    "date": "2026-05-09",
-    "title": "Cross-Modal Navigation with Multi-Agent Reinforcement Learning"
-  },
-  {
-    "id": "Can RL Teach Long-Horizon Reasoning to LLMs? Expre",
-    "date": "2026-05-09",
-    "title": "Can RL Teach Long-Horizon Reasoning to LLMs? Expressiveness Is Key"
-  },
-  {
-    "id": "Beyond SFT-to-RL: Pre-alignment via Black-Box On-P",
-    "date": "2026-05-09",
-    "title": "Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL"
-  },
-  {
-    "id": "AssistDLO: Assistive Teleoperation for Deformable ",
-    "date": "2026-05-09",
-    "title": "AssistDLO: Assistive Teleoperation for Deformable Linear Object Manipulation"
-  },
-  {
-    "id": "AdaGamma: State-Dependent Discounting for Temporal",
-    "date": "2026-05-09",
-    "title": "AdaGamma: State-Dependent Discounting for Temporal Adaptation in Reinforcement Learning"
-  },
-  {
     "id": "2606.04436",
     "date": "2026-06-07",
     "title": "3DThinkVLA: Endowing Vision-Language-Action Models with Latent 3D Priors via 3D-Thinking-Guided Co-training"
@@ -2018,5 +1838,65 @@
     "id": "2606.06485",
     "date": "2026-06-08",
     "title": "PAR3D: A Unified 3D-MLLM with Part-Aware Representation for Scene Understanding"
+  },
+  {
+    "id": "2506.19850",
+    "date": "2026-06-10",
+    "title": "Unified Vision-Language-Action Model"
+  },
+  {
+    "id": "2506.21539",
+    "date": "2026-06-10",
+    "title": "WorldVLA: Towards Autoregressive Action World Model"
+  },
+  {
+    "id": "2506.09422",
+    "date": "2026-06-10",
+    "title": "Time-Unified Diffusion Policy with Action Discrimination for Robotic Manipulation"
+  },
+  {
+    "id": "2506.14608",
+    "date": "2026-06-10",
+    "title": "Latent Action Diffusion for Cross-Embodiment Manipulation"
+  },
+  {
+    "id": "2506.23135",
+    "date": "2026-06-10",
+    "title": "RoboScape: Physics-informed Embodied World Model"
+  },
+  {
+    "id": "2506.23919",
+    "date": "2026-06-10",
+    "title": "World4Omni: A Zero-Shot Framework from Image Generation World Model to Robotic Manipulation"
+  },
+  {
+    "id": "2506.00613",
+    "date": "2026-06-10",
+    "title": "WorldGym: World Model as An Environment for Policy Evaluation"
+  },
+  {
+    "id": "2506.08840",
+    "date": "2026-06-10",
+    "title": "MoRE: Mixture of Residual Experts for Humanoid Lifelike Gaits Learning on Complex Terrains"
+  },
+  {
+    "id": "2506.21853",
+    "date": "2026-06-10",
+    "title": "Skill-Nav: Enhanced Navigation with Versatile Quadrupedal Locomotion via Waypoint Interface"
+  },
+  {
+    "id": "2506.16565",
+    "date": "2026-06-10",
+    "title": "Reimagination with Test-time Observation Interventions: Distractor-Robust World Model Predictions"
+  },
+  {
+    "id": "2506.17198",
+    "date": "2026-06-10",
+    "title": "Dex1B: Learning with 1B Demonstrations for Dexterous Manipulation"
+  },
+  {
+    "id": "2506.13762",
+    "date": "2026-06-10",
+    "title": "Touch begins where vision ends: Generalizable policies for contact-rich manipulation"
   }
 ]
