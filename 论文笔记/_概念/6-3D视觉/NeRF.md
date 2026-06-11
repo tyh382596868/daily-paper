@@ -1,5 +1,3 @@
----
-type: concept
 aliases: [NeRF, Neural Radiance Field, 神经辐射场]
 ---
 
