@@ -31,6 +31,7 @@ $$
 - [[3DThinkVLA]]: patch-level 对齐 ViT 中间层与 [[VGGT]]
 - [[DINOv2]]: 自蒸馏 latent alignment
 - LiT: 视觉 encoder 与冻结 LLM 文本 encoder 对齐
+- [[LARA]]: LAM 潜在动作表示与扩散 VLA 动作隐空间的双向对齐，实现联合正则化
 
 ## 相关概念
 - [[Latent Distillation]]
