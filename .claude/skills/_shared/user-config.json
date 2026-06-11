@@ -30,7 +30,13 @@
       "dreamzero",
       "wan video model",
       "vla memory",
-      "world model with memory"
+      "world model with memory",
+      "video generation model",
+      "video foundation model",
+      "text-to-video",
+      "image-to-video",
+      "autoregressive video generation",
+      "interactive video generation"
     ],
     "negative_keywords": [
       "medical imaging",
@@ -90,7 +96,8 @@
   },
   "automation": {
     "auto_refresh_indexes": true,
-    "git_commit": false,
-    "git_push": false
+    "git_commit": true,
+    "git_push": true,
+    "git_merge_to_main": true
   }
 }

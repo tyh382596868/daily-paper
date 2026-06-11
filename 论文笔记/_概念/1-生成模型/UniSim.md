@@ -18,6 +18,7 @@ aliases: [Universal Simulator]
 ## 代表工作
 
 - Yang et al., 2024a: UniSim 原始论文
+- [[RoboScape]]: 以 UniSim 为视频生成质量对比基线，在物理感知和 3D 几何一致性上超越 UniSim
 
 ## 相关概念
 

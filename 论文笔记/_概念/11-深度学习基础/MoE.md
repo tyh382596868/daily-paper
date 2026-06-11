@@ -19,6 +19,7 @@ $$y = \sum_{i=1}^{N} G(x)_i \cdot E_i(x)$$
 
 ## 代表工作
 - [[VLA-GSE]]: 将 MoE 用于 VLA 的 PEFT
+- [[HANDOFF]]: MoE 学生策略，三路 Expert 分别由 WBC/Locomotion/跌倒恢复 Teacher 通过 context 条件化 KL 蒸馏训练
 
 ## 相关概念
 - [[LoRA]]
