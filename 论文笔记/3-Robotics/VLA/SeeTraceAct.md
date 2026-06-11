@@ -1,12 +1,12 @@
 ---
 title: "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos"
 method_name: "SeeTraceAct"
-authors: [Jaehyeon Son, Junhyun Kim, Kyle Kam, Jeremiah Coholich, Seok Joon Kim, Jinhoo Kim, Chris Dongjoo Kim, Jaemin Cho, Dieter Fox, Zsolt Kira]
+authors: [Jaehyeon Son, Junhyun Kim, Kyle Kam, Jeremiah Coholich, Seok Joon Kim, Jinhoo Kim, Chris Dongjoo Kim, Jaemin Cho, Dieter Fox]
 year: 2026
 venue: arXiv
 tags: [demo-conditioned-vla, cross-embodiment, end-effector-trace, latent-planning, robot-manipulation, imitation-learning, visibility-aware]
 zotero_collection: 3-Robotics/VLA
-image_source: online
+image_source: pending
 arxiv_html: https://arxiv.org/html/2606.02745v1
 created: 2026-06-11
 ---
