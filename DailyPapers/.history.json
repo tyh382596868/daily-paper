@@ -2238,5 +2238,65 @@
     "id": "2606.09749",
     "date": "2026-06-09",
     "title": "Your Model Already Knows: Attention-Guided Safety Filter for Vision-Language-Action Models"
+  },
+  {
+    "id": "2506.19850",
+    "date": "2026-06-10",
+    "title": "Unified Vision-Language-Action Model"
+  },
+  {
+    "id": "2506.21539",
+    "date": "2026-06-10",
+    "title": "WorldVLA: Towards Autoregressive Action World Model"
+  },
+  {
+    "id": "2506.09422",
+    "date": "2026-06-10",
+    "title": "Time-Unified Diffusion Policy with Action Discrimination for Robotic Manipulation"
+  },
+  {
+    "id": "2506.14608",
+    "date": "2026-06-10",
+    "title": "Latent Action Diffusion for Cross-Embodiment Manipulation"
+  },
+  {
+    "id": "2506.23135",
+    "date": "2026-06-10",
+    "title": "RoboScape: Physics-informed Embodied World Model"
+  },
+  {
+    "id": "2506.23919",
+    "date": "2026-06-10",
+    "title": "World4Omni: A Zero-Shot Framework from Image Generation World Model to Robotic Manipulation"
+  },
+  {
+    "id": "2506.00613",
+    "date": "2026-06-10",
+    "title": "WorldGym: World Model as An Environment for Policy Evaluation"
+  },
+  {
+    "id": "2506.08840",
+    "date": "2026-06-10",
+    "title": "MoRE: Mixture of Residual Experts for Humanoid Lifelike Gaits Learning on Complex Terrains"
+  },
+  {
+    "id": "2506.21853",
+    "date": "2026-06-10",
+    "title": "Skill-Nav: Enhanced Navigation with Versatile Quadrupedal Locomotion via Waypoint Interface"
+  },
+  {
+    "id": "2506.16565",
+    "date": "2026-06-10",
+    "title": "Reimagination with Test-time Observation Interventions: Distractor-Robust World Model Predictions"
+  },
+  {
+    "id": "2506.17198",
+    "date": "2026-06-10",
+    "title": "Dex1B: Learning with 1B Demonstrations for Dexterous Manipulation"
+  },
+  {
+    "id": "2506.13762",
+    "date": "2026-06-10",
+    "title": "Touch begins where vision ends: Generalizable policies for contact-rich manipulation"
   }
 ]

@@ -151,7 +151,7 @@ python3 ../_shared/generate_paper_mocs.py
 
 默认配置下这个开关是开启的，所以新增的概念和论文笔记通常会自动反映到各分类目录页中。
 
-### Step 5: Git 提交
+### Step 5: Git 提交 + 合并到 main
 
 仅当 `GIT_COMMIT_ENABLED=true` 时执行，并且必须先检查：
 
@@ -161,10 +161,34 @@ python3 ../_shared/generate_paper_mocs.py
 满足条件后才 commit：
 
 ```bash
-cd {VAULT_PATH} && git add -A && git commit -m "daily papers: notes YYYY-MM-DD"
+cd {VAULT_PATH} && git add -A && git commit -m "daily papers: YYYY-MM-DD"
 ```
 
-只有在 `GIT_PUSH_ENABLED=true` 且仓库已配置远端时才 push。
+只有在 `GIT_PUSH_ENABLED=true` 且仓库已配置远端时才 push 当前分支：
+
+```bash
+git push -u origin {current_branch}
+```
+
+#### 合并到 main（仅当 `GIT_MERGE_TO_MAIN=true`）
+
+在 push 当前分支之后，如果 `GIT_MERGE_TO_MAIN=true`，执行合并：
+
+1. 记录当前分支名：`CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)`
+2. 检查远端是否有 `main` 分支：`git ls-remote --heads origin main`
+3. 拉取 main 最新状态，然后合并，最后切回原分支：
+
+```bash
+git fetch origin main
+git checkout main
+git pull origin main
+git merge --no-ff {CURRENT_BRANCH} -m "daily papers: YYYY-MM-DD"
+git push origin main
+git checkout {CURRENT_BRANCH}
+```
+
+4. 如果合并出现冲突，**不要强制解决**，停下来告知用户手动处理，并切回原分支。
+5. 合并完成后告知用户 main 已更新到最新 daily papers。
 
 ## 输出
 
@@ -179,7 +203,7 @@ cd {VAULT_PATH} && git add -A && git commit -m "daily papers: notes YYYY-MM-DD"
 - 如果前置文件不存在，必须先运行前面的步骤
 - `/paper-reader` skill 会自动处理概念库补充，不要重复创建
 - 仅为"必读"论文生成笔记，"值得看"不生成，耗时正常，**不是跳过的理由**
-- 默认自动刷新目录页，但默认不做 git commit / push
+- 默认自动刷新目录页、自动 git commit / push，并合并到 main
 - **绝对禁止**以下偷懒行为：
   - 自己手写 70 行骨架笔记代替 paper-reader 输出
   - 以"context overflow"为由跳过论文不生成笔记

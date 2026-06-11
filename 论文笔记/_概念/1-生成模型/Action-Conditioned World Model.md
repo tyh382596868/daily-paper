@@ -21,6 +21,7 @@ aliases: [Action-Conditioned World Model, 动作条件世界模型, 游戏世界
 
 - [[WBench]] 评测中: Matrix-Game 3.0 在 Navigation 83.5；Happy Oyster 综合最强
 - Genie 3 (Google DeepMind): 标杆动作条件世界模型
+- [[RoboScape]]: 物理感知机器人操作世界模型，在动作条件视频生成中引入深度和关键点物理先验
 
 ## 相关概念
 
