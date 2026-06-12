@@ -188,7 +188,7 @@ $$
 **含义**: 在噪声 $\varepsilon$ 和目标动作块 $\bar{A}_t^r$ 之间线性插值构造训练轨迹，$U_\tau$ 为对应速度场
 
 **符号说明**:
-- $\tau \sim \mathcal{U}(0,1)$: 插值时间步
+- $\tau \sim \mathrm{Beta}(1.0, 1.5)$，缩放至 $0.999\tilde{\tau}$: 插值时间步（Beta 分布偏向低 $\tau$ 值，强化噪声端训练）
 - $\bar{A}_t^r$: 目标动作块（归一化后）
 - $\varepsilon \sim \mathcal{N}(0, I)$: 标准高斯噪声
 
