@@ -40,7 +40,7 @@ description: |
 ## 前置检查
 
 1. 检查 `/tmp/daily_papers_enriched.json` 是否存在
-2. 检查今天的推荐文件 `{DAILY_PAPERS_PATH}/YYYY-MM-DD-论文推荐.md` 是否存在
+2. 检查今天的推荐文件 `{DAILY_PAPERS_PATH}/YYYY-MM/YYYY-MM-DD-论文推荐.md` 是否存在
 3. 如果任一不存在，告知用户需要先运行前置步骤，然后停止
 
 ## 工作流程
@@ -112,7 +112,7 @@ paper-reader 在独立的 Task agent 中运行，不会占用主 agent 的 conte
 
 **3b: 匹配论文与笔记**
 
-读取当天推荐文件 `{DAILY_PAPERS_PATH}/YYYY-MM-DD-论文推荐.md`，对每篇论文（`### N.` 开头的段落）：
+读取当天推荐文件 `{DAILY_PAPERS_PATH}/YYYY-MM/YYYY-MM-DD-论文推荐.md`，对每篇论文（`### N.` 开头的段落）：
 
 1. 从论文标题中提取方法名/模型名（通常是标题冒号前的缩写，如 "DM0"、"BPP"、"PA3FF"）
 2. 与 3a 的笔记索引匹配（不区分大小写）
@@ -125,7 +125,7 @@ paper-reader 在独立的 Task agent 中运行，不会占用主 agent 的 conte
 > 📒 行一并升级为可点链接：
 >
 > ```bash
-> python3 backfill_links.py --recommendation {DAILY_PAPERS_PATH}/YYYY-MM-DD-论文推荐.md
+> python3 backfill_links.py --recommendation {DAILY_PAPERS_PATH}/YYYY-MM/YYYY-MM-DD-论文推荐.md
 > ```
 
 如需手动插入，对匹配到笔记的论文，在 `- **来源**:` 行之后插入一行，**使用相对路径的标准

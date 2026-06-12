@@ -210,7 +210,7 @@ description: |
 
 ### Phase 6: 保存到 Obsidian
 
-用 Write 工具保存到 `{DAILY_PAPERS_PATH}/YYYY-MM-DD-论文推荐.md`。
+用 Write 工具保存到 `{DAILY_PAPERS_PATH}/YYYY-MM/YYYY-MM-DD-论文推荐.md`（目录不存在则先创建）。
 
 文件开头加 YAML frontmatter：
 
@@ -249,7 +249,7 @@ tags: [daily-papers, auto-generated]
 只有在上述条件都满足时才 commit：
 
 ```bash
-cd {VAULT_PATH} && git add "{daily_papers_folder}/YYYY-MM-DD-论文推荐.md" "{daily_papers_folder}/.history.json" && git commit -m "daily papers: YYYY-MM-DD"
+cd {VAULT_PATH} && git add "{daily_papers_folder}/YYYY-MM/YYYY-MM-DD-论文推荐.md" "{daily_papers_folder}/.history.json" && git commit -m "daily papers: YYYY-MM-DD"
 ```
 
 只有在 `GIT_PUSH_ENABLED=true` 且仓库已配置远端时才 push。
