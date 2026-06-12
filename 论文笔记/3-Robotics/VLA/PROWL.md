@@ -220,39 +220,39 @@ $$
 
 ### Figure 1: PROWL 框架总览
 
-> 🖼️ **Figure 1** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18803)）
+![Figure 1](https://arxiv.org/html/2605.18803v1/figures/prowl_framework_v3.png)
 
 **说明**: PROWL 两阶段流程。Phase 1 在被动人类演示数据上预训练世界模型；Phase 2 运行对抗课程——[[对抗策略]]、世界模型、[[PAT Buffer]] 三者之间的数据流闭环：策略发现高误差轨迹 → 写入 PAT 缓冲 → 缓冲按分数重排序 → 世界模型在混合数据上微调 → 误差信号反哺策略奖励。
 
 ### Figure 2: 对抗策略动力学
 
-> 🖼️ **Figure 2** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18803)）
+![Figure 2](https://arxiv.org/html/2605.18803v1/figures/prowl_RL_dynamics.png)
 
 **说明**: (a) 回合回报（仅作合理性检查，按构造非平稳）；(b) 到冻结 [[VPT]] 参考的 [[KL 散度]]——弱约束探索与稳定对抗探索明显分离；(c) 相机速度作为[[奖励攻击]]的「触发线」——$c_{kl}=0.5$ 时相机速度飙升；(d) 相机抖动 (camera-thrashing) 的退化案例可视化。结论：**弱 KL 约束导致奖励攻击，强约束在维持 KL 控制的同时抑制它**。
 
 ### Figure 3: 课程形成与新型交互发现
 
-> 🖼️ **Figure 3** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18803)）
+![Figure 3](https://arxiv.org/html/2605.18803v1/figures/wm_curriculum_dynamics.png)
 
 **说明**: (a) [[PAT Buffer]] 平均潜在遗憾随时间变化——成功的配置「先升后降」：先发现难例使遗憾上升，再随世界模型学习而下降；(b) 严格新型复合动作模式的发现计数——PROWL 发现了 27 个 BASALT 与 [[VPT]]-frozen 缓冲中完全没有的复合动作模式。
 
 ### Figure 4: 留出与新型场景下的定性对比
 
-> 🖼️ **Figure 4a** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18803)）
+![Figure 4a](https://arxiv.org/html/2605.18803v1/figures/rot_fwd_strafe.png)
 
-> 🖼️ **Figure 4b** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18803)）
+![Figure 4b](https://arxiv.org/html/2605.18803v1/figures/rot_fwd_jum_sprint_strafe.png)
 
 **说明**: 留出与新型动作序列上的滚动预测对比。上图为来自 [[VPT]] 参考策略的高误差留出轨迹（旋转+前进+平移组合）；下图为对抗策略发现的新型复合动作（旋转+前进+跳跃+冲刺+平移）。PROWL 在这些动作密集组合下生成更连贯的滚动预测。
 
 ### Figure 5: AFS-EPE 捕捉外观指标看不见的运动失败
 
-> 🖼️ **Figure 5** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18803)）
+![Figure 5](https://arxiv.org/html/2605.18803v1/figures/afs_vs_metrics.png)
 
 **说明**: 与 Figure 6 同一条轨迹。黄色带标注动作密集帧。[[结构相似性|SSIM]] / [[感知图像相似度|LPIPS]] / 潜在遗憾等外观指标在动作密集帧上几乎不变，但 [[Action-Follow Score|AFS-EPE]]（光流端点误差）在这些帧出现明显尖峰——说明运动保真度失败对标准外观指标「不可见」，必须用 AFS 才能捕捉。
 
 ### Figure 6: VPT Base 与 PROWL 在相同动作下的对比
 
-> 🖼️ **Figure 6** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18803)）
+![Figure 6](https://arxiv.org/html/2605.18803v1/figures/afs_latent_images.png)
 
 **说明**: 留出 VPT 参考轨迹第 22–32 帧。相同动作条件下，VPT Base 在动作密集帧出现[[光流]]不连贯（运动方向混乱），PROWL 生成的光流场连贯一致，验证 PROWL 显著改善了动作条件下的运动建模。
 

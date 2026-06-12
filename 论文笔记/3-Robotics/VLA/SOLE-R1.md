@@ -212,13 +212,13 @@ $$
 
 ### Figure 1: 总览 — SOLE-R1 作为单一奖励信号
 
-> 🖼️ **Figure 1** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2603.28730)）
+![Figure 1](https://arxiv.org/html/2603.28730v2/figures/fig1_v3.png)
 
 **说明**：SOLE-R1 接收视频帧 + 语言目标，输出 `<think>` 推理 + `<answer>` 标量进度，进度直接作为 RL 训练的密集奖励。在 40 个零样本任务上，**SOLE-R1 在 24 个任务上达到 ≥50% 成功率**，远超 GPT-5 (7) 和 Gemini-3-Pro (5)。覆盖 [[RoboSuite]] / [[ManiSkill]] / [[Meta-World|Metaworld]] / [[LIBERO]] 仿真环境和真实 [[Franka 研究臂|Franka]] 机器人。
 
 ### Figure 2: 训练数据合成构成
 
-> 🖼️ **Figure 2** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2603.28730)）
+![Figure 2](https://arxiv.org/html/2603.28730v2/figures/fig2_v2.png)
 
 **说明**：训练数据由三层混合：
 - **基础空间推理**：[[SSR-CoT]] 风格的 image-depth-QA-rationale 元组（1.2M）

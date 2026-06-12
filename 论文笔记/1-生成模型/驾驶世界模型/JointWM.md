@@ -308,55 +308,55 @@ $$
 
 ### Figure 1: Paradigm Comparison / 三类世界模型范式对比
 
-> 🖼️ **Figure 1** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 1](https://arxiv.org/html/2605.18137v4/figures/teaser.png)
 
 **说明**: 自上而下分别是 reconstruction-only（只显式 3D 但不能"做梦"）、generation-only（能生成但无几何约束、长程漂移）、JointWM（两者闭环）。这张 teaser 直接传达 motivation——**两类方法的失效模式恰好互补**。
 
 ### Figure 2: WorldRec Network Architecture / 重建网络架构
 
-> 🖼️ **Figure 2** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 2](https://arxiv.org/html/2605.18137v4/figures/worldrep.png)
 
 **说明**: 多相机输入 → 共享 backbone 多尺度特征 → [[Sparse Scene Query|稀疏 3D 查询]] 投影采样 → [[Cross-View Attention|跨视图/跨时间聚合]] → MLP 解出高斯属性 → 可微光栅化渲染。**重点**：高斯是 query-level 稀疏的，不是像素稠密的。
 
 ### Figure 3: WorldGen Architecture & Two-Stage Training / 生成网络与两阶段训练
 
-> 🖼️ **Figure 3** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 3](https://arxiv.org/html/2605.18137v4/figures/worldgen-training-stage.jpg)
 
 **说明**: DiT 主干 + 多模态条件（trajectory / camera / layout / text）。左侧是 Stage 1 [[Flow Matching|双向预训练]]，右侧是 Stage 2 [[Causal Fine-tuning|三阶段因果微调]]（[[Teacher Forcing]] → [[ODE Distillation]] → [[DMD]]）。注意右侧每个 stage 的注意力 mask 变化——双向 → 因果 → 因果+少步 → 因果+生成式 context。
 
 ### Figure 4: Joint World Model Architecture / 联合世界模型
 
-> 🖼️ **Figure 4** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 4](https://arxiv.org/html/2605.18137v4/figures/JointWM.png)
 
 **说明**: WorldRec 与 WorldGen 在两个接口耦合：(1) 高斯渲染图 → WorldGen 的 RGB 先验条件；(2) WorldGen 输出 → WorldRec 增量扩张。形成闭环。
 
 ### Figure 5a: JointWM-WorldRec Incremental Reconstruction / 增量重建
 
-> 🖼️ **Figure 5a** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 5a](https://arxiv.org/html/2605.18137v4/figures/JointWM-WorldRec.png)
 
 **说明**: 新到 frame 的查询 token 通过 [[Cross-Attention|cross-attention]] 与已缓存的 Gaussian token 融合：已观测区域 refine，未观测区域 expand。整个机制不需要重新优化。
 
 ### Figure 5b: JointWM-WorldGen RGB Conditioning / RGB 先验条件
 
-> 🖼️ **Figure 5b** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 5b](https://arxiv.org/html/2605.18137v4/figures/JointWM-WorldGen.png)
 
 **说明**: 当前 Gaussian 场被 rasterize 到 target camera 得到 $I_{\text{ren}}$（含空洞、伪影），作为第四种条件模态拼入 DiT。生成模型"看着这张草图"补全细节。
 
 ### Figure 6: WorldRec on Waymo / Waymo 原轨迹重建
 
-> 🖼️ **Figure 6** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 6](https://arxiv.org/html/2605.18137v4/figures/worldrep_waymo-compare.jpg)
 
 **说明**: 与 [[MVSplat]]、[[NoPoSplat]]、[[DepthSplat]]、[[STORM]]、[[DGGT]] 在原轨迹上的对比。本文方法在路面纹理、远端建筑、动态车辆边缘清晰度上明显占优。
 
 ### Figure 7: WorldRec Novel View on Waymo / Waymo 新视角合成
 
-> 🖼️ **Figure 7** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 7](https://arxiv.org/html/2605.18137v4/figures/worldrep_waymo-nvs.jpg)
 
 **说明**: 偏离训练轨迹的 NVS。重点看远端几何稳定性，本文方法没有 DGGT/STORM 那种"远处糊掉"现象。
 
 ### Figure 8: WorldRec on Private Data / 内部数据集
 
-> 🖼️ **Figure 8** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 8](https://arxiv.org/html/2605.18137v4/figures/worldrep_midata.jpg)
 
 **说明**: 小米内部数据集上的 NVS 结果，验证跨数据集泛化与产品落地可行性。
 
@@ -368,49 +368,49 @@ $$
 
 ### Figure 10: WorldGen Long-Tail Scenes / 长尾场景生成
 
-> 🖼️ **Figure 10** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 10](https://arxiv.org/html/2605.18137v4/figures/worldgen_longtail.png)
 
 **说明**: 文本/布局条件下生成"道路上的动物"等罕见场景，证明 generation 能力补充了真实数据采集的盲区。
 
 ### Figure 11: WorldGen Extreme Weather / 极端天气生成
 
-> 🖼️ **Figure 11** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 11](https://arxiv.org/html/2605.18137v4/figures/worldgen_weather.png)
 
 **说明**: 雨/雪/雾天气可控合成——对自动驾驶数据闭环来说，这类长尾数据是金钱难买的。
 
 ### Figure 12: WorldGen Long-Horizon Controllable Generation / 长程可控生成
 
-> 🖼️ **Figure 12** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 12](https://arxiv.org/html/2605.18137v4/figures/worldgen_control.png)
 
 **说明**: 10fps / 30fps 模式下生成接近 1 分钟连续视频，trajectory 与 layout 条件保持可控。Stage 2c 的 DMD 在这里发挥关键作用——没有它，长程必漂。
 
 ### Figure 13: JWM Long-Horizon Consistency #1
 
-> 🖼️ **Figure 13** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 13](https://arxiv.org/html/2605.18137v4/figures/JWM-1.png)
 
 **说明**: 联合世界模型长程时序一致性示例 1。注意路面纹理/建筑结构在数十秒后仍稳定，这是单纯 generation 做不到的。
 
 ### Figure 14: JWM Long-Horizon Consistency #2
 
-> 🖼️ **Figure 14** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 14](https://arxiv.org/html/2605.18137v4/figures/JWM-2.png)
 
 **说明**: 长程时序一致性示例 2。复杂交叉路口场景下几何与动态目标都不漂。
 
 ### Figure 15: JWM Long-Horizon Consistency #3
 
-> 🖼️ **Figure 15** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 15](https://arxiv.org/html/2605.18137v4/figures/JWM-3.png)
 
 **说明**: 长程时序一致性示例 3。从 Joint vs WorldGen-only 的对比可看出几何锚点的关键作用。
 
 ### Figure 16: JWM Multi-View Spatial Consistency / 多视图空间一致性
 
-> 🖼️ **Figure 16** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 16](https://arxiv.org/html/2605.18137v4/figures/JWM-4.png)
 
 **说明**: 多个相机视角下，同一时刻物体位置、光照、阴影保持物理上自洽——因为它们共享同一份高斯场作为先验。
 
 ### Figure 17: JWM Multi-Run Stability / 多次推理稳定性
 
-> 🖼️ **Figure 17** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.18137)）
+![Figure 17](https://arxiv.org/html/2605.18137v4/figures/worldgen_multitraj.jpg)
 
 **说明**: 同一 prompt 不同随机种子，**结构骨架（建筑、道路、车道）保持一致**，只有非结构性细节有变化。这是工业部署看重的"可重复性"。
 

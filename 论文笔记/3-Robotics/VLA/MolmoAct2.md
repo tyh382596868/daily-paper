@@ -295,19 +295,19 @@ $$
 
 ### Figure 5: MolmoAct2-Think 自适应深度推理
 
-> 🖼️ **Figure 5** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.02881)）
+![Figure 5](https://arxiv.org/html/2605.02881v1/figures/MAF44.png)
 
 **说明**: MolmoAct2-Think 在 MolmoAct2 基础上增加自适应深度 token 推理。对比相邻帧深度嵌入的余弦相似度，仅对发生变化的空间格重新预测深度码，静态区域直接复用缓冲值，从而减少冗余计算并保持几何定位能力。
 
 ### Figure 6: RoboEval 基准性能对比
 
-> 🖼️ **Figure 6** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.02881)）
+![Figure 6](https://arxiv.org/html/2605.02881v1/figures/MAF6.png)
 
 **说明**: MolmoAct2-DROID 在 MolmoSpaces（仿真 Pick/Place/Open/Close）和 MolmoBot（真实操控任务）上均大幅超越 π₀.₅-DROID，平均成功率分别为 37.7% vs. 34.5%（MolmoSpaces）和 87.1%（MolmoBot）。
 
 ### Figure 7: 高效微调评测结果
 
-> 🖼️ **Figure 7** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.02881)）
+![Figure 7](https://arxiv.org/html/2605.02881v1/figures/MAF5.png)
 
 **说明**: 在 8 个真实世界任务上的综合评测，MolmoAct2 经过少量演示微调后快速适应新任务，展示了其高效微调能力。
 

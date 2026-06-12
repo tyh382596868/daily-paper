@@ -271,11 +271,11 @@ $$
 
 | (a) put_object_cabinet | (b) place_phone_stand |
 |---|---|
-| > 🖼️ **put_object_cabinet** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.21862)） | > 🖼️ **place_phone_stand** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.21862)） |
+| ![put_object_cabinet](https://arxiv.org/html/2605.21862v1/figures/trajacotry-div/div_put_object_cabinet.png) | ![place_phone_stand](https://arxiv.org/html/2605.21862v1/figures/trajacotry-div/div_place_phone_stand.png) |
 
 | (c) place_fan | (d) place_a2b_right |
 |---|---|
-| > 🖼️ **place_fan** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.21862)） | > 🖼️ **place_a2b_right** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.21862)） |
+| ![place_fan](https://arxiv.org/html/2605.21862v1/figures/trajacotry-div/div_place_fan.png) | ![place_a2b_right](https://arxiv.org/html/2605.21862v1/figures/trajacotry-div/div_place_a2b_right.png) |
 
 **说明**: 四个 [[RoboTwin]] 任务上 EvoScene-VLA vs. LingBot-VLA 的末端 3D 轨迹。EvoScene-VLA 在所有四个任务上产生**明显更平滑**的路径——因为 chunk 内每步用的是当时的几何，不会再出现"对着旧场景挥拳"的折角。
 
@@ -289,11 +289,11 @@ $$
 
 | (a) grab_roller | (b) place_bread_skillet |
 |---|---|
-| > 🖼️ **grab_roller** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.21862)） | > 🖼️ **place_bread_skillet** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.21862)） |
+| ![grab_roller](https://arxiv.org/html/2605.21862v1/figures/trajacotry-div/div_grab_roller.png) | ![place_bread_skillet](https://arxiv.org/html/2605.21862v1/figures/trajacotry-div/div_place_bread_skillet.png) |
 
 | (c) place_burger_fries | (d) place_cans_plasticbox |
 |---|---|
-| > 🖼️ **place_burger_fries** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.21862)） | > 🖼️ **place_cans_plasticbox** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.21862)） |
+| ![place_burger_fries](https://arxiv.org/html/2605.21862v1/figures/trajacotry-div/div_place_burger_fries.png) | ![place_cans_plasticbox](https://arxiv.org/html/2605.21862v1/figures/trajacotry-div/div_place_cans_plasticbox.png) |
 
 **说明**: 附录 E 中补充的 4 个 [[RoboTwin]] 任务轨迹对比，结论一致：EvoScene-VLA 全部产生更平滑的路径。
 

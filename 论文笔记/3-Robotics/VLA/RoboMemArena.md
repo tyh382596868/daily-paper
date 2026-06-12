@@ -284,7 +284,7 @@ $$
 
 ### Figure S3: 每任务验证步骤分布
 
-> 🖼️ **Figure S3** — 图片暂缺，arXiv 抓取失败（原图见 [arXiv HTML](https://arxiv.org/html/2605.10921)）
+![Figure S3](https://arxiv.org/html/2605.10921v1/figures/10.png)
 
 **说明**: (a) 每任务包含 3–9 个验证步骤，大多数任务超过 5 步的长程阈值；(b) 总体直方图。
 
