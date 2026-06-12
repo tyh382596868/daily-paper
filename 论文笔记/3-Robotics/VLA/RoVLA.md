@@ -113,7 +113,7 @@ RoVLA 采用 **[[双系统架构]]（高层语义 + 低层动作生成）** 作�
 **具体实现**:
 - 对视觉 token $v_t$ 与机器人状态 $\mathbf{q}_t$ 施加 **[[对抗扰动]]**：沿 $\mathcal{L}_{\text{EC}}$ 梯度方向归一化后加扰（公式 12-13），步长用 $\min(\alpha, \epsilon_{\text{adv}}\|\cdot\|_2)$ 自适应裁剪
 - 把扰动后的特征送入 [[DiT]]，得到扰动分支预测 $\hat{\mathbf{v}}_{\text{pert}}^{\tau_i}$
-- 用 [[Observational Consistency|OC 损失]] 要求扰动分支对齐干净分支，并对干净分支施加 **stop-gradient** $\operatorname{sg}(\cdot)$，防止梯度回流污染未扰动分支（公式 14）
+- 用 [[Observational Consistency|OC 损失]] 要求扰动分支对齐干净分支，并对干净分支施加 **stop-gradient** $\mathrm{sg}(\cdot)$，防止梯度回流污染未扰动分支（公式 14）
 - 超参数 $\alpha = 0.01$、$\epsilon_{\text{adv}} = 0.03$
 
 #### 模块 4: [[自适应损失加权]]训练目标
@@ -176,7 +176,7 @@ $$
 ### 公式 5: [[VLM]] 语义编码
 
 $$
-[\,l_t,\; v_t\,] = \operatorname{VLM}_{\theta_1}(T, \mathbf{I}_t)
+[\,l_t,\; v_t\,] = \mathrm{VLM}_{\theta_1}(T, \mathbf{I}_t)
 $$
 
 **含义**: 高层语义编码器（[[InternVL]]3.5-2B）把指令与图像编码成语言 token $l_t$ 和视觉 token $v_t$。
@@ -188,7 +188,7 @@ $$
 ### 公式 6: [[DiT]] 动作生成器
 
 $$
-\hat{\mathbf{v}}^{\tau} = \operatorname{DiT}_{\theta_2}(l_t, v_t, \mathbf{A}_t^{\tau}, \mathbf{q}_t, \tau)
+\hat{\mathbf{v}}^{\tau} = \mathrm{DiT}_{\theta_2}(l_t, v_t, \mathbf{A}_t^{\tau}, \mathbf{q}_t, \tau)
 $$
 
 **含义**: 低层动作生成器以语义 token、含噪动作、状态、时间步为条件预测速度场。
@@ -211,11 +211,11 @@ $$
 ### 公式 8-9: 双时间步干净速度预测
 
 $$
-\hat{\mathbf{v}}_{\text{clean}}^{\tau_1} = \operatorname{DiT}_{\theta_2}(l_t, v_t, \mathbf{A}_t^{\tau_1}, \mathbf{q}_t, \tau_1)
+\hat{\mathbf{v}}_{\text{clean}}^{\tau_1} = \mathrm{DiT}_{\theta_2}(l_t, v_t, \mathbf{A}_t^{\tau_1}, \mathbf{q}_t, \tau_1)
 $$
 
 $$
-\hat{\mathbf{v}}_{\text{clean}}^{\tau_2} = \operatorname{DiT}_{\theta_2}(l_t, v_t, \mathbf{A}_t^{\tau_2}, \mathbf{q}_t, \tau_2)
+\hat{\mathbf{v}}_{\text{clean}}^{\tau_2} = \mathrm{DiT}_{\theta_2}(l_t, v_t, \mathbf{A}_t^{\tau_2}, \mathbf{q}_t, \tau_2)
 $$
 
 **含义**: 在两个独立采样的去噪时间步 $\tau_1, \tau_2$ 处分别得到干净（无对抗扰动）的速度场预测。
@@ -234,14 +234,14 @@ $$
 ### 公式 11: [[Beta 分布时间步采样]]
 
 $$
-p(\tau) = \operatorname{Beta}\!\left(\frac{s-\tau}{s};\; 1.5,\; 1\right), \quad s = 0.999
+p(\tau) = \mathrm{Beta}\!\left(\frac{s-\tau}{s};\; 1.5,\; 1\right), \quad s = 0.999
 $$
 
 **含义**: 时间步不采用均匀分布，而用偏向大 $\tau$（接近干净动作）的 Beta 分布，使一致性约束更聚焦于去噪后期阶段。
 
 **符号说明**:
 - $s = 0.999$: 缩放常数
-- $\operatorname{Beta}(\cdot; 1.5, 1)$: 形状参数 $(1.5, 1)$ 的 Beta 分布
+- $\mathrm{Beta}(\cdot; 1.5, 1)$: 形状参数 $(1.5, 1)$ 的 Beta 分布
 
 ### 公式 12: 视觉特征对抗扰动
 
@@ -267,13 +267,13 @@ $$
 ### 公式 14: [[Observational Consistency|观测一致性损失]]
 
 $$
-\mathcal{L}_{\text{OC}} = \frac{1}{2}\sum_{i=1}^{2} \big\| \hat{\mathbf{v}}_{\text{pert}}^{\tau_i} - \operatorname{sg}\!\big(\hat{\mathbf{v}}_{\text{clean}}^{\tau_i}\big) \big\|_2^2
+\mathcal{L}_{\text{OC}} = \frac{1}{2}\sum_{i=1}^{2} \big\| \hat{\mathbf{v}}_{\text{pert}}^{\tau_i} - \mathrm{sg}\!\big(\hat{\mathbf{v}}_{\text{clean}}^{\tau_i}\big) \big\|_2^2
 $$
 
 **含义**: 要求扰动分支预测 $\hat{\mathbf{v}}_{\text{pert}}^{\tau_i}$ 对齐干净分支预测；干净分支用 stop-gradient 包裹，作为不动的目标，梯度只更新扰动分支。
 
 **符号说明**:
-- $\operatorname{sg}(\cdot)$: stop-gradient 算子，阻断梯度回流
+- $\mathrm{sg}(\cdot)$: stop-gradient 算子，阻断梯度回流
 - $\hat{\mathbf{v}}_{\text{pert}}^{\tau_i}$: 扰动特征经 DiT 得到的速度场预测
 - 求和遍历两个时间步 $i \in \{1,2\}$
 
@@ -340,7 +340,7 @@ $$
 $$
 
 $$
-\mathbf{A}_t^{\tau + \Delta\tau} = \mathbf{A}_t^{\tau} + \Delta\tau \cdot \operatorname{DiT}_{\theta_2}(l_t, v_t, \mathbf{A}_t^{\tau}, \mathbf{q}_t, \tau), \quad \Delta\tau = \frac{1}{K}
+\mathbf{A}_t^{\tau + \Delta\tau} = \mathbf{A}_t^{\tau} + \Delta\tau \cdot \mathrm{DiT}_{\theta_2}(l_t, v_t, \mathbf{A}_t^{\tau}, \mathbf{q}_t, \tau), \quad \Delta\tau = \frac{1}{K}
 $$
 
 **含义**: 推理时从高斯噪声出发，用前向 Euler 法以 $K$ 步积分 ODE 还原动作块；实验取 $K=8$。

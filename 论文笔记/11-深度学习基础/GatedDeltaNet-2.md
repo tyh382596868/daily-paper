@@ -136,7 +136,7 @@ $$
 - $\bm{k}_t \in \mathbb{R}^{d_k}, \bm{v}_t \in \mathbb{R}^{d_v}$：当前 key / value 向量（已 L2 归一化）
 - $\bm{b}_t \in [0,1]^{d_k}$：**channel-wise 擦除门**（key 轴）
 - $\mathbf{w}_t \in [0,1]^{d_v}$：**channel-wise 写入门**（value 轴）
-- $\mathbf{D}_t = \operatorname{Diag}(\bm{\alpha}_t)$：channel-wise 衰减矩阵，$\bm{\alpha}_t \in (0,1]^{d_k}$
+- $\mathbf{D}_t = \mathrm{Diag}(\bm{\alpha}_t)$：channel-wise 衰减矩阵，$\bm{\alpha}_t \in (0,1]^{d_k}$
 - $\odot$：[[Hadamard 积]]（逐元素乘）
 
 ### 公式 2: [[Delta 规则]] 三步残差展开（推导视角）
@@ -160,7 +160,7 @@ $$
 ### 公式 3: [[在线梯度下降|快速权重在线优化目标]]
 
 $$
-\mathbf{S}_t = \operatorname*{arg\,min}_{\mathbf{S}} \bm{L}_t(\mathbf{S}), \quad \bm{L}_t(\mathbf{S}) = \|\mathbf{S} - \bar{\mathbf{S}}_t\|_F^2 - 2\langle \mathbf{S}^\top \bm{k}_t,\ \bm{z}_t - \bar{\mathbf{S}}_t^\top \bm{e}_t\rangle
+\mathbf{S}_t = \mathop{\mathrm{arg\,min}}_{\mathbf{S}} \bm{L}_t(\mathbf{S}), \quad \bm{L}_t(\mathbf{S}) = \|\mathbf{S} - \bar{\mathbf{S}}_t\|_F^2 - 2\langle \mathbf{S}^\top \bm{k}_t,\ \bm{z}_t - \bar{\mathbf{S}}_t^\top \bm{e}_t\rangle
 $$
 
 **含义**：Gated Delta Rule-2 等价于在局部联想记忆上做一步在线梯度下降——一阶项是"记住 $(\bm{k}_t, \bm{z}_t)$"，二阶约束是"别偏离上一步状态太远"。这给了"为什么 erase/write 应该解耦"的理论解释：两个项分别作用于不同子空间。
@@ -189,7 +189,7 @@ $$
 \bm{b}_t = \sigma(\mathbf{W}_b \bm{x}_t), \quad \mathbf{w}_t = \sigma(\mathbf{W}_w \bm{x}_t)
 $$
 $$
-\bm{g}_t = -\exp(\mathbf{a}) \odot \operatorname{softplus}(\mathbf{W}_f \bm{x}_t + \bm{\delta}), \quad \bm{\alpha}_t = \exp(\bm{g}_t)
+\bm{g}_t = -\exp(\mathbf{a}) \odot \mathrm{softplus}(\mathbf{W}_f \bm{x}_t + \bm{\delta}), \quad \bm{\alpha}_t = \exp(\bm{g}_t)
 $$
 
 **含义**：两个新门用线性投影 + [[sigmoid]] 产生（保证 $[0,1]$ 范围），衰减门用 [[Softplus|softplus]]-based 参数化保证 $\bm{\alpha}_t \in (0,1]$。

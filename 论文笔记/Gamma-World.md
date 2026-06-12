@@ -305,7 +305,7 @@ $$
 
 ### Figure 6: 真实双臂机器人
 
-![Figure 6](https://research.nvidia.com/labs/sil/projects/gamma-world/figures/robo-visualization.png)
+> 🖼️ **Figure 6** — 图片暂缺，arXiv 抓取失败（原图未能获取）
 
 **说明**: 把左右机械臂视为两个交互 agent，在 RealOmin-Open 数据集上生成未来帧。同一多 agent 世界模型框架可以从 Minecraft 玩家迁移到双臂操作场景，保持双臂协调运动和空间布局。
 

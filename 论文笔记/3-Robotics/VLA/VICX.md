@@ -158,7 +158,7 @@ $$
 ### 公式2: [[In-Context Retrieval|情境样本检索]]
 
 $$
-\{i_1, \ldots, i_K\} = \arg\!\operatorname{top-}K_{i \in \mathcal{M}}\; \text{sim}(f^{arm}_t,\; f^{arm}_i)
+\{i_1, \ldots, i_K\} = \arg\,\text{top-}K_{i \in \mathcal{M}}\; \text{sim}(f^{arm}_t,\; f^{arm}_i)
 $$
 
 **含义**: 从记忆库 $\mathcal{M}$ 中按视觉相似度检索与当前帧最近的 $K$ 个图像-状态对作为情境提示。
@@ -216,31 +216,31 @@ $$
 
 ### Figure 1: VICX 系统概览
 
-![VICX Overview](https://arxiv.org/html/2606.12028/figures/fig1_overview.png)
+> 🖼️ **VICX Overview** — 图片暂缺（arXiv 当前 403 未能抓取，原图见 [arXiv HTML](https://arxiv.org/html/2606.12028)）
 
 **说明**: VICX 整体框架示意图。上半部分展示冻结视频生成模型接受语言指令和当前观测，输出视觉规划帧；下半部分展示 V2T-ICON 通过检索情境样本将规划帧转换为状态轨迹，反馈控制器执行状态跟踪，最终执行视频反馈回视频代理形成闭环。
 
 ### Figure 2: V2T-ICON 架构详解
 
-![V2T-ICON Architecture](https://arxiv.org/html/2606.12028/figures/fig2_v2t_icon.png)
+> 🖼️ **V2T-ICON Architecture** — 图片暂缺（arXiv 当前 403 未能抓取，原图见 [arXiv HTML](https://arxiv.org/html/2606.12028)）
 
 **说明**: V2T-ICON 的详细结构。输入为分割后的 arm-only 帧与 $K$ 个检索到的图像-状态情境对，通过 [[Transformer]] 编码器融合情境信息后，输出目标机器人状态。关键设计是推理时**无需参数更新**，完全依赖情境提示适应新任务。
 
 ### Figure 3: Arm-Only 分割示意
 
-![Arm-Only Segmentation](https://arxiv.org/html/2606.12028/figures/fig3_segmentation.png)
+> 🖼️ **Arm-Only Segmentation** — 图片暂缺（arXiv 当前 403 未能抓取，原图见 [arXiv HTML](https://arxiv.org/html/2606.12028)）
 
 **说明**: 展示原始观测帧（含背景和物体）经语义分割提取为仅含机械臂的 arm-only 帧的对比。arm-only 表示去除了背景纹理变化，使视觉-状态映射对任务和场景变化更鲁棒。
 
 ### Figure 4: 闭环自我校正示例
 
-![Closed-Loop Self-Correction](https://arxiv.org/html/2606.12028/figures/fig4_closed_loop.png)
+> 🖼️ **Closed-Loop Self-Correction** — 图片暂缺（arXiv 当前 403 未能抓取，原图见 [arXiv HTML](https://arxiv.org/html/2606.12028)）
 
 **说明**: 当初次执行失败时（如抓取姿态不对），VICX 将失败视频作为信息上下文输入视频代理，视频代理重新规划出新的抓取策略，展示了系统在外部扰动下的自适应恢复能力。
 
 ### Figure 5: 跨形态迁移
 
-![Cross-Embodiment Transfer](https://arxiv.org/html/2606.12028/figures/fig5_cross_embodiment.png)
+> 🖼️ **Cross-Embodiment Transfer** — 图片暂缺（arXiv 当前 403 未能抓取，原图见 [arXiv HTML](https://arxiv.org/html/2606.12028)）
 
 **说明**: 展示 VICX 在训练时未见过的机器人形态上的迁移效果。由于 arm-only 分割消除了形态特定的外观差异，V2T-ICON 能够将规划帧映射到不同的机器人状态空间，无需重新训练。
 
