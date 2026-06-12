@@ -168,8 +168,12 @@ description: |
 > ⏪ **再推提醒**：这篇在 {last_recommend_date} 推荐过
 > ← 仅对 is_re_recommend=true 的论文显示
 
-- 📒 **已有笔记**: [[existing_note_name]] — 直接看笔记，不再重复解释
+- 📒 **已有笔记**: [existing_note_name](../论文笔记/分类目录/existing_note_name.md) — 直接看笔记，不再重复解释
 ```
+
+> 📒 链接用**相对路径的标准 Markdown 链接**（`../论文笔记/...`），不要用 `[[wikilink]]`，
+> 否则在 GitHub 上点不动。如果当下不确定笔记的具体路径，可以先写 `[[existing_note_name]]`，
+> 后续 `daily-papers-notes` 的 `backfill_links.py` 会自动把它升级成可点链接。
 
 **对于没有笔记的论文**，使用完整格式：
 

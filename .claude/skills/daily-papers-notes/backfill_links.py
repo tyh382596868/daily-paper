@@ -16,6 +16,7 @@ The script:
 """
 
 import argparse
+import os
 import re
 import sys
 from pathlib import Path
@@ -27,6 +28,21 @@ if str(_SHARED_DIR) not in sys.path:
 from user_config import obsidian_vault_path, paper_notes_dir
 
 NOTES_DIR = paper_notes_dir()
+VAULT_ROOT = NOTES_DIR.parent
+
+
+def make_note_link(note_name: str, note_path, rec_dir: Path) -> str:
+    """Build a GitHub- and Obsidian-clickable relative markdown link.
+
+    note_path is relative to the vault root. rec_dir is the directory of the
+    recommendation file. The link is computed as a relative path so it resolves
+    both in Obsidian and when browsing the repo on GitHub.
+    """
+    abs_note = VAULT_ROOT / note_path
+    rel = os.path.relpath(abs_note, rec_dir).replace(os.sep, '/')
+    # Encode characters that break markdown link syntax (UTF-8/Chinese is fine raw)
+    rel = rel.replace(' ', '%20').replace('(', '%28').replace(')', '%29')
+    return f'[{note_name}]({rel})'
 
 
 def scan_notes() -> dict:
@@ -97,8 +113,8 @@ def match_papers_with_notes(content: str, notes_index: dict) -> list:
 
         source_line_end = source_match.end()
 
-        # Check if note link already exists
-        if re.search(r'- 📒 \*\*笔记\*\*:', section_content):
+        # Check if note link already exists (笔记 or 已有笔记)
+        if re.search(r'- 📒 \*\*(?:已有)?笔记\*\*:', section_content):
             continue  # Already has note link
 
         # Try to match with existing notes
@@ -108,6 +124,7 @@ def match_papers_with_notes(content: str, notes_index: dict) -> list:
                 'paper_title': paper_title,
                 'method_name': method_name,
                 'note_name': notes_index[method_lower]['name'],
+                'note_path': notes_index[method_lower]['path'],
                 'section_start': section_start,
                 'source_line_end': section_start + source_line_end,
             })
@@ -115,20 +132,50 @@ def match_papers_with_notes(content: str, notes_index: dict) -> list:
     return matches
 
 
+def upgrade_existing_links(content: str, notes_index: dict, rec_dir: Path) -> tuple:
+    """Convert existing wikilink 📒 lines to clickable relative markdown links.
+
+    Handles both `- 📒 **笔记**: [[Name]]` and `- 📒 **已有笔记**: [[Name]] — ...`,
+    preserving any trailing explanatory text after the wikilink.
+    """
+    count = 0
+
+    def repl(m):
+        nonlocal count
+        label = m.group(1)
+        raw = m.group(2).strip()
+        target = raw.split('|')[0].strip()  # handle [[Name|alias]]
+        info = notes_index.get(target.lower())
+        if not info:
+            return m.group(0)  # unknown note, leave untouched
+        count += 1
+        return f'- 📒 **{label}**: {make_note_link(info["name"], info["path"], rec_dir)}'
+
+    content = re.sub(
+        r'- 📒 \*\*(已有笔记|笔记)\*\*:\s*\[\[([^\]]+)\]\]',
+        repl,
+        content,
+    )
+    return content, count
+
+
 def backfill_links(recommendation_path: Path, notes_index: dict) -> int:
     """Backfill note links to recommendation file."""
+    rec_dir = recommendation_path.parent
+
     with open(recommendation_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
+    # 1. Upgrade any existing wikilink 📒 lines to clickable markdown links
+    content, upgraded = upgrade_existing_links(content, notes_index, rec_dir)
+
+    # 2. Insert links for papers that have a note but no 📒 line yet
     matches = match_papers_with_notes(content, notes_index)
-
-    if not matches:
-        print("No papers matched with existing notes")
-        return 0
-
-    # Insert note links (in reverse order to preserve positions)
     for match in reversed(matches):
-        insert_text = f'\n- 📒 **笔记**: [[{match["note_name"]}]]'
+        insert_text = (
+            f'\n- 📒 **笔记**: '
+            f'{make_note_link(match["note_name"], match["note_path"], rec_dir)}'
+        )
         content = (
             content[:match['source_line_end']] +
             insert_text +
@@ -138,7 +185,10 @@ def backfill_links(recommendation_path: Path, notes_index: dict) -> int:
     with open(recommendation_path, 'w', encoding='utf-8') as f:
         f.write(content)
 
-    # Update 分流表 wikilinks
+    if upgraded:
+        print(f"Upgraded {upgraded} existing wikilink note links to clickable links")
+
+    # Update 分流表 wikilinks (kept as wikilinks for Obsidian graph navigation)
     update_diversion_table(recommendation_path, notes_index, matches)
 
     return len(matches)
