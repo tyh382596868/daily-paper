@@ -7,6 +7,7 @@ venue: arXiv
 tags: [video-generation, in-context-learning, robot-manipulation, world-model, cross-task-generalization, vla, operator-network]
 zotero_collection: 3-Robotics/VLA
 image_source: online
+image_note: "arxiv图片链接暂时403，需科学上网访问 https://arxiv.org/html/2606.12028"
 arxiv_html: https://arxiv.org/html/2606.12028
 created: 2026-06-11
 ---
