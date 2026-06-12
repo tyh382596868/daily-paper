@@ -4,10 +4,10 @@ method_name: "WorldOlympiad"
 authors: [Yuke Zhao, Wangbo Zhao, Weijie Wang, Zeyu Zhang, Dakai An, Akide Liu, Yinghao Yu, Jiasheng Tang, Fan Wang, Wei Wang, Bohan Zhuang]
 year: 2026
 venue: arXiv
-tags: [world-model, benchmark, video-generation, physical-reasoning, 3d-consistency, interaction-fidelity]
+tags: [world-model-benchmark, video-generation-evaluation, physical-faithfulness, geometric-consistency, interaction-fidelity]
 zotero_collection: 1-生成模型
 image_source: online
-arxiv_html: https://arxiv.org/html/2606.11129
+arxiv_html: https://arxiv.org/html/2606.11129v1
 created: 2026-06-12
 ---
 
@@ -277,31 +277,31 @@ $$
 
 ### Figure 1: WorldOlympiad 整体流程
 
-![Figure 1](https://arxiv.org/html/2606.11129/2606.11129v1/x1.png)
+![Figure 1](https://arxiv.org/html/2606.11129v1/x1.png)
 
 **说明**：WorldOlympiad 的完整 pipeline 概览。左侧为数据采集（游戏/机器人/现实世界三个场景），中间为长视频生成（[[MLLM]] 辅助的分块动作字幕标注），右侧为三轨评测（物理、几何、交互赛道）。
 
 ### Figure 2: 数据采集概览
 
-![Figure 2](https://arxiv.org/html/2606.11129/2606.11129v1/x2.png)
+![Figure 2](https://arxiv.org/html/2606.11129v1/x2.png)
 
 **说明**：三类视频来源的数据采集流程。展示 GameGen-X（游戏）、RoboCOIN（机器人双臂操作）、LVD-2M（现实世界长视频）的数据特征与筛选标准。
 
 ### Figure 3: 数据标准化流水线
 
-![Figure 3](https://arxiv.org/html/2606.11129/2606.11129v1/x3.png)
+![Figure 3](https://arxiv.org/html/2606.11129v1/x3.png)
 
 **说明**：从原始视频到精细动作-字幕标注的三阶段处理流程：时序分块识别 → chunk 字幕生成 → 全局上下文精化。确保每个 chunk 的字幕在全视频时序中自洽。
 
 ### Figure 4: 数据流水线统计
 
-![Figure 4](https://arxiv.org/html/2606.11129/2606.11129v1/x4.png)
+![Figure 4](https://arxiv.org/html/2606.11129v1/x4.png)
 
 **说明**：数据处理的数量统计，涵盖处理阶段覆盖率、标注完成率、最终评测可用样本数量。
 
 ### Figure 5: WorldOlympiad 主要评测结果
 
-![Figure 5](https://arxiv.org/html/2606.11129/2606.11129v1/x5.png)
+![Figure 5](https://arxiv.org/html/2606.11129v1/x5.png)
 
 **说明**：8 个被评测世界模型在三条赛道上的得分统计。雷达图或柱状对比图，揭示各模型的能力分布差异：顶级模型物理分高（~0.94）但 3D 分仍不及 0.45，交互分中等（~0.73）。
 
