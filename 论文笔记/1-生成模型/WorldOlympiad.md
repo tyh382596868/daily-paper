@@ -307,7 +307,7 @@ $$
 
 ### Figure 6: 典型案例分析
 
-![Figure 6](https://arxiv.org/html/2606.11129/2606.11129v1/x6.png)
+![Figure 6](https://arxiv.org/html/2606.11129v1/x6.png)
 
 **说明**：WorldOlympiad 检测到的典型成功案例与失败案例对比。成功案例展示物理行为保持完好的高质量生成；失败案例包括违反重力约束、几何不一致（3D 重建崩溃）、chunk 边界状态重置等典型错误。
 
