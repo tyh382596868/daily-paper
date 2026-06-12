@@ -102,6 +102,15 @@ allowed-tools: Bash, Read, Write, Edit, Glob, Grep, WebFetch, WebSearch
 6. 验证：外链可加载 / 本地文件 >10KB
 7. **URL 去重**：写入前检查 URL 中是否有重复的 arxiv_id 路径段（如 `2603.05312v1/2603.05312v1/`），有则删除重复段。详见 `references/image-troubleshooting.md`
 
+> ⛔ **铁律：禁止编造图片 URL**。只能写入从来源 A/B/C **实际提取到的** img src（arXiv HTML 的真实图名形如 `/x1.png`、`/x2.png`）。
+> **绝对不要**自己拼描述性文件名（如 `/figures/fig1_overview.png`、`/figures/method.png`）——这类路径在 arXiv 上根本不存在，GitHub 上会显示破图。
+>
+> **抓不到图时的正确做法**（如沙箱环境 arXiv 返回 403、HTML 未生成）：**不要写 `![]()` 嵌入猜测 URL**，改用占位行：
+> ```markdown
+> > 🖼️ **Figure X: 标题** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/{arxiv_id})）
+> ```
+> 并在 frontmatter 标注 `image_source: pending`。占位行配合下方的图表「说明」文字，仍能让读者理解每张图，且不会在 GitHub 上挂破图。
+
 > ar5iv 编号不一定对应 Figure 编号，排错见 `references/image-troubleshooting.md`
 
 ### 图片可靠性保障（生成后自动执行）
@@ -117,6 +126,14 @@ python3 ../daily-papers/download_note_images.py "{笔记完整路径}"
 
 每个公式必须包含：名称（`[[概念|名称]]`）、LaTeX `$$` 块（前后留空行）、含义、符号列表。
 `$$` 块前后**必须有空行**否则 Obsidian 不渲染。超长公式用 `aligned` 拆分。
+
+> ⚠️ **GitHub 兼容性**：笔记会在 GitHub 上浏览，而 GitHub 用 KaTeX 渲染数学，宏白名单比 Obsidian 严格。
+> **禁止使用 `\operatorname` / `\operatorname*`**（GitHub 报 `macros not allowed: operatorname`）。等价替换：
+> - 普通算子：`\operatorname{sg}` → `\mathrm{sg}`、`\operatorname{Beta}` → `\mathrm{Beta}`、`\operatorname{softplus}` → `\mathrm{softplus}`
+> - 带下标 limits 的：`\operatorname*{arg\,min}_{x}` → `\mathop{\mathrm{arg\,min}}_{x}`（`\arg\min`/`\arg\max` 也可直接用 KaTeX 自带的 `\argmin`/`\argmax` 等价写法 `\mathop{\mathrm{...}}`）
+> - 取 top-K 之类：用 `\mathop{\mathrm{top\text{-}}K}` 或 `\arg\,\text{top-}K`，**不要**用 `\operatorname{top-}`
+>
+> 同理避免其它非标准宏（如自定义 `\def`）；优先用 `\mathrm`、`\mathop`、`\text`、`\mathbf`、`\mathcal` 等 KaTeX 通用宏。
 
 ## 4. Obsidian 保存
 
@@ -188,7 +205,8 @@ Tags 判断：看 Related Work 小标题 + Abstract 关键词。第一个 tag �
 - [ ] 所有 Table 完整保留（所有行列）？
 - [ ] 正文中技术术语有 `[[概念]]` 内联链接？
 - [ ] 概念库已更新（缺失的概念已创建）？
-- [ ] 图片可用（外链可加载 / 本地 >10KB）？
+- [ ] 图片可用（外链可加载 / 本地 >10KB）？**没有编造的 `/figures/xxx.png` 猜测 URL**，抓不到的图用占位行？
+- [ ] 公式**不含 `\operatorname`** 等 GitHub KaTeX 禁用宏（已换成 `\mathrm`/`\mathop`）？
 
 ## 7. 交互式功能
 

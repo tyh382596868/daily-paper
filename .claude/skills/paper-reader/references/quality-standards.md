@@ -9,17 +9,23 @@
 | # | 错误类型 | 示例 | 检查方法 |
 |---|---------|------|---------|
 | 1 | **变量冲突** | $v(s_\tau) = \sum_\tau r_\tau$（$\tau$ 既是自由变量又是求和变量） | 确保 bound variable 和 free variable 不同名 |
-| 2 | **公式-文本不一致** | 文字说 "stop-gradient" 但公式里没写 $\operatorname{sg}(\cdot)$ | 文字描述的性质必须在公式中体现 |
+| 2 | **公式-文本不一致** | 文字说 "stop-gradient" 但公式里没写 $\mathrm{sg}(\cdot)$ | 文字描述的性质必须在公式中体现 |
 | 3 | **符号约定不一致** | 正文用 $p$ 表示后验，公式用 $q$ | 全文统一使用原论文符号约定 |
 | 4 | **上下标/求和范围错误** | $\sum_{n=1}^{H}$ 写成 $\sum_{n=1}^{H-1}$ | 逐字核对原论文 |
 | 5 | **缺少关键算子** | 省略 $\mathbb{E}$、$\nabla$、stop-gradient 等 | 确认所有算子完整 |
 
-### Obsidian MathJax 适配
+### Obsidian + GitHub 数学适配
+
+笔记同时在 Obsidian（MathJax）和 GitHub（KaTeX）下浏览，必须两边都能渲染。KaTeX 宏白名单更严格。
 
 1. **避免超长单行公式**（>80 字符拆分为 `aligned` 块）
 2. **`$$` 块前后必须有空行**（否则不渲染）
-3. 安全命令：`\operatorname{}`, `\text{}`, `\begin{aligned}`, `\underbrace{}`
-4. `\Big`, `\bigg` 优于 `\left`/`\right` 处理大括号嵌套
+3. 安全命令（两边通用）：`\mathrm{}`, `\mathop{}`, `\text{}`, `\mathbf{}`, `\mathcal{}`, `\begin{aligned}`, `\underbrace{}`
+4. ⛔ **禁用 `\operatorname{}` / `\operatorname*{}`**：Obsidian 能渲染但 **GitHub KaTeX 报错** `macros not allowed: operatorname`。等价替换：
+   - `\operatorname{sg}` → `\mathrm{sg}`；`\operatorname{Beta}` → `\mathrm{Beta}`；`\operatorname{softplus}` → `\mathrm{softplus}`
+   - `\operatorname*{arg\,min}_{x}` → `\mathop{\mathrm{arg\,min}}_{x}`
+   - 文本里若要表达 stop-gradient，公式写 `\mathrm{sg}(\cdot)`（不要写 `\operatorname{sg}`）
+5. `\Big`, `\bigg` 优于 `\left`/`\right` 处理大括号嵌套
 
 ### 公式自检清单
 

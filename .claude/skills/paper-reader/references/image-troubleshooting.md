@@ -75,7 +75,12 @@ WebFetch 返回的图片路径可能是**相对路径**（如 `2603.05312v1/x1.p
 ![Figure 1](https://arxiv.org/html/xxxx/x1.png)
 ```
 
-**本地**（外链不可用时的备选）:
+> ⛔ 外链 URL 只能是从 HTML/主页**实际提取到的真实地址**（arXiv 真实图名形如 `/x1.png`、`/x2.png`）。
+> **禁止编造描述性文件名**（如 `/figures/fig1_overview.png`、`/figures/method.png`）——arXiv 上不存在这种路径，GitHub 会显示破图。
+> 抓不到图时不要写 `![]()` 猜测 URL，改用占位行 `> 🖼️ **Figure X: 标题** — 图片暂缺（[arXiv HTML](https://arxiv.org/html/{arxiv_id})）` 并设 `image_source: pending`。
+> 下面 `_fig1_overview.png` 这种描述性命名**仅用于已下载到本地的真实文件**，不可用于远程 URL。
+
+**本地**（外链不可用时的备选，文件须真实存在于 `assets/`）:
 ```markdown
 ![[{方法名}_fig1_overview.png]]
 ![[{方法名}_fig1_overview.png|600]]  <!-- 指定宽度 -->
