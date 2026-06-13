@@ -10,7 +10,7 @@ generated_by: dailypaper-skills
 
 ## 子目录
 
-- [[论文笔记/3-Robotics/VLA/VLA|VLA]] · 51 篇笔记 · 1 个子目录
+- [[论文笔记/3-Robotics/VLA/VLA|VLA]] · 52 篇笔记 · 1 个子目录
 - [[论文笔记/3-Robotics/assets/assets|assets]] · 0 篇笔记 · 0 个子目录
 
 ## 当前目录笔记
@@ -19,6 +19,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/GRAIL|GRAIL]]
 - [[论文笔记/3-Robotics/HANDOFF|HANDOFF]]
 - [[论文笔记/3-Robotics/LAD|LAD]]
+- [[论文笔记/3-Robotics/Mana|Mana]]
 - [[论文笔记/3-Robotics/PhysX-Omni|PhysX-Omni]]
 
 ## 说明

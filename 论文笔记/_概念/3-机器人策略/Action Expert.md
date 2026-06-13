@@ -25,6 +25,7 @@ Action Expert 是 [[VLA]] / [[WLA]] / [[World Action Model|WAM]] 类模型中负
 - [[π0]]: flow matching 动作头的代表
 - [[FLOWER]]: flow matching 动作专家
 - [[Diffusion Policy]]: 扩散式动作头
+- [[APT]]: 通过两阶段预训练解决行动专家捷径学习问题，引入[[层级门控融合]]注入语言特征
 
 ## 相关概念
 
