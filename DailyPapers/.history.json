@@ -1,100 +1,5 @@
 [
   {
-    "id": "2605.10921",
-    "date": "2026-05-13",
-    "title": "RoboMemArena: A Comprehensive and Challenging Robotic Memory Benchmark"
-  },
-  {
-    "id": "2605.10903",
-    "date": "2026-05-13",
-    "title": "CapVector: Learning Transferable Capability Vectors in Parametric Space for Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.11459",
-    "date": "2026-05-13",
-    "title": "Overcoming Dynamics-Blindness: Training-Free Pace-and-Path Correction for VLA Models"
-  },
-  {
-    "id": "2605.11567",
-    "date": "2026-05-13",
-    "title": "Dynamic Execution Commitment of Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.11596",
-    "date": "2026-05-13",
-    "title": "HorizonDrive: Self-Corrective Autoregressive World Model for Long-horizon Driving Simulation"
-  },
-  {
-    "id": "2605.11367",
-    "date": "2026-05-13",
-    "title": "3D-Belief: Embodied Belief Inference via Generative 3D World Modeling"
-  },
-  {
-    "id": "2605.11151",
-    "date": "2026-05-13",
-    "title": "RankQ: Offline-to-Online Reinforcement Learning via Self-Supervised Action Ranking"
-  },
-  {
-    "id": "2605.11817",
-    "date": "2026-05-13",
-    "title": "See What Matters: Differentiable Grid Sample Pruning for Generalizable Vision-Language-Action Model"
-  },
-  {
-    "id": "2605.11809",
-    "date": "2026-05-13",
-    "title": "Beyond World-Frame Action Heads: Motion-Centric Action Frames for Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.11750",
-    "date": "2026-05-13",
-    "title": "DreamAvoid: Critical-Phase Test-Time Dreaming to Avoid Failures in VLA Policies"
-  },
-  {
-    "id": "2605.11832",
-    "date": "2026-05-13",
-    "title": "Learning Action Manifold with Multi-view Latent Priors for Robotic Manipulation"
-  },
-  {
-    "id": "2605.11564",
-    "date": "2026-05-13",
-    "title": "RIO: Flexible Real-Time Robot I/O for Cross-Embodiment Robot Learning"
-  },
-  {
-    "id": "2605.11381",
-    "date": "2026-05-13",
-    "title": "Kairos: A Scalable Serving System for Physical AI"
-  },
-  {
-    "id": "2605.11678",
-    "date": "2026-05-13",
-    "title": "OOM-Free Alpamayo via CPU-GPU Memory Swapping for Vision-Language-Action Models"
-  },
-  {
-    "id": "2605.11479",
-    "date": "2026-05-13",
-    "title": "Offline Policy Evaluation for Manipulation Policies via Discounted Liveness Formulation"
-  },
-  {
-    "id": "2605.11951",
-    "date": "2026-05-13",
-    "title": "From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation"
-  },
-  {
-    "id": "2605.11762",
-    "date": "2026-05-13",
-    "title": "NavOL: Navigation Policy with Online Imitation Learning"
-  },
-  {
-    "id": "2605.11859",
-    "date": "2026-05-13",
-    "title": "EvoNav: Evolutionary Reward Function Design for Robot Navigation with Large Language Models"
-  },
-  {
-    "id": "2605.11424",
-    "date": "2026-05-13",
-    "title": "VidSplat: Gaussian Splatting Reconstruction with Geometry-Guided Video Diffusion Priors"
-  },
-  {
     "id": "2605.13775",
     "date": "2026-05-14",
     "title": "RoboEvolve: Co-Evolving Planner-Simulator for Robotic Manipulation with Limited Data"
@@ -2073,5 +1978,85 @@
     "id": "2606.11767",
     "date": "2026-06-12",
     "title": "Blind Dexterous Grasping via Real2Sim2Real Tactile Policy Learning"
+  },
+  {
+    "id": "2606.13376",
+    "date": "2026-06-13",
+    "title": "MoVerse: Real-Time Video World Modeling with Panoramic Gaussian Scaffold"
+  },
+  {
+    "id": "2606.12979",
+    "date": "2026-06-13",
+    "title": "EPM-JEPA: Operator-Side Experience Modulation in JEPA-Family World Models"
+  },
+  {
+    "id": "2606.13494",
+    "date": "2026-06-13",
+    "title": "NavWAM: A Navigation World Action Model for Goal-Conditioned Visual Navigation"
+  },
+  {
+    "id": "2606.12366",
+    "date": "2026-06-13",
+    "title": "APT: Action Expert Pretraining Improves Instruction Generalization of VLA Models"
+  },
+  {
+    "id": "2606.12402",
+    "date": "2026-06-13",
+    "title": "DIRECT: When and Where Should You Allocate Test-Time Compute in Embodied Planners"
+  },
+  {
+    "id": "2606.11628",
+    "date": "2026-06-13",
+    "title": "LUCID: Learning Embodiment-Agnostic Intent Models from Unstructured Human Videos"
+  },
+  {
+    "id": "2606.12956",
+    "date": "2026-06-13",
+    "title": "SERF: Spatiotemporal Environment and Robot Feature Map for Long-Horizon Mobile Manipulation"
+  },
+  {
+    "id": "2606.13460",
+    "date": "2026-06-13",
+    "title": "VISA: VLM-Guided Instance Semantic Auditing for 3D Occupancy World Models"
+  },
+  {
+    "id": "2606.13677",
+    "date": "2026-06-13",
+    "title": "Mana: Dexterous Manipulation of Articulated Tools"
+  },
+  {
+    "id": "2606.13232",
+    "date": "2026-06-13",
+    "title": "WT-UMI: Tactile-based Whole-Body Manipulation via Force-Supervised Contact-Aware Policy"
+  },
+  {
+    "id": "2606.12604",
+    "date": "2026-06-13",
+    "title": "EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations"
+  },
+  {
+    "id": "2606.13675",
+    "date": "2026-06-13",
+    "title": "Improving Robotic Generalist Policies via Flow Reversal Steering"
+  },
+  {
+    "id": "2606.13497",
+    "date": "2026-06-13",
+    "title": "SPARC: Reliable Spatial Annotations from Robot Demonstrations at Scale"
+  },
+  {
+    "id": "2606.13501",
+    "date": "2026-06-13",
+    "title": "GF-DiT: Scheduling Parallelism for Diffusion Transformer Serving"
+  },
+  {
+    "id": "2606.12706",
+    "date": "2026-06-13",
+    "title": "VLADriveBench: Evaluating CoT-Action Relationship in VLA for Autonomous Driving"
+  },
+  {
+    "id": "2606.13169",
+    "date": "2026-06-13",
+    "title": "Redesigning Regularization for Effective Policy Smoothing"
   }
 ]
