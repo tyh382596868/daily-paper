@@ -202,7 +202,7 @@ $$
 
 ### Figure 5：预训练必要性与语言注入机制消融
 
-![Figure 5](https://arxiv.org/html/2606.12366/2606.12366v1/x5.png)
+> 🖼️ **Figure 5: Ablation on large-scale pretraining and language injection mechanism** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.12366)）
 
 **说明**: 左图显示无大规模预训练的两阶段训练在未见类别（UO、UOUE）上显著落后；右图显示[[层级门控融合]]在所有维度上优于 Token Insertion，尤其在 VA 先验保持关键的 UO/UOUE 维度上差异最大。
 
@@ -210,7 +210,7 @@ $$
 
 ### Figure 6：组合任务结果
 
-![Figure 6](https://arxiv.org/html/2606.12366/2606.12366v1/x6.png)
+> 🖼️ **Figure 6: Results on compositional task** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.12366)）
 
 **说明**: 组合任务中，[[π₀.₅]] 在任务链接（chaining）场景下成功率接近 0%，而 APT 维持较强性能，无需显式任务分割即可执行多指令链式操作。
 
@@ -218,7 +218,7 @@ $$
 
 ### Figure 7：真实世界案例
 
-![Figure 7](https://arxiv.org/html/2606.12366/2606.12366v1/x7.png)
+> 🖼️ **Figure 7: Real-world cases** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.12366)）
 
 **说明**: (a) 抓放任务、(b) 杂乱场景抓放、(c) 组合任务链接的真实机器人执行结果，展示 APT 在未见对象、容器、环境下的泛化能力及失败案例分析。
 
