@@ -6,7 +6,7 @@ year: 2026
 venue: arXiv
 tags: [vla, action-expert, instruction-generalization, diffusion-policy, pretraining, bayesian-factorization, ood-generalization]
 zotero_collection: 3-Robotics/VLA
-image_source: online
+image_source: pending
 arxiv_html: https://arxiv.org/html/2606.12366
 created: 2026-06-13
 ---
@@ -170,7 +170,7 @@ $$
 
 ### Figure 1：APT 动机与概览
 
-![Figure 1](https://arxiv.org/html/2606.12366/2606.12366v1/x1.png)
+> 🖼️ **Figure 1: Action expert pretraining enables effective instruction following** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.12366)）
 
 **说明**: 说明行动专家预训练（APT）如何实现有效指令遵循。现有方法（如 [[π₀.₅]]）因数据不平衡导致 OOD 指令失败，APT 通过两阶段训练建立稳健的语言泛化能力。
 
@@ -178,15 +178,15 @@ $$
 
 ### Figure 2：APT 两阶段训练架构
 
-![Figure 2](https://arxiv.org/html/2606.12366/2606.12366v1/x2.png)
+> 🖼️ **Figure 2: Overview of APT** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.12366)）
 
-**说明**: Stage 1 中，[[行动专家]]仅条件化于来自冻结 [[Qwen3-VL]] 的视觉 token，构建 VA 先验；Stage 2 中，语言 token 通过[[层级门控融合]]注入，网络扩展至全 $N$ 层以对齐任务指令。
+**说明**: Stage 1 中，[[Action Expert|行动专家]]仅条件化于来自冻结 [[Qwen3-VL]] 的视觉 token，构建 VA 先验；Stage 2 中，语言 token 通过[[层级门控融合]]注入，网络扩展至全 $N$ 层以对齐任务指令。
 
 ---
 
 ### Figure 3：行动专家设计与门控融合
 
-![Figure 3](https://arxiv.org/html/2606.12366/2606.12366v1/x3.png)
+> 🖼️ **Figure 3: Action Expert Design** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.12366)）
 
 **说明**: 展示[[层级门控融合]]的具体结构。VLM 特征经 sigmoid 门控后以残差方式注入行动专家各层，动作 token 经分块因果自注意力处理，[[FiLM]] 模块注入扩散时间步。
 
@@ -194,7 +194,7 @@ $$
 
 ### Figure 4：跨架构泛化消融
 
-![Figure 4](https://arxiv.org/html/2606.12366/2606.12366v1/x4.png)
+> 🖼️ **Figure 4: Action expert pretraining applies to diverse architectures** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.12366)）
 
 **说明**: 验证两阶段预训练在 π 风格（APT）和 GR00T 风格（[[GR00T N1.5|GR00T]]）架构上均带来一致提升，APT 架构提升最为显著，证明方法的架构无关性。
 
