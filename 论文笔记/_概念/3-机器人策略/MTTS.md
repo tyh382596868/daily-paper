@@ -1,30 +1,41 @@
 ---
 type: concept
-aliases: [Multi-Tactile Token Synthesizer, 多触觉令牌合成器]
+aliases: [Morphology-Aware Tactile Token Space, 形态感知触觉令牌空间]
 ---
 
-# MTTS（Multi-Tactile Token Synthesizer）
+# MTTS（形态感知触觉令牌空间）
 
 ## 定义
-MTTS 是 FTP-1 提出的跨传感器触觉编码器，将图像型、阵列型、状态型三类异构触觉传感器的输出映射到统一的 token 表示空间，实现跨传感器策略泛化。
+MTTS（Morphology-Aware Tactile Token Space）是 [[FTP-1]] 提出的统一触觉表示框架，将异构触觉传感器（图像型、阵列型、状态型）的输出组织为 24 个功能区域的令牌序列，通过共享功能区域嵌入实现跨传感器对齐。
 
 ## 数学形式
-对第 $k$ 种传感器的输入 $\mathbf{s}_k$，通过传感器特定编码器：
-$$\mathbf{t}_k = \text{Encoder}_k(\mathbf{s}_k) \in \mathbb{R}^{d}$$
 
-统一 token 空间中做对齐（对比学习目标）：
-$$\mathcal{L}_{\text{align}} = \sum_{i \neq j} \text{InfoNCE}(\mathbf{t}_i, \mathbf{t}_j)$$
+触觉令牌 $\mathbf{T}$ 由各传感器编码器生成，加上可学习功能区域嵌入 $\mathbf{E}_{area}$：
+
+$$
+\mathbf{T} = \mathrm{Encoder}(\mathcal{X}) + \mathbf{E}_{area} + \mathbf{E}_{hand}
+$$
+
+其中 $\mathbf{E}_{hand}$ 区分左右手，$\mathcal{X}$ 为异构触觉观测。
+
+## 24 功能区域划分
+
+- **槽位 0–14**: 手部功能区域（拇指尖、各指节等）
+- **槽位 15–20**: 腕部 + 手指力矩传感器
+- **槽位 0–1（夹爪）**: 映射至拇指尖 + 食指尖
+- **槽位 21–23**: 保留扩展
 
 ## 核心要点
-1. 解决触觉传感器的跨硬件异质性——21 种传感器的信号差异极大
-2. 每种传感器有独立的模态特定编码器，共享 token 空间
-3. 与 VLA backbone 接口通用，不需要为每个传感器重新训练策略
-4. 配合 UniVTAC 对齐训练
+1. 传感器特定编码器（图像型→ViT+T3；阵列型→CNN；状态型→Fourier+MLP）将原始信号映射至 MTTS 令牌
+2. **功能区域嵌入全传感器共享**，是实现跨传感器对齐的关键
+3. 设计遵循手部形态学，使不同传感器的相同功能区域在表示空间中对齐
 
 ## 代表工作
-- [[FTP-1]]: MTTS 提出论文，跨传感器触觉基础策略
+- [[FTP-1]]: MTTS 提出论文，核心创新，实现 21 种传感器的统一表示
 
 ## 相关概念
+- [[触觉传感器]]
 - [[GelSight]]
-- [[InfoNCE]]
-- [[ACT (Action Chunking Transformer)]]
+- [[Contactile]]
+- [[T3 Transformer]]
+- [[触觉专家网络]]
