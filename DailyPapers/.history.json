@@ -1,70 +1,5 @@
 [
   {
-    "id": "2605.13775",
-    "date": "2026-05-14",
-    "title": "RoboEvolve: Co-Evolving Planner-Simulator for Robotic Manipulation with Limited Data"
-  },
-  {
-    "id": "2605.13757",
-    "date": "2026-05-14",
-    "title": "FrameSkip: Learning from Fewer but More Informative Frames in VLA Training"
-  },
-  {
-    "id": "2605.13724",
-    "date": "2026-05-14",
-    "title": "AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation"
-  },
-  {
-    "id": "2605.12587",
-    "date": "2026-05-14",
-    "title": "TrackCraft3R: Repurposing Video Diffusion Transformers for Dense 3D Tracking"
-  },
-  {
-    "id": "2605.12500",
-    "date": "2026-05-14",
-    "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture"
-  },
-  {
-    "id": "2605.12495",
-    "date": "2026-05-14",
-    "title": "AlphaGRPO: Unlocking Self-Reflective Multimodal Generation in UMMs via Decompositional Verifiable Reward"
-  },
-  {
-    "id": "2605.12090",
-    "date": "2026-05-14",
-    "title": "World Action Models: The Next Frontier in Embodied AI"
-  },
-  {
-    "id": "2605.11550",
-    "date": "2026-05-14",
-    "title": "The DAWN of World-Action Interactive Models"
-  },
-  {
-    "id": "2605.10832",
-    "date": "2026-05-14",
-    "title": "Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents"
-  },
-  {
-    "id": "2605.10813",
-    "date": "2026-05-14",
-    "title": "NanoResearch: Co-Evolving Skills, Memory, and Policy for Personalized Research Automation"
-  },
-  {
-    "id": "2605.00080",
-    "date": "2026-05-14",
-    "title": "World Model for Robot Learning: A Comprehensive Survey"
-  },
-  {
-    "id": "2604.18486",
-    "date": "2026-05-14",
-    "title": "OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation"
-  },
-  {
-    "id": "2509.18154",
-    "date": "2026-05-14",
-    "title": "MiniCPM-V 4.5: Cooking Efficient MLLMs via Architecture, Data, and\n  Training Recipe"
-  },
-  {
     "id": "2605.15190",
     "date": "2026-05-15",
     "title": "RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO"
@@ -2058,5 +1993,90 @@
     "id": "2606.13169",
     "date": "2026-06-13",
     "title": "Redesigning Regularization for Effective Policy Smoothing"
+  },
+  {
+    "id": "2606.12690",
+    "date": "2026-06-14",
+    "title": "EWAM: An Enhanced World Action Model for Closed-Loop Online Adaptation in Embodied Intelligence"
+  },
+  {
+    "id": "2606.13102",
+    "date": "2026-06-14",
+    "title": "FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation"
+  },
+  {
+    "id": "2606.13222",
+    "date": "2026-06-14",
+    "title": "Proprioceptive-visual correspondence enables self-other distinction in humanoid robots"
+  },
+  {
+    "id": "2606.12995",
+    "date": "2026-06-14",
+    "title": "GenHOI: Contact-Aware Humanoid-Object Interaction by Imitating Generated Videos without Task-Specific Training"
+  },
+  {
+    "id": "2606.12965",
+    "date": "2026-06-14",
+    "title": "EmbodiSteer: Steering Embodiment-Agnostic Visuomotor Policies with Joint-Space Guidance for Zero-Shot Cross-Embodiment Deployment"
+  },
+  {
+    "id": "2606.12372",
+    "date": "2026-06-14",
+    "title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning"
+  },
+  {
+    "id": "2606.12406",
+    "date": "2026-06-14",
+    "title": "FACTR 2: Learning External Force Sensing for Commodity Robot Arms Improves Policy Learning"
+  },
+  {
+    "id": "2606.12334",
+    "date": "2026-06-14",
+    "title": "Fourier Features Let Agents Learn High Precision Policies with Imitation Learning"
+  },
+  {
+    "id": "2606.13601",
+    "date": "2026-06-14",
+    "title": "MCR-Bionic Hand: Anatomical Structural Priors for Dexterous Manipulation"
+  },
+  {
+    "id": "2606.12603",
+    "date": "2026-06-14",
+    "title": "From Imitation to Alignment: Human-Preference Flow Policies for Long-Horizon Sidewalk Navigation"
+  },
+  {
+    "id": "2606.12550",
+    "date": "2026-06-14",
+    "title": "Foresight: Iterative Reasoning About Clues that Matter for Navigation"
+  },
+  {
+    "id": "2606.12396",
+    "date": "2026-06-14",
+    "title": "VLGA: Vision-Language-Geometry-Action Models for Autonomous Driving"
+  },
+  {
+    "id": "2606.13040",
+    "date": "2026-06-14",
+    "title": "RoboProcessBench: Benchmarking Process-Aware Understanding in Vision-Language Robotic Manipulation"
+  },
+  {
+    "id": "2606.12579",
+    "date": "2026-06-14",
+    "title": "G-MAPP: GPU-accelerated Multi-Agent Planning and Perception for Reactive Motion Generation"
+  },
+  {
+    "id": "2606.13655",
+    "date": "2026-06-14",
+    "title": "Flex4DHuman: Flexible Multi-view Video Diffusion for 4D Human Reconstruction"
+  },
+  {
+    "id": "2606.12910",
+    "date": "2026-06-14",
+    "title": "Bounding Boxes as Goals: Language-Conditioned Grasping via Neuro-Symbolic Planning"
+  },
+  {
+    "id": "2606.13049",
+    "date": "2026-06-14",
+    "title": "Y-BotFrame: An Extensible Embodied Agent Framework for Quadruped Robot Assistants"
   }
 ]
