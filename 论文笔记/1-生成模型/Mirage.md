@@ -17,11 +17,11 @@ created: 2026-06-13
 
 | 项目 | 内容 |
 |------|------|
-| 机构 | Microsoft（代码托管于 Microsoft GitHub） |
+| 机构 | Zhejiang University, Microsoft Research, Adelaide University, Monash University |
 | 日期 | June 2026 |
-| 项目主页 | — |
+| 项目主页 | [aka.ms/latent-spatial-memory](https://aka.ms/latent-spatial-memory) |
 | 对比基线 | [[Voyager]], [[Spatia]], [[VMem]] |
-| 链接 | [arXiv](https://arxiv.org/abs/2606.09828) / Code（Microsoft GitHub） |
+| 链接 | [arXiv](https://arxiv.org/abs/2606.09828) / [Code](https://aka.ms/latent-spatial-memory) |
 
 ---
 
@@ -72,7 +72,7 @@ created: 2026-06-13
 Mirage 采用**三阶段 3D 缓存**架构：
 
 - **输入**: 初始帧 $I_0$（图像）+ 相机内外参序列 $\{K^t, \mathbf{E}^t\}$
-- **Backbone**: 预训练[[视频扩散模型]]（CogVideoX-based，[[Flow Matching]]训练目标）
+- **Backbone**: [[Wan2.2-TI2V]] (Wan2.2-TI2V-5B，[[Flow Matching]]训练目标)
 - **核心模块**: [[Latent Spatial Memory]] — 世界坐标下的 latent 特征点云
 - **条件注入**: [[ControlNet]] 风格侧分支，输入为 latent-resolution 的读出帧
 - **输出**: 几何一致的长序列视频帧
@@ -284,15 +284,9 @@ $$
 
 ---
 
-### Figure 9: 补充视频结果
-
-![Figure 9: 更多场景下的 Mirage 生成结果](https://arxiv.org/html/2606.09828/x9.png)
-
-**说明**: 补充可视化结果，进一步展示 Mirage 在不同场景和相机运动模式下的一致性。
-
----
-
 ### Table 1: WorldScore 全面评测
+
+**世界模型方法（World Model Methods）**
 
 | Method | Avg↑ | Static↑ | Dynamic↑ | Cam Ctrl↑ | Obj Ctrl↑ | Content↑ | 3D Cons↑ | Photo Cons↑ | Style Cons↑ |
 |--------|------|---------|---------|---------|---------|---------|---------|-----------|-----------|
@@ -303,7 +297,17 @@ $$
 | FlashWorld | 60.23 | 70.85 | 49.60 | 84.43 | 50.28 | 56.54 | 85.87 | 86.72 | 79.36 |
 | LucidDreamer | 59.84 | 70.40 | 49.28 | 88.93 | 41.18 | 75.00 | 90.37 | 90.20 | 48.10 |
 | Spatia | 69.73 | 72.63 | 66.82 | 75.66 | 52.32 | 69.95 | 86.40 | 89.10 | 80.09 |
+
+**通用视频生成模型（Foundation Video Models）**
+
+| Method | Avg↑ | Static↑ | Dynamic↑ | Cam Ctrl↑ | Obj Ctrl↑ | Content↑ | 3D Cons↑ | Photo Cons↑ | Style Cons↑ |
+|--------|------|---------|---------|---------|---------|---------|---------|-----------|-----------|
+| VideoCrafter2 | 50.03 | 52.57 | 47.49 | 28.92 | 39.07 | 72.46 | 65.14 | 61.85 | 43.79 |
+| EasyAnimate | 52.25 | 52.85 | 51.65 | 26.72 | 54.50 | 50.76 | 67.29 | 47.35 | 73.05 |
+| Allegro | 53.64 | 55.31 | 51.97 | 24.84 | 57.47 | 51.48 | 70.50 | 69.89 | 65.60 |
 | CogVideoX-I2V | 60.64 | 62.15 | 59.12 | 38.27 | 40.07 | 36.73 | 86.21 | 88.12 | 83.22 |
+| Vchitect-2.0 | 40.38 | 42.28 | 38.47 | 26.55 | 49.54 | 65.75 | 41.53 | 42.30 | 25.69 |
+| LTX-Video | 55.99 | 55.44 | 56.54 | 25.06 | 53.41 | 39.73 | 78.41 | 88.92 | 53.50 |
 | Wan2.1 | 55.21 | 57.56 | 52.85 | 23.53 | 40.32 | 45.44 | 78.74 | 78.36 | 77.18 |
 | **Mirage (Ours)** | **70.36** | **73.60** | **67.11** | 55.36 | **74.17** | 42.09 | **92.21** | **93.95** | **96.91** |
 
@@ -381,13 +385,15 @@ $$
 
 ### 实现细节
 
-- **Backbone**: CogVideoX-based 预训练[[视频扩散模型]]（[[Flow Matching]]训练目标）
-- **侧分支**: ControlNet 风格，接受 latent-resolution 读出帧作为条件
+- **Backbone**: [[Wan2.2-TI2V]] (Wan2.2-TI2V-5B，[[Flow Matching]]训练目标，VAE stride s=16，C=48 通道)
+- **侧分支**: [[ControlNet]] 风格，接受 latent-resolution 读出帧作为条件
 - **LoRA rank**: 64（附加到自注意力 Q/K/V/O 投影）
-- **深度估计**: DepthAnything 3（默认），也支持 MapAnything / UniDepth
-- **动态过滤**: 开放词汇实体提取器 + 视频分割模型
-- **硬件**: NVIDIA H100（效率测试）
+- **深度估计**: [[DepthAnything3]]（默认），也支持 MapAnything / [[UniDepth]]
+- **动态过滤**: [[Qwen3-VL]] 开放词汇实体提取 + [[SAM2|SAM 3]] 视频分割
+- **相机位姿**: [[VIPE]] 从训练视频中提取相机位姿和深度
+- **硬件**: 训练用 32 张 A100，推理用单张 H100（单机 UniPC 调度器，40 步采样）
 - **训练**: 两阶段（Stage 1 冻结主干，Stage 2 联合微调）
+- **输出分辨率**: 704×1280 像素，33 帧/chunk（latent 9×44×80）
 
 ### 效率分析
 

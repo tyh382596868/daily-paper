@@ -19,6 +19,7 @@ Wan2.2-TI2V（Text-Image-to-Video）是阿里巴巴 Wan 视频生成系列的图
 ## 代表工作
 
 - [[EA-WM]]: 以 Wan2.2-TI2V 为骨干，添加 KVAF 分支和事件感知融合，实现机器人操作视频生成
+- [[Mirage]]: 以 Wan2.2-TI2V-5B (5B 参数) 为骨干，添加 ControlNet 侧分支引入 Latent Spatial Memory，实现几何一致的无边界视频世界模型
 
 ## 相关概念
 
