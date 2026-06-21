@@ -157,7 +157,15 @@ def automation_config() -> dict:
 
 
 def obsidian_vault_path() -> Path:
-    return _expand(paths_config()["obsidian_vault"])
+    raw = paths_config()["obsidian_vault"]
+    expanded = _expand(raw)
+    if not expanded.is_absolute():
+        # Anchor a relative vault path (e.g. ".") to the repo root rather than
+        # the caller's cwd, so MOC/index scripts write to the same place no
+        # matter which directory a (possibly forked) skill invokes them from.
+        repo_root = Path(__file__).resolve().parents[3]
+        return (repo_root / expanded).resolve()
+    return expanded
 
 
 def paper_notes_dir() -> Path:
