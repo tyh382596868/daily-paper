@@ -68,6 +68,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/WhatIfWorld|WhatIfWorld]]
 - [[论文笔记/3-Robotics/VLA/World-VLA-Loop|World-VLA-Loop]]
 - [[论文笔记/3-Robotics/VLA/X-Foresight|X-Foresight]]
+- [[论文笔记/3-Robotics/VLA/omega-EVA|omega-EVA]]
 
 ## 说明
 
