@@ -46,6 +46,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/OrbiSim|OrbiSim]]
 - [[论文笔记/3-Robotics/VLA/PAPO-VLA|PAPO-VLA]]
 - [[论文笔记/3-Robotics/VLA/PROWL|PROWL]]
+- [[论文笔记/3-Robotics/VLA/PearlVLA|PearlVLA]]
 - [[论文笔记/3-Robotics/VLA/Pion|Pion]]
 - [[论文笔记/3-Robotics/VLA/RLA-WM|RLA-WM]]
 - [[论文笔记/3-Robotics/VLA/RLDX-1|RLDX-1]]
