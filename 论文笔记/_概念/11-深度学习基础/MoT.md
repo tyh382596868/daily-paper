@@ -26,6 +26,7 @@ $$
 
 ## 代表工作
 
+- [[Mixture-of-Transformers]]：原始 MoT 论文（Meta, TMLR 2025）——按模态解耦 FFN/注意力投影/归一化，自注意力全局共享，文+图 55.8% FLOPs 追平 dense。
 - GE-Act, Motus, LingBot-VA, BagelVLA, Fast-WAM, LDA-1B, FRAPPE, DiT4DiT — [[RobotWM-Survey]] Section 3.4
 
 ## 相关概念
