@@ -30,6 +30,7 @@ DEFAULT_CONFIG = {
         "obsidian_vault": "~/ObsidianVault",
         "paper_notes_folder": "论文笔记",
         "daily_papers_folder": "DailyPapers",
+        "deep_reading_folder": "论文精读",
         "concepts_folder": "_概念",
         "zotero_db": "~/Zotero/zotero.sqlite",
         "zotero_storage": "~/Zotero/storage",
@@ -165,6 +166,10 @@ def paper_notes_dir() -> Path:
 
 def daily_papers_dir() -> Path:
     return obsidian_vault_path() / paths_config()["daily_papers_folder"]
+
+
+def deep_reading_dir() -> Path:
+    return obsidian_vault_path() / paths_config().get("deep_reading_folder", "论文精读")
 
 
 def concepts_dir() -> Path:
