@@ -30,6 +30,7 @@ $$
 - [[EA-WM]]: 使用 Flow Matching 目标联合训练视频和 KVAF 预测
 - [[RLA-WM]]: 在紧凑的残差潜在动作（RLA）空间用 Flow Matching 生成 $z$，再单步解码未来 DINO token
 - [[EvoScene-VLA]]: 动作专家共享时间步 $\tau$ 联合去噪动作和场景 token，免在线场景预测器
+- [[FAFM]]（Guo et al., 2026）: 在 DCT 系数空间执行 Flow Matching + 速度正则化，等价 H¹ Sobolev 投影
 
 ## 相关概念
 

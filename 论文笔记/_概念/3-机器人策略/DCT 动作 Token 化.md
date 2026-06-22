@@ -26,6 +26,7 @@ $$
 
 - [[UniVLA-ICLR2026]]（Wang et al., 2025）: 将 DCT+BPE 动作 Token 化集成到统一 VLA 框架
 - [[FAST]]（pi 团队, 2025）: 提出频域动作序列 Token 化方法 FAST
+- [[FAFM]]（Guo et al., 2026）: 在 DCT 系数空间执行 Flow Matching，解决异构频率与时序抖动
 
 ## 相关概念
 

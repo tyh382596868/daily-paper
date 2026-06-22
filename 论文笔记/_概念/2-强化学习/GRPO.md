@@ -20,6 +20,7 @@ $$\hat{A}_i = \frac{r_i - \mathrm{mean}(\{r_1,\dots,r_G\})}{\mathrm{std}(\{r_1,\
 
 ## 代表工作
 - [[Sword]]: 用 GRPO 在学到的 world model（当模拟器）里对 [[OpenVLA]] 做 policy 后训练。
+- [[RewardAgent]]: DynDiff-GRPO，动态感知 rollout 多样化，对视频扩散世界模型做 RL 后训练，含均值空间 KL 正则变体。
 
 ## 相关概念
 - [[PPO]]
