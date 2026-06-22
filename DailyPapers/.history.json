@@ -1768,5 +1768,105 @@
     "id": "2606.12072",
     "date": "2026-06-21",
     "title": "World Model Self-Distillation: Training World Models to Solve General Tasks"
+  },
+  {
+    "id": "2606.16993",
+    "date": "2026-06-22",
+    "title": "DreamX-World 1.0: A General-Purpose Interactive World Model"
+  },
+  {
+    "id": "2606.16533",
+    "date": "2026-06-22",
+    "title": "Kairos: A Native World Model Stack for Physical AI"
+  },
+  {
+    "id": "2606.18960",
+    "date": "2026-06-22",
+    "title": "Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation"
+  },
+  {
+    "id": "2606.19531",
+    "date": "2026-06-22",
+    "title": "ImageWAM: Do World Action Models Really Need Video Generation, or Just Image Editing?"
+  },
+  {
+    "id": "2606.20104",
+    "date": "2026-06-22",
+    "title": "Sensorimotor World Models: Perception for Action via Inverse Dynamics"
+  },
+  {
+    "id": "2606.20562",
+    "date": "2026-06-22",
+    "title": "MemoryWAM: Efficient World Action Modeling with Persistent Memory"
+  },
+  {
+    "id": "2606.19928",
+    "date": "2026-06-22",
+    "title": "SWAP: Symmetric Equivariant World-Model for Agile Robot Parkour"
+  },
+  {
+    "id": "2606.20545",
+    "date": "2026-06-22",
+    "title": "Current World Models Lack a Persistent State Core"
+  },
+  {
+    "id": "2606.19784",
+    "date": "2026-06-22",
+    "title": "EquiVLA: A General Framework for Rotationally Equivariant Vision-Language-Action Models"
+  },
+  {
+    "id": "2606.18953",
+    "date": "2026-06-22",
+    "title": "Object-Centric Residual RL for Zero-Shot Sim-to-Real VLA Enhancement"
+  },
+  {
+    "id": "2606.20246",
+    "date": "2026-06-22",
+    "title": "Finetuning Vision-Language-Action Models Requires Fewer Layers Than You Think"
+  },
+  {
+    "id": "2606.19297",
+    "date": "2026-06-22",
+    "title": "Does VLA Even Know the Basics? Measuring Commonsense and World Knowledge Retention"
+  },
+  {
+    "id": "2606.18955",
+    "date": "2026-06-22",
+    "title": "Motion-Focused Latent Action Enables Cross-Embodiment VLA Training from Human EgoVideos"
+  },
+  {
+    "id": "2606.20092",
+    "date": "2026-06-22",
+    "title": "EventVLA: Event-Driven Visual Evidence Memory for Long-Horizon Vision-Language-Action Policies"
+  },
+  {
+    "id": "2606.20285",
+    "date": "2026-06-22",
+    "title": "Co-VLA: Coordination-Aware Structured Action Modeling for Dual-Arm Vision-Language-Action Systems"
+  },
+  {
+    "id": "2606.19998",
+    "date": "2026-06-22",
+    "title": "Tri-Info: Generalizable, Interpretable Failure Prediction for VLA Models via Information Theory"
+  },
+  {
+    "id": "2606.19194",
+    "date": "2026-06-22",
+    "title": "Invertible Neural Network Adapter for One-Step Flow Matching in Robot Manipulation"
+  },
+  {
+    "id": "2606.18959",
+    "date": "2026-06-22",
+    "title": "TactSpace: Learning a Physics-enriched Shared Latent Space for Tactile Sim-to-Real Transfer"
+  },
+  {
+    "id": "2606.19333",
+    "date": "2026-06-22",
+    "title": "Do as I Do: Dexterous Manipulation Data from Everyday Human Videos"
+  },
+  {
+    "id": "2605.12500",
+    "date": "2026-06-22",
+    "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture"
   }
 ]
