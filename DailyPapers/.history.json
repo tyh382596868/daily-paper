@@ -1868,5 +1868,155 @@
     "id": "2605.12500",
     "date": "2026-06-22",
     "title": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture"
+  },
+  {
+    "id": "2606.17480",
+    "date": "2026-06-22",
+    "title": "GeneralVLA-2: Geometry-Aware Reconstruction and Governed Memory for Robot Planning"
+  },
+  {
+    "id": "2606.20389",
+    "date": "2026-06-22",
+    "title": "CoLI: A Reproducible Platform for Continuum Robot Learning via Monolithic 3D Printing and Isomorphic Teleoperation"
+  },
+  {
+    "id": "2606.19769",
+    "date": "2026-06-22",
+    "title": "Data Standards for Humanoid Robotics: The Missing Infrastructure for Physical AI"
+  },
+  {
+    "id": "2606.19889",
+    "date": "2026-06-22",
+    "title": "SurgVista: Long-Horizon Surgical World Modeling with Plausible Instrument-Tissue Dynamics"
+  },
+  {
+    "id": "2602.15763",
+    "date": "2026-06-22",
+    "title": "GLM-5: from Vibe Coding to Agentic Engineering"
+  },
+  {
+    "id": "2606.16140",
+    "date": "2026-06-22",
+    "title": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models"
+  },
+  {
+    "id": "2606.20549",
+    "date": "2026-06-22",
+    "title": "Generating Robot Hands from Human Demonstrations"
+  },
+  {
+    "id": "2606.20458",
+    "date": "2026-06-22",
+    "title": "Slow Brain, Fast Planner: Latency-Resilient VLM-Augmented Urban Navigation"
+  },
+  {
+    "id": "2606.20135",
+    "date": "2026-06-22",
+    "title": "Frequency-Aware Flow Matching for Continuous and Consistent Robotic Action Generation"
+  },
+  {
+    "id": "2606.20118",
+    "date": "2026-06-22",
+    "title": "Pose6DAug: Physically Plausible Multi-view Object Swapping for Robot Data Augmentation"
+  },
+  {
+    "id": "2606.19752",
+    "date": "2026-06-22",
+    "title": "Temporal Self-Imitation Learning"
+  },
+  {
+    "id": "2606.20310",
+    "date": "2026-06-22",
+    "title": "Through the PRISM: Preference Representation in Intermediate States of Video Diffusion Models"
+  },
+  {
+    "id": "2606.20112",
+    "date": "2026-06-22",
+    "title": "Pixel-Level Residual Diffusion Transformer: Scalable 3D CT Volume Generation"
+  },
+  {
+    "id": "2606.20083",
+    "date": "2026-06-22",
+    "title": "Holo-World: Unified Camera, Object and Weather Control for Video World Model"
+  },
+  {
+    "id": "2606.20076",
+    "date": "2026-06-22",
+    "title": "Variable-Length Tokenization via Learnable Global Merging for Diffusion Transformers"
+  },
+  {
+    "id": "2606.20101",
+    "date": "2026-06-22",
+    "title": "Hybrid Diffusion Transformer for Instruction-Guided Audio Editing via Rectified Flow"
+  },
+  {
+    "id": "2606.19990",
+    "date": "2026-06-22",
+    "title": "Reward as An Agent for Embodied World Models"
+  },
+  {
+    "id": "2606.20495",
+    "date": "2026-06-22",
+    "title": "Increasing Resilience of Continuum Robots via Motion Planning Algorithms"
+  },
+  {
+    "id": "2606.20491",
+    "date": "2026-06-22",
+    "title": "Fast Human Attention Prediction for Fixation-guided Active Perception in Autonomous Navigation"
+  },
+  {
+    "id": "2606.20426",
+    "date": "2026-06-22",
+    "title": "TaCauchy: An Extensible FEM Framework for Vision-Based Tactile Simulation"
+  },
+  {
+    "id": "2606.20365",
+    "date": "2026-06-22",
+    "title": "An Infrastructure-less, Control-Independent Solution to Relative Localisation of a Team of Mobile Robots using Ranging Measurements"
+  },
+  {
+    "id": "2606.20272",
+    "date": "2026-06-22",
+    "title": "Efficiently Linking Real Scenes with Synthetic Data Generation for AI-based Cognitive Robotics and Computer Vision Applications"
+  },
+  {
+    "id": "2606.20209",
+    "date": "2026-06-22",
+    "title": "FlowMaps: Modeling Long-Term Multimodal Object Dynamics with Flow Matching"
+  },
+  {
+    "id": "2606.20193",
+    "date": "2026-06-22",
+    "title": "Belt-Finger: An Affordable Soft Belt-Driven Gripper for Dexterous In-Hand Manipulation"
+  },
+  {
+    "id": "2606.20048",
+    "date": "2026-06-22",
+    "title": "MirrorDuo: Reflection-Consistent Visuomotor Learning from Mirrored Demonstration Pairs"
+  },
+  {
+    "id": "2606.20031",
+    "date": "2026-06-22",
+    "title": "A Neuromorphic Reinforcement Learning Framework for Efficient Pathfinding in Robotic Mobile Fulfillment Systems"
+  },
+  {
+    "id": "2606.19971",
+    "date": "2026-06-22",
+    "title": "Evaluation of Augmented Reality-based Intuitive Interface for Robot-Assisted Transesophageal Echocardiography: A User Study"
+  },
+  {
+    "id": "2606.19914",
+    "date": "2026-06-22",
+    "title": "Co-policy: Responsive Human-Robot Co-Creation for Musical Performances"
+  },
+  {
+    "id": "2606.19897",
+    "date": "2026-06-22",
+    "title": "One-to-Two Acting: A Novel Framework for Single-arm Agent Action Expansion to Dual Arms"
+  },
+  {
+    "id": "2606.19774",
+    "date": "2026-06-22",
+    "title": "Start Right, Arrive Right: Asynchronous Execution via Initial Noise Selection"
   }
 ]
