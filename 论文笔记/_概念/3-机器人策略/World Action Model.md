@@ -29,6 +29,7 @@ World Action Model（WAM）是一类将场景演化预测（世界模型）与�
 - [[VLA-JEPA]]: 采用 JEPA 式预测目标的 WAM 变体
 - [[RLA-WM]]: 极简 WAM——给 BC-ResNet 加线性头预测残差潜在动作（RLA），从无动作视频学策略，不耦合 DINO/视频生成 backbone
 - [[DAWN]]: 把 WAM 推广为 [[WAIM]]（World-Action Interactive Model），通过 [[World Predictor]] 与 [[World-Conditioned Action Denoiser]] 的递归交互在自动驾驶 NAVSIM v1 perception-free 区取得 SOTA
+- [[ImageWAM]]: 用图像编辑骨干替代视频生成的 WAM，提取去噪 KV Cache 条件化动作专家，FLOPs 降至视频 WAM 的 1/6
 
 ## 相关概念
 
