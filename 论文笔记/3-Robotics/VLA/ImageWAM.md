@@ -6,7 +6,7 @@ year: 2026
 venue: arXiv
 tags: [world-action-model, image-editing, vla, flow-matching, robot-manipulation]
 zotero_collection: 3-Robotics/VLA
-image_source: online
+image_source: pending
 arxiv_html: https://arxiv.org/html/2606.19531
 created: 2026-06-22
 ---
@@ -226,31 +226,31 @@ $$
 
 ### Figure 1: 方法对比总览
 
-![Figure 1](https://arxiv.org/html/2606.19531/2606.19531v1/x1.png)
+> 🖼️ **Figure 1: 视频 WAM vs ImageWAM 对比** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.19531)）
 
 **说明**: 左侧展示传统视频生成 WAM 的流水线——从 $(o_t, l)$ 生成大量未来视频 token，存在计算冗余和视觉伪影问题；右侧展示 ImageWAM——直接生成单帧终态图像并提取 [[KV Cache|KV 缓存]]，聚焦于动作相关的当前到目标视觉差异。
 
 ### Figure 2: ImageWAM 流水线架构
 
-![Figure 2](https://arxiv.org/html/2606.19531/2606.19531v1/x2.png)
+> 🖼️ **Figure 2: ImageWAM Pipeline** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.19531)）
 
 **说明**: 完整 ImageWAM 流水线图。给定语言指令和当前观测 $o_t$，图像编辑骨干合成未来帧；[[Action Expert|动作专家]]通过 [[Joint Attention|联合注意力]]集成去噪过程中的中间 KV 特征 $\mathcal{C}_{\text{edit}}^{\tau}$，经[[Flow Matching|流匹配]]解码动作块 $\mathbf{a}_{t:t+H}$。
 
 ### Figure 3: 实验环境
 
-![Figure 3](https://arxiv.org/html/2606.19531/2606.19531v1/x3.png)
+> 🖼️ **Figure 3: 实验环境设置** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.19531)）
 
 **说明**: 四个实验环境：RoboTwin 2.0（仿真，含 clean/randomized 设置）、LIBERO（仿真，四个任务套件）、LIBERO-Plus（分布偏移鲁棒性测试）、以及真实世界 Dobot XTrainer 机械臂上的四个任务（叠碗、折毛巾、开抽屉存标记、挂杯）。
 
 ### Figure 4: 注意力可视化
 
-![Figure 4](https://arxiv.org/html/2606.19531/2606.19531v1/x4.png)
+> 🖼️ **Figure 4: Attention Visualization** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.19531)）
 
 **说明**: ImageWAM 编辑缓存的注意力集中在任务相关的变化区域（被操作的物体、目标容器、接触区域），有效抑制背景；而 FastWAM 视频缓存的注意力则更为分散，包含大量与动作无关的背景信息。
 
 ### Figure 5: 视频生成伪影导致动作失败
 
-![Figure 5](https://arxiv.org/html/2606.19531/2606.19531v1/x5.png)
+> 🖼️ **Figure 5: Future-Video Artifacts** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.19531)）
 
 **说明**: 视频生成 WAM 在任务相关对象周围产生可见的几何扭曲和空间布局不一致，这类伪影污染了动作条件化上下文，直接导致任务失败。ImageWAM 规避了这一问题。
 
