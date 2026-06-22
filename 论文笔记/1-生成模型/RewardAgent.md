@@ -297,13 +297,13 @@ $$
 
 ### Figure 2: Reward Agent 框架概览
 
-![Figure 2](https://arxiv.org/html/2606.19990/2606.19990v1/image/agent.png)
+> 🖼️ **Figure 2: Reward Agent 框架概览** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.19990)）
 
 **说明**: Reward Agent 的整体流水线：规划 → 课程式奖励设计 → 投票机制 → 反思，集成为统一的奖励生成管道。四个评估维度（Visual Quality、Instruction Following、Physical Compliance、Task Completion）依次推进，前一维度不达阈值则后续维度不执行。
 
 ### Figure 3: Rollout 策略消融实验
 
-![Figure 3](https://arxiv.org/html/2606.19990/2606.19990v1/x2.png)
+> 🖼️ **Figure 3: Rollout 策略消融实验** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.19990)）
 
 **说明**: (a) 用 DINOv3 余弦距离衡量 rollout 多样性：DynDiff-GRPO 保持比 CPS 更高的轨迹多样性。(b) PAI-Bench robot domain 性能：DynDiff-GRPO（Domain 85.63，Overall 81.18）> CPS（84.03，80.31），质量分数（Quality）两者相当。
 
