@@ -33,6 +33,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/GAF|GAF]]
 - [[论文笔记/3-Robotics/VLA/GEM-4D|GEM-4D]]
 - [[论文笔记/3-Robotics/VLA/GaussianDream|GaussianDream]]
+- [[论文笔记/3-Robotics/VLA/GeneralVLA2|GeneralVLA2]]
 - [[论文笔记/3-Robotics/VLA/ImageWAM|ImageWAM]]
 - [[论文笔记/3-Robotics/VLA/IntentVLA|IntentVLA]]
 - [[论文笔记/3-Robotics/VLA/JEPA-WM|JEPA-WM]]
