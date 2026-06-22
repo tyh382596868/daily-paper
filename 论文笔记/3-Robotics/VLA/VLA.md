@@ -26,6 +26,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/EgoExo-WM|EgoExo-WM]]
 - [[论文笔记/3-Robotics/VLA/EquiVLA|EquiVLA]]
 - [[论文笔记/3-Robotics/VLA/EvoScene-VLA|EvoScene-VLA]]
+- [[论文笔记/3-Robotics/VLA/FAFM|FAFM]]
 - [[论文笔记/3-Robotics/VLA/FASTER|FASTER]]
 - [[论文笔记/3-Robotics/VLA/FTP-1|FTP-1]]
 - [[论文笔记/3-Robotics/VLA/FineVLA|FineVLA]]
