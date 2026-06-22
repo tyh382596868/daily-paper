@@ -6,7 +6,7 @@ year: 2026
 venue: arXiv
 tags: [world-model, reinforcement-learning, reward-hacking, diffusion-policy, embodied-ai, grpo, video-generation]
 zotero_collection: 1-生成模型
-image_source: online
+image_source: pending
 arxiv_html: https://arxiv.org/html/2606.19990
 created: 2026-06-22
 ---
@@ -291,7 +291,7 @@ $$
 
 ### Figure 1: 典型奖励 Hacking 失败案例
 
-![Figure 1](https://arxiv.org/html/2606.19990/2606.19990v1/x1.png)
+> 🖼️ **Figure 1: 典型奖励 Hacking 失败案例** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.19990)）
 
 **说明**: 四种 [[Reward Hacking]] 模式的典型例子：(a) 视觉遮蔽（VideoAlign VQ 0.79/1.0）；(b) 运动退化（UnifiedReward Alignment Score 2.76/5.0）；(c) 背景简化（VideoAlign VQ 0.80/1.0）；(d) 物理违背（UnifiedReward Physics Score 3.0/5.0）。生成视频获得虚高分数但严重违背真实任务目标。
 
