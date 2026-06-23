@@ -6,7 +6,7 @@ year: 2026
 venue: arXiv
 tags: [world-model, sim-to-real, quadrotor, jepa, mppi, latent-dynamics]
 zotero_collection: 9-无人机
-image_source: online
+image_source: pending
 arxiv_html: https://arxiv.org/html/2606.23444
 created: 2026-06-23
 ---
@@ -262,7 +262,7 @@ $$
 
 ### Figure 1: 四旋翼世界模型的四个期望特性
 
-![Figure 1](https://arxiv.org/html/2606.23444/2606.23444v1/x1.png)
+> 🖼️ **Figure 1: 四旋翼世界模型的期望特性** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: 作者认为一个好的四旋翼[[World Model|世界模型]]应同时满足：(1) 精确的长时域预测，(2) 可解释的物理状态输出，(3) 实时推理能力，(4) 零样本任务泛化。SkyJEPA 通过 [[JEPA]] 潜预测 + 物理探针 + [[MPPI]] 集成实现了所有四个目标。
 
@@ -270,7 +270,7 @@ $$
 
 ### Figure 2: SkyJEPA 整体框架概览
 
-![Figure 2](https://arxiv.org/html/2606.23444/2606.23444v1/x2.png)
+> 🖼️ **Figure 2: 整体框架概览** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: 上方为状态/动作历史编码路径，[[TCN]] 编码器将历史输入编码为潜变量；中间为[[GRU]]预测器递归滚出未来潜变量；下方为物理探针将潜变量通过可微分运动学积分器解码为物理状态，最终输入 [[MPPI]] 控制器。
 
@@ -278,7 +278,7 @@ $$
 
 ### Figure 3: 两阶段训练流水线
 
-![Figure 3](https://arxiv.org/html/2606.23444/2606.23444v1/x3.png)
+> 🖼️ **Figure 3: 两阶段训练流水线** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: **Stage 1**（左）：编码器 + [[GRU]] 预测器联合训练，最小化 $\mathcal{L}_{\mathrm{pred}} + \lambda\mathcal{L}_{\mathrm{SIGReg}}$；**Stage 2**（右）：编码器和预测器权重冻结，仅训练物理探针 $\psi$，最小化 $\mathcal{L}_{\mathrm{prober}}$。两阶段的解耦是防止有监督状态恢复损失破坏已学潜动力学的关键设计。
 
@@ -286,7 +286,7 @@ $$
 
 ### Figure 4: 真实世界评估场景
 
-![Figure 4](https://arxiv.org/html/2606.23444/2606.23444v1/x4.png)
+> 🖼️ **Figure 4: 真实世界评估场景** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: 三种评估场景：(a) 标准轨迹跟踪，(b) 载荷运输（+300g，改变质量和惯性），(c) 螺旋桨切换（改变执行特性）。所有场景均为**零样本迁移**，无需真实环境微调。
 
@@ -294,7 +294,7 @@ $$
 
 ### Figure 5: NVIDIA Orin NX 推理速度分析
 
-![Figure 5](https://arxiv.org/html/2606.23444/2606.23444v1/x5.png)
+> 🖼️ **Figure 5: 推理速度分析** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: 推理时间随滚出长度和 MPPI 采样数 $S$ 增加。选定参数（$T=15$，$S=512$）在 10ms 实时控制预算内。99K 参数的轻量模型设计是嵌入式部署的关键。
 
@@ -302,7 +302,7 @@ $$
 
 ### Figure 6: 递归滚出误差分析
 
-![Figure 6](https://arxiv.org/html/2606.23444/2606.23444v1/x6.png)
+> 🖼️ **Figure 6: 递归滚出误差分析** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: 左图：[[Compounding Ratio|Compounding Ratio]]（复合比）随步数变化，SkyJEPA（CR=1.4）显著低于预测基线（CR=2.4）；右图：误差增长率（Error Growth Rate），SkyJEPA 的误差增量随步数接近平稳，而自回归基线持续增大。
 
@@ -310,7 +310,7 @@ $$
 
 ### Figure 7: 潜轨迹时序平滑性分析
 
-![Figure 7](https://arxiv.org/html/2606.23444/2606.23444v1/x7.png)
+> 🖼️ **Figure 7: 潜轨迹时序平滑性分析** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: (a) 笛卡尔坐标轨迹示例；(b) 对应潜轨迹的 PCA 投影，SkyJEPA 的潜轨迹在表征空间中呈平滑直线演化；(c) Temporal Straightening Score，SkyJEPA 得分 0.75 远高于预测基线的 -0.4，表明潜空间中时间演化更平滑一致，有利于稳定控制。
 
@@ -318,7 +318,7 @@ $$
 
 ### Figure 8: 开环预测精度对比
 
-![Figure 8](https://arxiv.org/html/2606.23444/2606.23444v1/x8.png)
+> 🖼️ **Figure 8: 开环预测精度对比** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: 不同动力学模型在位置 RMSE、速度 RMSE、姿态误差上随滚出长度的变化。SkyJEPA + PI Prober 在所有指标上均最优，且随步数增加误差增速最慢，体现了 [[JEPA]] 潜预测在长时域的核心优势。
 
@@ -326,7 +326,7 @@ $$
 
 ### Figure 9: 观测噪声鲁棒性
 
-![Figure 9](https://arxiv.org/html/2606.23444/2606.23444v1/x9.png)
+> 🖼️ **Figure 9: 观测噪声鲁棒性** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: 在增加 i.i.d. 高斯观测噪声下的位置 RMSE。SkyJEPA 在噪声逐渐增大时表现出明显更好的鲁棒性，得益于潜空间建模对逐步噪声扰动的自然抵抗能力。
 
@@ -334,7 +334,7 @@ $$
 
 ### Figure 10: 真实世界零样本轨迹跟踪
 
-![Figure 10](https://arxiv.org/html/2606.23444/2606.23444v1/x10.png)
+> 🖼️ **Figure 10: 真实世界零样本轨迹跟踪** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: 真实飞行轨迹叠加在参考轨迹上，颜色表示跟踪误差（厘米）。五种轨迹（圆形、椭圆、8字形、鱼形、双纽线）均实现零样本迁移，最高速度达 7.2 m/s，最大加速度 12.5 m/s²。
 
@@ -342,7 +342,7 @@ $$
 
 ### Figure 11: 平台变化下的鲁棒性
 
-![Figure 11](https://arxiv.org/html/2606.23444/2606.23444v1/x11.png)
+> 🖼️ **Figure 11: 平台变化下的鲁棒性** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.23444)）
 
 **说明**: (a) 载荷运输：附加 300g 载荷修改质量和惯性参数；(b) 螺旋桨切换：更换螺旋桨改变执行特性。SkyJEPA 无需重训，在所有扰动场景下位置误差比预测基线低约 1.3–1.35 倍。
 
