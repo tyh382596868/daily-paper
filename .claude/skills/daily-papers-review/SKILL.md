@@ -210,7 +210,16 @@ description: |
 
 ### Phase 6: 保存到 Obsidian
 
-用 Write 工具保存到 `{DAILY_PAPERS_PATH}/YYYY-MM/YYYY-MM-DD-论文推荐.md`（目录不存在则先创建）。
+**确定输出文件名（同一天多次运行时）**：
+
+检查 `{DAILY_PAPERS_PATH}/YYYY-MM/` 下是否已存在今天的推荐文件：
+- 不存在 → 使用 `YYYY-MM-DD-论文推荐.md`
+- 已存在 `YYYY-MM-DD-论文推荐.md` → 使用 `YYYY-MM-DD-论文推荐_v2.md`
+- 已存在 `_v2` → 使用 `_v3`，以此类推
+
+**绝对不要覆盖已有的推荐文件**，每次运行各自独立成文。
+
+用 Write 工具保存到上述确定的路径（目录不存在则先创建）。
 
 文件开头加 YAML frontmatter：
 
