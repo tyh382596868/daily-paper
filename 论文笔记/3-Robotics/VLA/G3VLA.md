@@ -53,7 +53,7 @@ created: 2026-06-24
 
 ### 本文的动机
 
-通过**最小改动**（仅修改视觉 token 的几何条件化方式）为 VLA 注入标定几何感应偏置，保留预训练骨干的视觉-语言知识，同时提升空间推理能力。几何信息作为归纳偏置而非新模态注入，与现有 [[VLA 后训练|Imitation Learning]] 目标完全兼容。
+通过**最小改动**（仅修改视觉 token 的几何条件化方式）为 VLA 注入标定几何感应偏置，保留预训练骨干的视觉-语言知识，同时提升空间推理能力。几何信息作为归纳偏置而非新模态注入，与现有 [[Imitation Learning]] 目标完全兼容。
 
 ---
 
@@ -162,7 +162,7 @@ $$
 - $G_\phi$: 零初始化的可学习嵌入函数
 - $R^v$: 射线坐标图（包含所有 patch 位置的射线方向）
 
-### 公式 3: [[几何模块|跨视图融合]]
+### 公式 3: [[Cross-View Attention|跨视图融合]]
 
 $$
 H = \mathrm{Fusion}_\psi(Z; \{K^v, T^v\}_{v=1}^{V})
@@ -411,7 +411,7 @@ Stage 1 以几何学习为主导，防止早期干扰动作学习；Stage 2 中�
 - [[相机内参]]: 核心依赖，用于射线反投影
 - [[Bi-Directional Attention|双向注意力机制]]: 跨视图融合的核心机制
 - [[Knowledge Distillation|知识蒸馏]]: π³X 到几何模块的蒸馏流程
-- [[VLA 后训练|Imitation Learning]]: 整体训练目标
+- [[Imitation Learning]]: 整体训练目标
 - [[VLA|Vision-Language-Action]]: 方法所属的 VLA 范畴
 
 ### 硬件/数据相关
