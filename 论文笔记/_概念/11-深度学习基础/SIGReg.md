@@ -32,6 +32,7 @@ $$
 
 - LeJEPA (Balestriero & LeCun, 2025): 首次提出 SIGReg 用于自监督表示学习
 - [[LeWM]]: 把 SIGReg 引入动作条件世界模型，实现端到端 JEPA 训练
+- [[SkyJEPA]]: 用 SIGReg 防止四旋翼动力学潜在表示坍缩，$M=17$ 随机投影方向，$\lambda_\mathrm{sig}=0.02$
 
 ## 相关概念
 
