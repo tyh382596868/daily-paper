@@ -22,6 +22,7 @@ $$\mathcal{L} = \| s_\phi(x_{t+k}) - p_\psi(s_\phi(x_t), a_{t:t+k}) \|^2$$
 - Bardes et al., 2024: [[V-JEPA]]
 - [[LeWM]]: 基于 [[SIGReg]] 的稳定端到端 JEPA 世界模型
 - [[PLDM]]: 此前唯一的端到端像素 JEPA 基线，需要 6+ 损失项
+- [[SkyJEPA]]: 将 JEPA 应用于四旋翼动力学建模，配合物理探针实现零样本 Sim-to-Real 控制
 
 ## 相关概念
 - [[I-JEPA]]
