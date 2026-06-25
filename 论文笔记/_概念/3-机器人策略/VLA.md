@@ -21,6 +21,7 @@ $$a_t = \pi_\theta(o_{0:t}, l)$$
 - [[OpenVLA]]: 开源 VLA，基于 Llama 骨干
 - [[RLDX-1]]: 加入 RL 后训练和物理信号流
 - [[MolmoAct2]]: 部署导向 VLA，支持低成本硬件
+- [[ACNet]]: 针对 VLA 推理延迟的轻量级异步控制适配器
 
 ## 相关概念
 - [[VLM]]

@@ -16,6 +16,7 @@ generated_by: dailypaper-skills
 
 - [[论文笔记/3-Robotics/VLA/3D-Belief|3D-Belief]]
 - [[论文笔记/3-Robotics/VLA/3DThinkVLA|3DThinkVLA]]
+- [[论文笔记/3-Robotics/VLA/ACNet|ACNet]]
 - [[论文笔记/3-Robotics/VLA/APT|APT]]
 - [[论文笔记/3-Robotics/VLA/AR-VLA|AR-VLA]]
 - [[论文笔记/3-Robotics/VLA/AffordanceVLA|AffordanceVLA]]
@@ -55,6 +56,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/Pion|Pion]]
 - [[论文笔记/3-Robotics/VLA/RLA-WM|RLA-WM]]
 - [[论文笔记/3-Robotics/VLA/RLDX-1|RLDX-1]]
+- [[论文笔记/3-Robotics/VLA/ROAD-VLA|ROAD-VLA]]
 - [[论文笔记/3-Robotics/VLA/RethinkVLAInit|RethinkVLAInit]]
 - [[论文笔记/3-Robotics/VLA/RoVLA|RoVLA]]
 - [[论文笔记/3-Robotics/VLA/RoboDream|RoboDream]]

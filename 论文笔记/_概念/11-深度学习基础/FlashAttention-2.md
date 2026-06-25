@@ -21,6 +21,7 @@ FlashAttention-2 是对原始 FlashAttention 的工程优化版本（Tri Dao, 20
 
 - Tri Dao et al., "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning" (2023)
 - [[X-Foresight]] 作为 baseline 对照（Block Sparse Attention 比 FA2 加速 1.59×）
+- [[Causal-rCM]]: 扩展 FA2 支持 [[JVP]]（Jacobian-vector product），用于连续时间 sCM 的 TF 掩码切线计算；稀疏 TF 掩码表达为 admissible query-key 区间，无需物化密集掩码
 
 ## 相关概念
 
