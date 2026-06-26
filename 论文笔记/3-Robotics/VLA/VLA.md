@@ -32,6 +32,7 @@ generated_by: dailypaper-skills
 - [[论文笔记/3-Robotics/VLA/FTP-1|FTP-1]]
 - [[论文笔记/3-Robotics/VLA/FineVLA|FineVLA]]
 - [[论文笔记/3-Robotics/VLA/FlowPRO|FlowPRO]]
+- [[论文笔记/3-Robotics/VLA/ForesightSafety-VLA|ForesightSafety-VLA]]
 - [[论文笔记/3-Robotics/VLA/G3VLA|G3VLA]]
 - [[论文笔记/3-Robotics/VLA/GAF|GAF]]
 - [[论文笔记/3-Robotics/VLA/GEM-4D|GEM-4D]]

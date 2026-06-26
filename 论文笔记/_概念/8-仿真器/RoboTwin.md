@@ -16,6 +16,7 @@ aliases: [RoboTwin]
 
 ## 代表工作
 - [[EvoScene-VLA]]: 31 任务平均成功率 87.2 % → 89.1 %（Clean）/ 86.1 % → 88.5 %（Rand）
+- [[ForesightSafety-VLA]]: 在 RoboTwin 上构建 66 个安全增强场景，覆盖 5 种机器人形态
 
 ## 相关概念
 - [[MuJoCo]]
