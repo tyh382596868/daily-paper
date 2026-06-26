@@ -6,7 +6,7 @@ year: 2026
 venue: arXiv
 tags: [world-model, hallucination, data-coverage, benchmark, flow-matching, curiosity-driven, visual-world-model]
 zotero_collection: 1-生成模型
-image_source: online
+image_source: mixed
 arxiv_html: https://arxiv.org/html/2606.27326
 created: 2026-06-26
 ---
@@ -191,17 +191,17 @@ $$
 
 ### Figure 1：三类幻觉模式的可视化
 
-![Figure 1 - 感知幻觉（编码重建失真）](https://arxiv.org/html/2606.27326v1/visualizations/hallucination/4_pygame-reacher-easy-enc.png)
+> 🖼️ **Figure 1a: 感知幻觉（编码重建失真）** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.27326)）
 
-![Figure 1 - 感知幻觉（解码重建失真）](https://arxiv.org/html/2606.27326v1/visualizations/hallucination/4_pygame-reacher-easy-dec.png)
+> 🖼️ **Figure 1b: 感知幻觉（解码重建失真）** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.27326)）
 
 ![Figure 1 - 动作边缘化（动作被忽略，向下）](https://arxiv.org/html/2606.27326v1/visualizations/hallucination/hallucination-maniskill-action-down2.png)
 
 ![Figure 1 - 动作边缘化（动作被忽略，向上）](https://arxiv.org/html/2606.27326v1/visualizations/hallucination/hallucination-maniskill-action-up2.png)
 
-![Figure 1 - 场景发散（Pong 球瞬移，t=34）](https://arxiv.org/html/2606.27326v1/visualizations/hallucination/hallucination-pong-frame1-thick.png)
+> 🖼️ **Figure 1e: 场景发散（Pong 球瞬移，t=34）** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.27326)）
 
-![Figure 1 - 场景发散（Pong 球瞬移，t=36）](https://arxiv.org/html/2606.27326v1/visualizations/hallucination/hallucination-pong-frame2-thick.png)
+> 🖼️ **Figure 1f: 场景发散（Pong 球瞬移，t=36）** — 图片暂缺（arXiv 抓取失败，原图见 [arXiv HTML](https://arxiv.org/html/2606.27326)）
 
 **说明**: 三类幻觉对应 pipeline 的三个不同阶段：感知幻觉在 $H=0$ 时的编码-解码阶段发生；动作边缘化在动力学模型阶段导致控制失效；场景发散在多步展开累积误差后产生物理不合理事件。
 
